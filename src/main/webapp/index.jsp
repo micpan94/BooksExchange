@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="cssB/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
     <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+
 
     <style>
         body {
@@ -25,19 +27,60 @@
 
         }
 
-        h1{
-            text-align: left;
-            margin-top: 20px;
+        h1 {
+            font-size: 36px;
+            font-weight: 400;
+            color: #C0D06F;
+            margin: 20px;
         }
+
+        .jumpers {
+            text-align: center;
+        }
+
+        .jumpers img {
+            width: 100%;
+            height: auto;
+        }
+
+        .jumpers p {
+            margin-bottom: 30px;
+        }
+
+        .jumpers figcaption {
+            margin-top: 8px;
+        }
+
+        .navbar {
+            min-height: 57px;
+        }
+
+        .login-bar {
+            float: right;
+        }
+
+
     </style>
 
 </head>
 <body>
-
 <header>
+    <%--    <div id="login-bar" class="login-bar">--%>
+    <%--        <div> ZALOGUJ SIĘ </div>--%>
+    <%--        <div> UTWÓRZ KONTO</div>--%>
 
-    <nav class="navbar navbar-dark bg-primary navbar-expand-md">
-        <a class="navbar-brand" href="#"><i class="demo-icon icon-book"></i>changebook.com</a>
+
+    <%--    </div>--%>
+    <nav class="navbar navbar-light bg-jumpers navbar-expand-lg">
+
+        <a class="navbar-brand" href="#"><img src="img/logo.png" width="30" height="30"
+                                              class="d-inline-block mr-1 align-bottom" alt="">changebook.com</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="mainmenu">
 
             <ul class="navbar-nav mr-auto">
@@ -46,21 +89,8 @@
                     <a class="nav-link" href="#"> Start </a>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">KATEGORIE</a>
-                </li>
-
-
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> BESTSELEERY </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> NOWOŚCI</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">OGŁOSZENIA</a>
+                    <a class="nav-link" href="#">BESTSELERY</a>
                 </li>
 
                 <li class="nav-item">
@@ -68,7 +98,15 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TEL 32 720 60 60</a>
+                    <a class="nav-link disabled" href="#">OGŁOSZENIA</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ZALOGUJ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NOWE KONTO</a>
                 </li>
 
             </ul>
@@ -85,7 +123,62 @@
     </nav>
 
 </header>
+
+
 <h1>NOWOŚCI</h1>
+
+<div id="slider" >
+    <figure>
+        <img src="images/France.jpg">
+        <img src="images/Ibiza.jpg">
+        <img src="images/Amsterdam.jpg">
+        <img src="images/France.jpg">
+        <img src="images/Amsterdam.jpg">
+    </figure>
+
+
+
+
+    <li>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.dropdown').on('click', function (e) {
+                var $el = $(this);
+                var $parent = $(this).offsetParent(".dropdown-menu");
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                var $subMenu = $(this).next(".dropdown-menu");
+                $subMenu.toggleClass('show');
+
+                $(this).parent("li").toggleClass('show');
+
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                    $('.dropdown-menu .show').removeClass("show");
+                });
+
+                if (!$parent.parent().hasClass('navbar-nav')) {
+                    $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+                }
+
+                return false;
+            });
+        });
+
+    </script>
 
 </body>
 </html>
