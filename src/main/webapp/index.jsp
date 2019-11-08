@@ -65,9 +65,6 @@
 </head>
 <body>
 <header>
-    <%--    <div id="login-bar" class="login-bar">--%>
-    <%--        <div> ZALOGUJ SIĘ </div>--%>
-    <%--        <div> UTWÓRZ KONTO</div>--%>
 
 
     <%--    </div>--%>
@@ -127,58 +124,44 @@
 
 <h1>NOWOŚCI</h1>
 
-<div id="slider" >
-    <figure>
-        <img src="images/France.jpg">
-        <img src="images/Ibiza.jpg">
-        <img src="images/Amsterdam.jpg">
-        <img src="images/France.jpg">
-        <img src="images/Amsterdam.jpg">
-    </figure>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
 
+<script src="js/bootstrap.min.js"></script>
 
-    <li>
+<script>
 
+    $(document).ready(function () {
+        $('.dropdown').on('click', function (e) {
+            var $el = $(this);
+            var $parent = $(this).offsetParent(".dropdown-menu");
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+            }
+            var $subMenu = $(this).next(".dropdown-menu");
+            $subMenu.toggleClass('show');
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+            $(this).parent("li").toggleClass('show');
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-
-        $(document).ready(function () {
-            $('.dropdown').on('click', function (e) {
-                var $el = $(this);
-                var $parent = $(this).offsetParent(".dropdown-menu");
-                if (!$(this).next().hasClass('show')) {
-                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-                }
-                var $subMenu = $(this).next(".dropdown-menu");
-                $subMenu.toggleClass('show');
-
-                $(this).parent("li").toggleClass('show');
-
-                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
-                    $('.dropdown-menu .show').removeClass("show");
-                });
-
-                if (!$parent.parent().hasClass('navbar-nav')) {
-                    $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
-                }
-
-                return false;
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                $('.dropdown-menu .show').removeClass("show");
             });
-        });
 
-    </script>
+            if (!$parent.parent().hasClass('navbar-nav')) {
+                $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+            }
+
+            return false;
+        });
+    });
+
+</script>
 
 </body>
 </html>
