@@ -33,7 +33,7 @@
             color: #C0D06F;
             margin: 20px;
         }
-
+x
         .jumpers {
             text-align: center;
         }
