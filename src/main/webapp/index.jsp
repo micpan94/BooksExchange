@@ -55,8 +55,6 @@
             width: 700px;
             height: 400px;
             overflow: hidden;
-        }
-        .middle{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -89,7 +87,7 @@
         .slides{
             width: 500%;
             height: 100%;
-            display: flex;
+            display:inline-flex;
         }
 
         .slide{
@@ -181,7 +179,7 @@
 
 <h1>NOWOŚCI</h1>
 
-<div class="slidershow middle">
+<div class="slidershow">
 
     <div class="slides">
         <input type="radio" name="r" id="r1" checked>
