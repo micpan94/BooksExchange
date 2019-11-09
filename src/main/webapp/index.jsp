@@ -51,23 +51,25 @@
             min-height: 57px;
         }
 
-        .slidershow{
-            width: 700px;
-            height: 400px;
+        .slidershow {
+            width: 100%;
+            height: 550px;
             overflow: hidden;
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
-        .navigation{
+
+        .navigation {
             position: absolute;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
         }
-        .bar{
+
+        .bar {
             width: 50px;
             height: 10px;
             border: 2px solid #fff;
@@ -75,44 +77,47 @@
             cursor: pointer;
             transition: 0.4s;
         }
-        .bar:hover{
+
+        .bar:hover {
             background: #fff;
         }
 
-        input[name="r"]{
+        input[name="r"] {
             position: absolute;
             visibility: hidden;
         }
 
-        .slides{
+        .slides {
             width: 500%;
             height: 100%;
-            display:inline-flex;
+            display: inline-flex;
         }
 
-        .slide{
+        .slide {
             width: 20%;
             transition: 0.6s;
         }
-        .slide img{
+
+        .slide img {
             width: 100%;
             height: 100%;
         }
 
-        #r1:checked ~ .s1{
+        #r1:checked ~ .s1 {
             margin-left: 0;
         }
-        #r2:checked ~ .s1{
+
+        #r2:checked ~ .s1 {
             margin-left: -20%;
         }
-        #r3:checked ~ .s1{
+
+        #r3:checked ~ .s1 {
             margin-left: -40%;
         }
-        #r4:checked ~ .s1{
+
+        #r4:checked ~ .s1 {
             margin-left: -60%;
         }
-
-
 
 
     </style>
@@ -122,7 +127,6 @@
 <header>
 
 
-    <%--    </div>--%>
     <nav class="navbar navbar-light bg-jumpers navbar-expand-lg">
 
         <a class="navbar-brand" href="#"><img src="img/logo.png" width="30" height="30"
@@ -138,7 +142,7 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"> Start </a>
+                    <a class="nav-link" href="#"> START </a>
                 </li>
 
                 <li class="nav-item">
@@ -161,6 +165,10 @@
                     <a class="nav-link" href="#">NOWE KONTO</a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TEL 32 764 64 73</a>
+                </li>
+
             </ul>
 
             <form class="form-inline">
@@ -175,9 +183,6 @@
     </nav>
 
 </header>
-
-
-<h1>NOWOŚCI</h1>
 
 <div class="slidershow">
 
@@ -207,6 +212,7 @@
         <label for="r4" class="bar"></label>
     </div>
 </div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
