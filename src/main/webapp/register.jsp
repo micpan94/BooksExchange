@@ -124,6 +124,13 @@
                 <%
                     }
                 %>
+                <%
+                    if (request.getAttribute("succes") != null){
+                %>
+                <li>Udało się stworzyć konto!</li>
+                <%
+                    }
+                %>
             </ul>
         </fieldset>
 
@@ -139,7 +146,7 @@
                 </div>
 
                 <div class="inputField">
-                    <input name="password" type="text" id="last-name" placeholder="Hasło">
+                    <input name="password" type="password" id="last-name" placeholder="Hasło">
                 </div>
 
                 <div class="inputField">
