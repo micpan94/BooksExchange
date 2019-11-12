@@ -84,9 +84,9 @@
 
 <form class="box" method="post">
     <h1>Register</h1>
-    <input type="text" name="name" placeholder="your name">
-    <input type="text" name="login" placeholder="your email">
-    <input type="password" placeholder="password">
+    <input type="text" name="login" placeholder="your login">
+    <input type="text" name="mail" placeholder="your email">
+    <input type="password" name="password" placeholder="password">
 
     <input type="submit" value="create new account">
 

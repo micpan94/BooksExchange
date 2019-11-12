@@ -158,11 +158,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ZALOGUJ</a>
+                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">ZALOGUJ</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">NOWE KONTO</a>
+                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">NOWE KONTO</a>
                 </li>
 
                 <li class="nav-item">
