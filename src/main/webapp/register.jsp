@@ -18,6 +18,8 @@
             padding: 0;
             font-family: sans-serif;
             background-image: url("login.jpg");
+            color: white;
+
         }
 
         .box {
@@ -83,12 +85,77 @@
 <body>
 
 <form class="box" method="post">
-    <h1>Register</h1>
-    <input type="text" name="login" placeholder="your login">
-    <input type="text" name="mail" placeholder="your email">
-    <input type="password" name="password" placeholder="password">
+    <h1>Rejestracja</h1>
+    <%--    <input type="text" name="login" placeholder="your login">--%>
+    <%--    <input type="text" name="mail" placeholder="your email">--%>
+    <%--    <input type="password" name="password" placeholder="password">--%>
 
-    <input type="submit" value="create new account">
+    <%--    <input type="submit" value="create new account">--%>
+
+    <div id="container">
+
+        <%
+            if (request.getAttribute("errors") != null) {
+        %>
+        <fieldset>
+            <ul>
+                <%--            // first name erero--%>
+                <%
+                    if (request.getAttribute("login_error") != null) {
+                %>
+                <li>Błędna nazwa użytkownika</li>
+                <%
+                    }
+                %>
+                <%--&lt;%&ndash;&ndash;%&gt; last name error--%>
+                <%
+                    if (request.getAttribute("password_error") != null) {
+                %>
+                <li>Błędne hasło</li>
+                <%
+                    }
+                %>
+                <%--           dob erereo--%>
+
+                <%
+                    if (request.getAttribute("email_error") != null) {
+                %>
+                <li>Błedny adres email</li>
+                <%
+                    }
+                %>
+            </ul>
+        </fieldset>
+
+        <%
+            }
+        %>
+
+
+        <fieldset>
+            <form action="AddUser" method="post">
+                <div class="inputField">
+                    <input name="login" type="text" id="first-name" placeholder="Login">
+                </div>
+
+                <div class="inputField">
+                    <input name="password" type="text" id="last-name" placeholder="Hasło">
+                </div>
+
+                <div class="inputField">
+                    <input name="email" type="text" id="dob" placeholder="Email">
+                </div>
+
+                <div class="inputField" id="submitField">
+                    <input id="submitBtn" type="submit" value="Stwórz nowe konto">
+                </div>
+            </form>
+        </fieldset>
+
+
+
+    </div>
+
 
 </form>
 
