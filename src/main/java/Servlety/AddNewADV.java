@@ -27,7 +27,10 @@ public class AddNewADV extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LocalDateTime localDateTime = LocalDateTime.now();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-
+        //commit test
 
     }
+
+
+
 }
