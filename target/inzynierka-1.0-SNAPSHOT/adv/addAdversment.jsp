@@ -117,7 +117,7 @@
 
 </head>
 
-<form class="box" method="post">
+<form class="box" method="post" enctype="multipart/form-data" action="multiPartServlet">
     <%
         if (request.getAttribute("errors") != null) {
     %>

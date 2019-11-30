@@ -21,7 +21,7 @@
 
     <style>
         body {
-            background-image: url("t1.png");
+            background-image: url("img/bck1.jpg");
             font-family: 'McLaren', cursive;
             text-align: center;
 
