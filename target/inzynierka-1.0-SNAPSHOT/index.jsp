@@ -14,9 +14,9 @@
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
     <title>Welcome</title>
-    <link rel="stylesheet" href="cssB/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
-    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+
 
 
     <style>
@@ -97,9 +97,11 @@
 
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
-                    <%String name = session.getAttribute("name").toString(); %>
-                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">Witaj <%=name%>
-                    </a>
+                    <%String name = session.getAttribute("name").toString();
+                        String id = session.getAttribute("user").toString();
+                    %>
+                    <a class="nav-link">Witaj <%=name%> ID: <%=id%></a>
+
                 </li>
                 <% } else { %>
                 <li class="nav-item">

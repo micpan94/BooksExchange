@@ -27,7 +27,7 @@ public class AdvServlet extends HttpServlet {
         req.setAttribute("advList",advertisementCollection);
         req.setAttribute("numberOfAdvs",numberOfAdvs);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("adv/adv.jsp");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("adversmentJSP/viewAdv.jsp");
         requestDispatcher.forward(req, resp);
 
 

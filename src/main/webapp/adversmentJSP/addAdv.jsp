@@ -15,7 +15,7 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background-image: url("login.jpg");
+            background-image: url("img/login.jpg");
 
         }
 
@@ -117,7 +117,7 @@
 
 </head>
 
-<form class="box" method="post" enctype="multipart/form-data" action="multiPartServlet">
+<form class="box" method="post" >
     <%
         if (request.getAttribute("errors") != null) {
     %>
@@ -156,13 +156,13 @@
     <input type="text" name="price" placeholder="cena">
     <label for="type">Rodziaj</label>
     <select id="type" name="type">
-        <option>biznes,ekonomia,marketing</option>
+        <option>biznes</option>
         <option>dla dzieci</option>
-        <option>fantastyka,horror</option>
+        <option>fantastyka</option>
         <option>historia</option>
         <option>informatyka</option>
         <option>komiks</option>
-        <option>kryminal,thriller</option>
+        <option>kryminal</option>
         <option>kuchnia</option>
         <option>lektury szkolne</option>
         <option>literatura obca</option>
@@ -182,10 +182,6 @@
     <h2>Opis</h2>
     <textarea name="content" rows="6" id="textarea"
               placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
-    <h2>Dodaj zdjęcie</h2>
-
-    <input type="file" name="file" id="file">
-
 
     <input type="submit" name="" value="Dodaj">
 

@@ -17,7 +17,7 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background-image: url("login.jpg");
+            background-image: url("img/login.jpg");
             color: white;
 
         }
