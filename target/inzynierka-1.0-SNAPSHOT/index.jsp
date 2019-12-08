@@ -13,6 +13,8 @@
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+
     <title>Welcome</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
@@ -20,11 +22,17 @@
 
     <style>
         body {
-            background-image: url("img/bck1.jpg");
-            font-family: 'McLaren', cursive;
+            background-image: url("img/index.jpg");
+            background-size: cover;
+            font-family: 'Oleo Script Swash Caps', cursive;
             text-align: center;
 
         }
+
+        .logo {
+            font-family: 'Oleo Script Swash Caps', cursive;
+        }
+
 
         h1 {
             font-size: 36px;
@@ -66,7 +74,7 @@
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
         <%--        ta linijka byla do loga --%>
         <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
-        <a class="navbar-brand" href="#">changebook.com</a>
+        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                 aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
@@ -78,40 +86,42 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h5><a class="nav-link" href="#"> START </a></h5>
+                    <h3><a class="nav-link" href="#">Strona Główna</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h5><a class="nav-link" href="#">BESTSELERY</a></h5>
+                    <h3><a class="nav-link" href="#">Bestselery</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h5><a class="nav-link" href="#">RABATY</a></h5>
+                    <h3><a class="nav-link" href="#">Promocje</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h5><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv">OGŁOSZENIA</a></h5>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv">Ogłoszenia</a></h3>
                 </li>
 
 
                 <% if (session.getAttribute("name") != null) { %>
-                <li class="nav-item">
-                    <%
-                        String name = session.getAttribute("name").toString();
-                        String id = session.getAttribute("user").toString();
-                    %>
-                    <a class="nav-link">Witaj <%=name%> ID: <%=id%>
-                    </a>
+                <h3>
+                    <li class="nav-item">
+                        <%
+                            String name = session.getAttribute("name").toString();
+                            String id = session.getAttribute("user").toString();
+                        %>
+                        <a class="nav-link">Witaj <%=name%> ID: <%=id%>
+                        </a>
 
-                </li>
+                    </li>
+                </h3>
                 <% } else { %>
                 <li class="nav-item">
-                    <h5><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">ZALOGUJ</a></h5>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">Zaloguj</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h5><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">NOWE KONTO</a>
-                    </h5>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">Nowe Konto</a>
+                    </h3>
                 </li>
 
                 <% } %>
@@ -119,12 +129,12 @@
 
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">DODAJ NOWE
-                        OGŁOSZENIE</a>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe
+                        ogłoszenie</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout">WYLOGUJ</a>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout">Wyloguj</a></h3>
                 </li>
 
                 <% }%>

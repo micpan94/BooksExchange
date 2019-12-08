@@ -28,6 +28,29 @@ public class Client{
     public Client(){}
 
 
+    public String getTelephoneNr() {
+        return telephoneNr;
+    }
+
+    public void setTelephoneNr(String telephoneNr) {
+        this.telephoneNr = telephoneNr;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Set<Advertisement> getAdvertisementSet() {
+        return advertisementSet;
+    }
+
+    public void setAdvertisementSet(Set<Advertisement> advertisementSet) {
+        this.advertisementSet = advertisementSet;
+    }
 
     public int getId() {
         return id;

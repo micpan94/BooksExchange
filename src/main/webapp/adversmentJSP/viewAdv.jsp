@@ -10,15 +10,25 @@
 <html>
 <head>
     <title>Ogłoszenie</title>
+
+    <style>
+        body{
+            background-image: url("adversmentJSP/img/lib1.jpg");
+            background-size: inherit;
+        }
+    </style>
 </head>
 <body>
 <div id="advList">
 
     <c:forEach items="${advList}" var="element">
 
-        <a href="http://localhost:3000/advertisement-details/<c:out value="${element.id}"/>"> <c:out
+        <div><h4><a href="http://localhost:3000/advertisement-details/<c:out value="${element.id}"/>"> <c:out
                 value="${element.title}"></c:out>
-            <c:out value="${element.price}"></c:out> zł</a>
+            <c:out value="${element.price}"></c:out> zł</a></h4>
+<%--            //img src jest tutaj wyznaczikime od katalohu webapp--%>
+            <img src="adversmentJSP/img/logo.jpg" width="50" height="70">
+        </div>
 
 
     </c:forEach>

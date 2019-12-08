@@ -18,11 +18,12 @@ public class Advertisement {
     private String type;
     @ManyToOne
     private Client client;
+    private String location;
 //    @Lob
 //    @Basic(fetch = FetchType.LAZY)
 //    private byte[] picture;
 
-    public Advertisement(LocalDateTime data, String title, String content, Integer price, Boolean isNew, String type, Client client) {
+    public Advertisement(LocalDateTime data, String title, String content, Integer price, Boolean isNew, String type, Client client,String location) {
         this.data = data;
         this.title = title;
         this.content = content;
@@ -30,6 +31,7 @@ public class Advertisement {
         this.isNew = isNew;
         this.type = type;
         this.client = client;
+        this.location = location;
 
     }
 
@@ -98,6 +100,14 @@ public class Advertisement {
 
     public void setClient(Client client) {
         this.client = client;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 }
 //
