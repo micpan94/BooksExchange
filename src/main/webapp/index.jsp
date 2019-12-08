@@ -14,7 +14,7 @@
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/1c89e44ac5.js" crossorigin="anonymous"></script>
     <title>Welcome</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
@@ -63,6 +63,24 @@
             visibility: hidden;
         }
 
+        #footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+
+        }
+        #footerBlock{
+            float: right;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     </style>
 
@@ -155,6 +173,14 @@
     </nav>
 
 </header>
+
+<div id="footer">
+
+    Created by Michał Pankiewicz 2019
+    <div id="footerBlock">
+        <i class="fab fa-facebook-square fa-2x"></i>   <i class="fab fa-youtube fa-2x"></i><i class="fab fa-twitter fa-2x"></i><i class="fab fa-instagram fa-2x"></i>
+
+    </div>
 
 </div>
 
