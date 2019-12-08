@@ -12,19 +12,11 @@
 </head>
 <body>
 
-<h1>upload a file</h1>
-<fieldset>
-    <legend>Upload file</legend>
-    <form  method="post" enctype="multipart/form-data">
-        <label for="filename"> select file:</label>
-        <input id="filename" type="file" name="fileName" size="30"/><br/>
-        <input id="filename2" type="file" name="fileName" size="30"/><br/>
-        <input id="filename3" type="file" name="fileName" size="30"/><br/>
-        <input type="submit" value="upload" />
+<form method="post"  enctype="multipart/form-data">
+    Choose a file: <input type="file" name="multiPartServlet" />
+    <input type="submit" value="Upload" />
+</form>
 
-    </form>
-
-</fieldset>
 
 
 </body>

@@ -117,7 +117,7 @@
 
 </head>
 
-<form class="box" method="post" >
+<form class="box" method="post" enctype="multipart/form-data">
     <%
         if (request.getAttribute("errors") != null) {
     %>
@@ -182,7 +182,8 @@
     <h2>Opis</h2>
     <textarea name="content" rows="6" id="textarea"
               placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
-
+    <h4>Wybierz zdjęcia</h4>
+    <input type="file" name="multiPartServlet" multiple >
     <input type="submit" name="" value="Dodaj">
 
 </form>

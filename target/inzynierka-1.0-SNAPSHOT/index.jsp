@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="cssB/main.css">
 
 
-
     <style>
         body {
             background-image: url("img/bck1.jpg");
@@ -97,10 +96,12 @@
 
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
-                    <%String name = session.getAttribute("name").toString();
+                    <%
+                        String name = session.getAttribute("name").toString();
                         String id = session.getAttribute("user").toString();
                     %>
-                    <a class="nav-link">Witaj <%=name%> ID: <%=id%></a>
+                    <a class="nav-link">Witaj <%=name%> ID: <%=id%>
+                    </a>
 
                 </li>
                 <% } else { %>
@@ -118,7 +119,8 @@
 
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">DODAJ NOWE OGŁOSZENIE</a>
+                    <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">DODAJ NOWE
+                        OGŁOSZENIE</a>
                 </li>
 
                 <li class="nav-item">

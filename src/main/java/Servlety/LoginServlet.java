@@ -60,11 +60,14 @@ public class LoginServlet extends HttpServlet {
 
             Client client = clientDao.findById(userId);
             session.setAttribute("name",client.getLogin());
-            session.setAttribute("user",client);
+            Integer clientID = userId;
+            session.setAttribute("user",clientID);
+            session.setAttribute("client",client);
 
 
 
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
+
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/home");
             requestDispatcher.forward(req, resp);
         } else if (isLoginInBase && wrongPassword) {
             req.setAttribute("errors",true);
