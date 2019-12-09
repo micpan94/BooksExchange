@@ -9,7 +9,9 @@
 <html>
 <head>
 
-    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+
 
     <title>Panel logowania</title>
     <style>
@@ -17,8 +19,11 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
-            background-image: url("img/login.jpg");
+            background-image: url("img/index.jpg");
+            background-size: cover;
+            !important;font-family: 'Lobster', cursive;
+
+
         }
 
         .box {
@@ -36,9 +41,7 @@
 
         .box h1 {
             color: white;
-            text-transform: uppercase;
             font-weight: 500;
-            font-family: 'Yeon Sung', cursive;
         }
 
         .box input[type = "text"], .box input[type = "password"] {
@@ -77,7 +80,9 @@
         }
 
         .box input[type="submit"]:hover {
-            background: #2ecc71;
+            /*background: #2ecc71;*/
+            background: black;
+            color: white;
         }
 
     </style>
@@ -117,7 +122,7 @@
     %>
 
 
-    <h1>Zaloguj się do panelu </h1>
+    <h1>Zaloguj się</h1>
     <input type="text" name="login" placeholder="login">
     <input type="password" name="password" placeholder="haslo">
     <input type="submit" name="" value="Login">

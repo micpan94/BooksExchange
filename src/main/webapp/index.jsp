@@ -18,6 +18,9 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
+    <%--    // od stopki--%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <%--    <link rel="stylesheet" href="style/style.css">--%>
 
 
     <style>
@@ -68,7 +71,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            padding: 1rem;
+            padding: 0;
             background-color: black;
             color: white;
             opacity: 60%;
@@ -76,11 +79,46 @@
             font-size: 20px;
 
         }
-        #footerBlock{
-            float: right;
-            margin-left: auto;
-            margin-right: auto;
+
+        .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 15px;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
         }
+
+        .social-buttons a::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, white, black);
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover::before {
+            transform: scale(0);
+        }
+
+        .social-buttons a i {
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover i {
+            background: linear-gradient(45deg, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(2.2);
+        }
+
 
     </style>
 
@@ -175,12 +213,14 @@
 </header>
 
 <div id="footer">
-
-    Created by Michał Pankiewicz 2019
-    <div id="footerBlock">
-        <i class="fab fa-facebook-square fa-2x"></i>   <i class="fab fa-youtube fa-2x"></i><i class="fab fa-twitter fa-2x"></i><i class="fab fa-instagram fa-2x"></i>
-
+    <div class="social-buttons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
     </div>
+
 
 </div>
 

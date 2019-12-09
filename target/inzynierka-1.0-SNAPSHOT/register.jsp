@@ -9,6 +9,8 @@
 <html>
 <head>
     <title>Register now</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
 
 
     <style>
@@ -16,8 +18,8 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
-            background-image: url("img/login.jpg");
+            font-family: 'Lobster', cursive;
+            background-image: url("img/index.jpg");
             color: white;
 
         }
@@ -36,9 +38,7 @@
 
         .box h1 {
             color: white;
-            text-transform: uppercase;
             font-weight: 500;
-            font-family: 'Yeon Sung', cursive;
         }
 
         .box input[type = "text"], .box input[type = "password"] {
@@ -57,8 +57,8 @@
         }
 
         .box input[type = "text"]:focus, .box input[type = "password"]:focus {
-            width: 280px;
-            border-color: #2ecc71;
+            width: 260px;
+            border-color: white;
         }
 
         .box input[type="submit"] {
@@ -77,7 +77,11 @@
         }
 
         .box input[type="submit"]:hover {
-            background: #2ecc71;
+            background: black;
+            color: white;
+            border: 2px solid white;
+
+
         }
 
     </style>
