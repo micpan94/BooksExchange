@@ -43,6 +43,12 @@
             color: white;
             font-weight: 500;
         }
+        .box h5{
+            color: white;
+            font-weight: 100;
+            text-decoration: none;
+
+        }
 
         .box input[type = "text"], .box input[type = "password"] {
             border: 0;
@@ -85,6 +91,7 @@
             color: white;
         }
 
+
     </style>
 </head>
 <body>
@@ -126,6 +133,8 @@
     <input type="text" name="login" placeholder="login">
     <input type="password" name="password" placeholder="haslo">
     <input type="submit" name="" value="Login">
+
+    <h5>Nie masz konta ? <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">utwórz nowe</a></h5>
 
 </form>
 
