@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c89e44ac5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <title>Welcome</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
@@ -27,7 +28,7 @@
         body {
             background-image: url("img/index.jpg");
             background-size: cover;
-            font-family: 'Oleo Script Swash Caps', cursive;
+        !important;font-family: 'Lobster', cursive;
             text-align: center;
 
         }
@@ -142,7 +143,7 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h3><a class="nav-link" href="#">Strona Główna</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT">Strona Główna</a></h3>
                 </li>
 
                 <li class="nav-item">
@@ -226,8 +227,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                 crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
