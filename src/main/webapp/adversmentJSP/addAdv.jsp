@@ -293,19 +293,19 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT">Strona Główna</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i class="fas fa-home"></i>Strona Główna</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#">Bestselery</a></h3>
+                    <h3><a class="nav-link" href="#"><i class="fas fa-book"></i>Bestselery</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#">Promocje</a></h3>
+                    <h3><a class="nav-link" href="#"><i class="fas fa-percent"></i>Promocje</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv">Ogłoszenia</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i class="fas fa-money-check"></i>Ogłoszenia</a></h3>
                 </li>
 
 
@@ -316,7 +316,7 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link">Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
                         </a>
 
                     </li>
@@ -335,13 +335,13 @@
 
 
                 <% if (session.getAttribute("name") != null) { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe
-                        ogłoszenie</a></h3>
-                </li>
+<%--                <li class="nav-item">--%>
+<%--                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe--%>
+<%--                        ogłoszenie</a></h3>--%>
+<%--                </li>--%>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout">Wyloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
                 </li>
 
                 <% }%>

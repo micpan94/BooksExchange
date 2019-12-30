@@ -13,14 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/SLIDER.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/slider/France.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/slider/Ibiza.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/slider/amsterdam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sliderBeta/amsterdam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sliderBeta/beta.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sliderBeta/xd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,17 +28,34 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1182">
-              <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="505">
+                  <caret line="254" column="135" selection-start-line="254" selection-start-column="101" selection-end-line="254" selection-end-column="135" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="440">
+                  <caret line="307" column="135" selection-start-line="307" selection-start-column="135" selection-end-line="307" selection-end-column="135" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Encje/Client.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/style/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
@@ -121,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/sliderBeta/beta.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/Login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" />
       </list>
     </option>
   </component>
@@ -208,6 +218,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="adversmentJSP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
@@ -374,7 +392,7 @@
       <workItem from="1576748479441" duration="1344000" />
       <workItem from="1577014987717" duration="1931000" />
       <workItem from="1577441131457" duration="2973000" />
-      <workItem from="1577532783077" duration="10764000" />
+      <workItem from="1577532783077" duration="19813000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1572988085512</created>
@@ -656,11 +674,25 @@
       <option name="project" value="LOCAL" />
       <updated>1577734379166</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="slider 1.1">
+      <created>1577738172414</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1577738172414</updated>
+    </task>
+    <task id="LOCAL-00042" summary="slider 1.2 + added some new font awesome icons">
+      <created>1577746364792</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1577746364792</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193025000" />
+    <option name="totallyTimeSpent" value="202074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,7 +707,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.23081024" />
+      <window_info id="Project" order="0" weight="0.23081024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -759,8 +791,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v11" />
-    <MESSAGE value="Sticky menu + test slider" />
     <MESSAGE value="slider test" />
     <MESSAGE value="slider test v1.1" />
     <MESSAGE value="Login panel with css v1.1" />
@@ -784,7 +814,9 @@
     <MESSAGE value="1.9 home get new css" />
     <MESSAGE value="get bootstrap panel 2.0" />
     <MESSAGE value="get first slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="get first slider" />
+    <MESSAGE value="slider 1.1" />
+    <MESSAGE value="slider 1.2 + added some new font awesome icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="slider 1.2 + added some new font awesome icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,13 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4624">
-          <caret line="272" column="6" selection-start-line="272" selection-start-column="6" selection-end-line="272" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/TestJsonServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1208,15 +1233,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2191">
-          <caret line="277" column="14" lean-forward="true" selection-start-line="277" selection-start-column="14" selection-end-line="277" selection-end-column="14" />
+        <state relative-caret-position="1139">
+          <caret line="109" column="26" lean-forward="true" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1182">
-          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+        <state relative-caret-position="505">
+          <caret line="254" column="135" selection-start-line="254" selection-start-column="101" selection-end-line="254" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="307" column="135" selection-start-line="307" selection-start-column="135" selection-end-line="307" selection-end-column="135" />
         </state>
       </provider>
     </entry>
