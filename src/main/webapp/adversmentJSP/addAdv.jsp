@@ -40,11 +40,11 @@
         }
 
         .box {
-            width: 300px;
-            padding: 40px;
+            width: 340px;
+            padding: 20px;
             position: absolute;
             /*// tutaj zmienialem*/
-            top: 48%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
             background: #191919;
@@ -133,59 +133,6 @@
 
 
         }
-        #footer {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            opacity: 60%;
-            text-align: center;
-            font-size: 20px;
-
-        }
-
-        .social-buttons a {
-            display: inline-flex;
-            text-decoration: none;
-            font-size: 15px;
-            width: 60px;
-            height: 60px;
-            color: #fff;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            margin: 0 8px;
-        }
-
-        .social-buttons a::before {
-            content: "";
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, white, black);
-            border-radius: 50%;
-            z-index: -1;
-            transition: 0.3s ease-in;
-        }
-
-        .social-buttons a:hover::before {
-            transform: scale(0);
-        }
-
-        .social-buttons a i {
-            transition: 0.3s ease-in;
-        }
-
-        .social-buttons a:hover i {
-            background: linear-gradient(45deg, black, white);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transform: scale(2.2);
-        }
-
 
     </style>
 
@@ -263,17 +210,6 @@
     <input type="submit" name="" value="Dodaj">
 
 </form>
-<div id="footer">
-    <div class="social-buttons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-
-
-</div>
 
 <header>
 
