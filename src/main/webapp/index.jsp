@@ -22,6 +22,8 @@
     <%--    // od stopki--%>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+
 
 
     <style>
@@ -42,13 +44,14 @@
         slider {
             display: block;
             width: 100%;
-            height: 300px;
+            height: 80px;
             overflow: hidden;
             position: absolute;
-            opacity: 75%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            border: black 2px solid;
+
         }
 
         slider > * {
@@ -57,13 +60,13 @@
             width: 100%;
             height: 100%;
             background: #1f1f1f;
-            animation: slide 12s infinite;
+            animation: slide 24s infinite;
             overflow: hidden;
         }
 
         slide:nth-child(1) {
             left: 0%;
-            animation-delay: -1s;
+            animation-delay: -2s;
             background-image: url("slider/1.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -71,7 +74,7 @@
         }
 
         slide:nth-child(2) {
-            animation-delay: 2s;
+            animation-delay: 4s;
             background-image: url("slider/2.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -79,14 +82,14 @@
         }
 
         slide:nth-child(3) {
-            animation-delay: 5s;
+            animation-delay: 10s;
             background-image: url("slider/3.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         slide:nth-child(4) {
-            animation-delay: 8s;
+            animation-delay: 16s;
             background-image: url("slider/4.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -94,9 +97,12 @@
         }
 
         slide p {
-            font-family: 'McLaren', cursive;
-            font-size: 70px;
+            font-family: 'Oleo Script', cursive;
+            font-size: 28px;
             text-align: center;
+            margin-top: 6px;
+            margin-bottom: 2px;
+            padding: 5px;
             display: inline-block;
             width: 100%;
             color: #fff;
@@ -164,6 +170,7 @@
             left: 0;
             padding: 0;
             background-color: black;
+            display: block;
             color: white;
             opacity: 60%;
             text-align: center;
@@ -233,19 +240,19 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT">Strona Główna</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i class="fas fa-home"></i>Strona Główna</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#">Bestselery</a></h3>
+                    <h3><a class="nav-link" href="#"><i class="fas fa-book"></i>Bestselery</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#">Promocje</a></h3>
+                    <h3><a class="nav-link" href="#"><i class="fas fa-percent"></i>Promocje</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv">Ogłoszenia</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i class="fas fa-money-check"></i>Ogłoszenia</a></h3>
                 </li>
 
 
@@ -256,18 +263,18 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link">Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
                         </a>
 
                     </li>
                 </h3>
                 <% } else { %>
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">Zaloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i class="fas fa-sign-in-alt"></i>Zaloguj</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">Nowe Konto</a>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i class="fas fa-child"></i>Nowe Konto</a>
                     </h3>
                 </li>
 
@@ -276,12 +283,12 @@
 
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i class="fas fa-plus"></i>Dodaj nowe
                         ogłoszenie</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout">Wyloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
                 </li>
 
                 <% }%>
@@ -355,10 +362,10 @@
 </script>
 
 <slider>
-    <slide><p>1</p></slide>
-    <slide><p>2</p></slide>
-    <slide><p>3</p></slide>
-    <slide><p>4</p></slide>
+    <slide><p>Utwórz nowe konto, dołacz do naszej społecznosci</p></slide>
+    <slide><p>Jestesmy juz w Katowicach i Chorzowie!</p></slide>
+    <slide><p>Sprawdz aktualne promocje</p></slide>
+    <slide><p>Sprzedawaj ksiazki w swojej okolicy</p></slide>
 
 
 </slider>
