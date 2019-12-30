@@ -44,50 +44,59 @@ public class AddNewADV extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-// Ustalamy sciezke do zapisu pliku
+
+        if (req.getSession().getAttribute("user") != null) {
+            // Ustalamy sciezke do zapisu pliku
 //        String uploadPath = getServletContext().getRealPath("") + File.separator + "/adversmentImg";
-        // w tym przypadku poliki sa zapisywane bezposrednio na serwerze
-        String uploadPath = "C:\\Users\\PanczoPC\\IdeaProjects\\inzynierka\\src\\main\\webapp\\adversmentJSP\\img";
-        File uploadDir = new File(uploadPath);
-        if (!uploadDir.exists()) uploadDir.mkdir();
+            // w tym przypadku poliki sa zapisywane bezposrednio na serwerze
+            String uploadPath = "C:\\Users\\PanczoPC\\IdeaProjects\\inzynierka\\src\\main\\webapp\\adversmentJSP\\img";
+            File uploadDir = new File(uploadPath);
+            if (!uploadDir.exists()) uploadDir.mkdir();
 
 
-        for (Part part : req.getParts()) {
-            // tutaj ghdzie jest abc nadajemy swoja nazwe
-            part.write(uploadPath + File.separator + "abc.jpg");
+            for (Part part : req.getParts()) {
+                // tutaj ghdzie jest abc nadajemy swoja nazwe
+                part.write(uploadPath + File.separator + "abc.jpg");
 
 
-            //uzyskujemy id klienta z atrybutu sesji nadanego przy logowaniu
-            HttpSession session = req.getSession();
-            Client client = (Client) session.getAttribute("client");
-            Integer userID = client.getId();
-            //setup
-            Advertisement advertisement = new Advertisement();
-            if (req.getParameter("state").contains("Nowa")) {
-                advertisement.setNew(true);
-            } else {
-                advertisement.setNew(false);
+                //uzyskujemy id klienta z atrybutu sesji nadanego przy logowaniu
+                HttpSession session = req.getSession();
+                Client client = (Client) session.getAttribute("client");
+                Integer userID = client.getId();
+                //setup
+                Advertisement advertisement = new Advertisement();
+                if (req.getParameter("state").contains("Nowa")) {
+                    advertisement.setNew(true);
+                } else {
+                    advertisement.setNew(false);
+                }
+                advertisement.setPrice(Integer.valueOf(req.getParameter("price")));
+                advertisement.setTitle(req.getParameter("title"));
+                advertisement.setContent(req.getParameter("content"));
+                advertisement.setType(req.getParameter("type"));
+                advertisement.setClient(clientDao.findById(userID));
+                advertisement.setData(LocalDateTime.now());
+                advertisement.setLocation(client.getLocation());
+                ///////////////////// COS TU KMINIE
+
+
+                try {
+                    advertisementDAO.save(advertisement);
+                    RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
+                    session.setAttribute("advID", advertisement.getId());
+                    requestDispatcher.forward(req, resp);
+
+                } catch (Exception e) {
+                    resp.getWriter().print(e.getMessage());
+                }
+
+
             }
-            advertisement.setPrice(Integer.valueOf(req.getParameter("price")));
-            advertisement.setTitle(req.getParameter("title"));
-            advertisement.setContent(req.getParameter("content"));
-            advertisement.setType(req.getParameter("type"));
-            advertisement.setClient(clientDao.findById(userID));
-            advertisement.setData(LocalDateTime.now());
-            advertisement.setLocation(client.getLocation());
-            ///////////////////// COS TU KMINIE
+        }
 
-
-            try {
-                advertisementDAO.save(advertisement);
-                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
-                session.setAttribute("advID", advertisement.getId());
-                requestDispatcher.forward(req, resp);
-
-            } catch (Exception e) {
-                resp.getWriter().print(e.getMessage());
-            }
-
+        else {
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
+            requestDispatcher.forward(req,resp);
 
         }
 

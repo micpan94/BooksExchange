@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
@@ -25,16 +25,99 @@
 
 
     <style>
-        body {
+        html, body {
             background-image: url("img/index.jpg");
             background-size: cover;
-        !important;font-family: 'Lobster', cursive;
+        !important;
+            font-family: 'Lobster', cursive;
             text-align: center;
-
+            /*  slider   */
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0px;
         }
 
-        .logo {
-            font-family: 'Oleo Script Swash Caps', cursive;
+        /*// slider*/
+        slider {
+            display: block;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: absolute;
+            opacity: 75%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        slider > * {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #1f1f1f;
+            animation: slide 22s infinite;
+            overflow: hidden;
+        }
+
+        slide:nth-child(1) {
+            left: 0%;
+            animation-delay: -1s;
+            background-image: url("slider/amsterdam.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        slide:nth-child(2) {
+            animation-delay: 4s;
+            background-image: url("slider/France.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        slide:nth-child(3) {
+            animation-delay: 7s;
+            background-image: url("slider/Ibiza.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        slide p {
+            font-family: 'McLaren', cursive;
+            font-size: 70px;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            color: #fff;
+        }
+
+        @keyframes slide {
+            0% {
+                left: 100%;
+                width: 100%;
+            }
+            5% {
+                left: 0%;
+            }
+            25% {
+                left: 0%;
+            }
+            30% {
+                left: -100%;
+                width: 100%;
+            }
+            30.0001% {
+                left: -100%;
+                width: 0%;
+            }
+            100% {
+                left: 100%;
+                width: 0%;
+            }
         }
 
 
@@ -215,11 +298,11 @@
 
 <div id="footer">
     <div class="social-buttons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </div>
 
 
@@ -227,8 +310,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                 crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -263,6 +346,14 @@
     });
 
 </script>
+
+<slider>
+    <slide><p>1</p></slide>
+    <slide><p>2</p></slide>
+    <slide><p>3</p></slide>
+
+
+</slider>
 
 </body>
 </html>
