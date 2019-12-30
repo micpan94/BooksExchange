@@ -12,23 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlety/SLIDER.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/slider/France.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/slider/Ibiza.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/slider/amsterdam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/sliderBeta/amsterdam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/sliderBeta/beta.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/sliderBeta/xd.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/SLIDER.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/slider/France.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/slider/Ibiza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/slider/amsterdam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sliderBeta/amsterdam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sliderBeta/beta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sliderBeta/xd.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/register.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="1182">
+              <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -222,14 +215,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -389,7 +374,7 @@
       <workItem from="1576748479441" duration="1344000" />
       <workItem from="1577014987717" duration="1931000" />
       <workItem from="1577441131457" duration="2973000" />
-      <workItem from="1577532783077" duration="9075000" />
+      <workItem from="1577532783077" duration="10764000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1572988085512</created>
@@ -664,11 +649,18 @@
       <option name="project" value="LOCAL" />
       <updated>1576010027427</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="get first slider">
+      <created>1577734379166</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1577734379166</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191336000" />
+    <option name="totallyTimeSpent" value="193025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -683,7 +675,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" visible="true" weight="0.23081024" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.23081024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -694,7 +686,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.219935" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.219935" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27410617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -767,7 +759,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v1" />
     <MESSAGE value="v11" />
     <MESSAGE value="Sticky menu + test slider" />
     <MESSAGE value="slider test" />
@@ -792,7 +783,8 @@
     <MESSAGE value="1.9 add Multipart servlet for img" />
     <MESSAGE value="1.9 home get new css" />
     <MESSAGE value="get bootstrap panel 2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="get bootstrap panel 2.0" />
+    <MESSAGE value="get first slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="get first slider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1223,8 +1215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="1182">
+          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
         </state>
       </provider>
     </entry>

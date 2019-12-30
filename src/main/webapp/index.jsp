@@ -57,30 +57,37 @@
             width: 100%;
             height: 100%;
             background: #1f1f1f;
-            animation: slide 22s infinite;
+            animation: slide 12s infinite;
             overflow: hidden;
         }
 
         slide:nth-child(1) {
             left: 0%;
             animation-delay: -1s;
-            background-image: url("slider/amsterdam.jpg");
+            background-image: url("slider/1.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         slide:nth-child(2) {
-            animation-delay: 4s;
-            background-image: url("slider/France.jpg");
+            animation-delay: 2s;
+            background-image: url("slider/2.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
         slide:nth-child(3) {
-            animation-delay: 7s;
-            background-image: url("slider/Ibiza.jpg");
+            animation-delay: 5s;
+            background-image: url("slider/3.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        slide:nth-child(4) {
+            animation-delay: 8s;
+            background-image: url("slider/4.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -351,6 +358,7 @@
     <slide><p>1</p></slide>
     <slide><p>2</p></slide>
     <slide><p>3</p></slide>
+    <slide><p>4</p></slide>
 
 
 </slider>
