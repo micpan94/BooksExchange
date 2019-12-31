@@ -63,7 +63,8 @@
             color: ghostwhite;
             font-size: 30px;
             position: absolute;
-            margin-left: 20px;
+            padding-left: 25px;
+            margin-right: 0;
             margin-top: 100px;
             text-shadow: black 0.1em 0.1em 0.2em;
             text-align: left;
@@ -73,7 +74,7 @@
             display: block;
             width: 100%;
             color: ghostwhite;
-            margin-left: 20px;
+            padding-left: 25px;
             text-shadow: black 0.1em 0.1em 0.2em;
             font-size: 30px;
             margin-top: 50px;
@@ -87,7 +88,17 @@
             width: 100%;
             margin-top: 100px;
             color: ghostwhite;
-            margin-left: 20px;
+            padding-left: 25px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-size: 30px;
+            text-align: left;
+        }
+        #contact{
+            display: block;
+            width: 100%;
+            margin-top: 100px;
+            color: ghostwhite;
+            padding-left: 25px;
             text-shadow: black 0.1em 0.1em 0.2em;
             font-size: 30px;
             text-align: left;
@@ -210,7 +221,7 @@
             opacity: 60%;
             text-align: center;
             font-size: 20px;
-
+            margin-top: 40px;
         }
 
         .social-buttons a {
@@ -261,10 +272,12 @@
             flex-flow: wrap;
             margin-left: 0;
             margin-right: 0;
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
 
         }
         .boxWrrapper1{
-            margin-top: 60px;
+            margin-top: 10px;
             width: 100%;
             height: auto;
             display: flex;
@@ -273,6 +286,17 @@
             flex-flow: wrap;
             margin-left: 0;
             margin-right: 0;
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+
+
+        }
+
+        #info{
+            color: white;
+            font-size: larger;
+            text-align: left;
+            text-shadow: black 0.1em 0.1em 0.2em;
 
         }
 
@@ -292,6 +316,9 @@
         .box img{
             width: 100%;
             height: 100%;
+        }
+        .box img:hover{
+            opacity: 80%;
         }
         @media screen and(max-width: 1200px) {
             .box{
@@ -417,19 +444,19 @@
 <div id="news">CO NOWEGO | KSIĄŻKI</div>
 
 <div class ="boxWrrapper">
-    <div class="box"><img src="books/holownia.jpg"></div>
-    <div class="box"><img src="books/puzo.jpg"></div>
-    <div class="box"><img src="books/tusk.jpg"></div>
-    <div class="box"><img src="books/witcher.jpg"></div>
+    <div class="box"><img src="books/holownia.jpg">49zł</div>
+    <div class="box"><img src="books/puzo.jpg">59zł</div>
+    <div class="box"><img src="books/tusk.jpg">29zł</div>
+    <div class="box"><img src="books/witcher.jpg">89zł</div>
 
 </div>
 
 <div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
 
 <div class="boxWrrapper">
-    <div class="box"><img src="books/wada.jpg"></div>
-    <div class="box"><img src="books/greta.jpg"></div>
-    <div class="box"><img src="books/sweden.jpg"></div>
+    <div class="box"><img src="books/wada.jpg">19,99zł</div>
+    <div class="box"><img src="books/greta.jpg">9,99zł</div>
+    <div class="box"><img src="books/sweden.jpg">34,99zł</div>
 
 </div>
 
@@ -437,9 +464,20 @@
 
 
 <div class="boxWrrapper1">
-    <div class="box"><img src="books/cezar.jpg"></div>
-    <div class="box"><img src="books/stranger.jpg"></div>
+    <div class="box"><img src="books/cezar.jpg">-30%</div>
+    <div class="box"><img src="books/stranger.jpg">-40%</div>
 
+</div>
+
+<div id="contact">KONTAKT</div>
+
+<div id="info">
+    <ul>
+        <li>ul.Dąbrowskiego 6 Dąbrowa Górnicza</li>
+        <li>tel. 22 733 69 69</li>
+        <li>e-mail:micpan94@gmail.com</li>
+        <li>2019/2020</li>
+    </ul>
 </div>
 
 

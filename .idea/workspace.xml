@@ -12,18 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/cezar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/greta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/holownia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/puzo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/stranger.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/sweden.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/tusk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/wada.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/books/witcher.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="435" column="43" lean-forward="true" selection-start-line="435" selection-start-column="43" selection-end-line="435" selection-end-column="43" />
+            <state relative-caret-position="393">
+              <caret line="297" column="28" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="28" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
@@ -72,6 +62,7 @@
       <find>nie masz kont</find>
       <find>best</find>
       <find>footer</find>
+      <find>news</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -401,7 +392,7 @@
       <workItem from="1577014987717" duration="1931000" />
       <workItem from="1577441131457" duration="2973000" />
       <workItem from="1577532783077" duration="26708000" />
-      <workItem from="1577788912793" duration="6606000" />
+      <workItem from="1577788912793" duration="9085000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1572988085512</created>
@@ -718,11 +709,18 @@
       <option name="project" value="LOCAL" />
       <updated>1577753962585</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="some new books">
+      <created>1577795787259</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1577795787259</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215575000" />
+    <option name="totallyTimeSpent" value="218054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +733,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1368" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" id="Project" order="0" visible="true" weight="0.2112462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -821,7 +818,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Login panel with css v1.1" />
     <MESSAGE value="register panel view + register new user" />
     <MESSAGE value="add client entity" />
     <MESSAGE value="reqister new client v 1.2" />
@@ -846,7 +842,8 @@
     <MESSAGE value="slider 1.2 + added some new font awesome icons" />
     <MESSAGE value=" added some new font awesome icons 1.4" />
     <MESSAGE value="fixed some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some bugs" />
+    <MESSAGE value="some new books" />
+    <option name="LAST_COMMIT_MESSAGE" value="some new books" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1253,8 +1250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="435" column="43" lean-forward="true" selection-start-line="435" selection-start-column="43" selection-end-line="435" selection-end-column="43" />
+        <state relative-caret-position="393">
+          <caret line="297" column="28" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="28" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
