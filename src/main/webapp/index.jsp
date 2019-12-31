@@ -29,13 +29,16 @@
         html, body {
             background-image: url("img/index.jpg");
             background-size: cover;
-        !important;
+            scroll-behavior: smooth;
             font-family: 'Lobster', cursive;
             text-align: center;
             /*  slider   */
             width: 100%;
             height: 100%;
             padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+
 
         }
 
@@ -60,9 +63,34 @@
             color: ghostwhite;
             font-size: 30px;
             position: absolute;
+            margin-left: 20px;
             margin-top: 100px;
+            text-shadow: black 0.1em 0.1em 0.2em;
             text-align: left;
             overflow: hidden;
+        }
+        #bestsellers{
+            display: block;
+            width: 100%;
+            color: ghostwhite;
+            margin-left: 20px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-size: 30px;
+            margin-top: 50px;
+            position: absolute;
+            text-align: left;
+            overflow: hidden;
+
+        }
+        #promotion{
+            display: block;
+            width: 100%;
+            margin-top: 100px;
+            color: ghostwhite;
+            margin-left: 20px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-size: 30px;
+            text-align: left;
         }
 
         slider > * {
@@ -176,11 +204,6 @@
         }
 
         #footer {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 0;
             background-color: black;
             display: block;
             color: white;
@@ -228,27 +251,60 @@
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
         }
-
-        #books {
+        .boxWrrapper{
             margin-top: 160px;
             width: 100%;
-            min-height: 350px;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .element {
-            text-align: center;
-            float: left;
-            margin-right: auto;
-            margin-left: auto;
-            min-width: 200px;
-            height: 340px;
-            color: whitesmoke;
-            border: black 2px solid;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            margin-left: 0;
+            margin-right: 0;
 
         }
+        .boxWrrapper1{
+            margin-top: 60px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        .box{
+            width: 15%;
+            min-width: 240px;
+            height: 380px;
+            margin: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            opacity: 85%;
+            font-size: 40px;
+            border: white 4px solid;
+            cursor: pointer;
+
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and(max-width: 1200px) {
+            .box{
+                width: 40%;
+            }
+        }
+        @media screen and(max-width: 600px) {
+            .box{
+                width: 90%;
+            }
+        }
+
+
 
 
     </style>
@@ -278,11 +334,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-book"></i>Bestsellery</a></h3>
+                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>Bestsellery</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-percent"></i>Promocje</a></h3>
+                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>Promocje</a></h3>
                 </li>
 
                 <li class="nav-item">
@@ -359,12 +415,34 @@
 </slider>
 
 <div id="news">CO NOWEGO | KSIĄŻKI</div>
-<div id="books">
-    <div class="element">
-        1
-    </div>
+
+<div class ="boxWrrapper">
+    <div class="box"><img src="books/holownia.jpg"></div>
+    <div class="box"><img src="books/puzo.jpg"></div>
+    <div class="box"><img src="books/tusk.jpg"></div>
+    <div class="box"><img src="books/witcher.jpg"></div>
 
 </div>
+
+<div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
+
+<div class="boxWrrapper">
+    <div class="box"><img src="books/wada.jpg"></div>
+    <div class="box"><img src="books/greta.jpg"></div>
+    <div class="box"><img src="books/sweden.jpg"></div>
+
+</div>
+
+<div id="promotion">AKTUALNE PROMOCJE</div>
+
+
+<div class="boxWrrapper1">
+    <div class="box"><img src="books/cezar.jpg"></div>
+    <div class="box"><img src="books/stranger.jpg"></div>
+
+</div>
+
+
 
 <div id="footer">
     <div class="social-buttons">

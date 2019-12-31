@@ -25,19 +25,21 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
 
 
-
     <style>
         html, body {
             background-image: url("img/index.jpg");
             background-size: cover;
-        !important;
+            scroll-behavior: smooth;
             font-family: 'Lobster', cursive;
             text-align: center;
             /*  slider   */
             width: 100%;
             height: 100%;
             padding: 0;
-            margin: 0px;
+            margin-left: 0;
+            margin-right: 0;
+
+
         }
 
         /*// slider*/
@@ -51,7 +53,44 @@
             background-repeat: no-repeat;
             background-size: cover;
             border: black 2px solid;
+            opacity: 75%;
 
+        }
+
+        #news {
+            display: block;
+            width: 100%;
+            color: ghostwhite;
+            font-size: 30px;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 100px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            text-align: left;
+            overflow: hidden;
+        }
+        #bestsellers{
+            display: block;
+            width: 100%;
+            color: ghostwhite;
+            margin-left: 20px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-size: 30px;
+            margin-top: 50px;
+            position: absolute;
+            text-align: left;
+            overflow: hidden;
+
+        }
+        #promotion{
+            display: block;
+            width: 100%;
+            margin-top: 100px;
+            color: ghostwhite;
+            margin-left: 20px;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            font-size: 30px;
+            text-align: left;
         }
 
         slider > * {
@@ -88,6 +127,7 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         slide:nth-child(4) {
             animation-delay: 16s;
             background-image: url("slider/4.jpg");
@@ -164,11 +204,6 @@
         }
 
         #footer {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 0;
             background-color: black;
             display: block;
             color: white;
@@ -216,6 +251,60 @@
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
         }
+        .boxWrrapper{
+            margin-top: 160px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+        .boxWrrapper1{
+            margin-top: 60px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        .box{
+            width: 15%;
+            min-width: 240px;
+            height: 380px;
+            margin: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            opacity: 85%;
+            font-size: 40px;
+            border: white 4px solid;
+            cursor: pointer;
+
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and(max-width: 1200px) {
+            .box{
+                width: 40%;
+            }
+        }
+        @media screen and(max-width: 600px) {
+            .box{
+                width: 90%;
+            }
+        }
+
+
 
 
     </style>
@@ -240,19 +329,21 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i class="fas fa-home"></i>Strona Główna</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                            class="fas fa-home"></i>Strona Główna</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-book"></i>Bestselery</a></h3>
+                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>Bestsellery</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-percent"></i>Promocje</a></h3>
+                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>Promocje</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i class="fas fa-money-check"></i>Ogłoszenia</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                            class="fas fa-money-check"></i>Ogłoszenia</a></h3>
                 </li>
 
 
@@ -270,11 +361,13 @@
                 </h3>
                 <% } else { %>
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i class="fas fa-sign-in-alt"></i>Zaloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                            class="fas fa-sign-in-alt"></i>Zaloguj</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i class="fas fa-child"></i>Nowe Konto</a>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                            class="fas fa-child"></i>Nowe Konto</a>
                     </h3>
                 </li>
 
@@ -283,12 +376,14 @@
 
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i class="fas fa-plus"></i>Dodaj nowe
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
+                            class="fas fa-plus"></i>Dodaj nowe
                         ogłoszenie</a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                            class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
                 </li>
 
                 <% }%>
@@ -309,6 +404,45 @@
     </nav>
 
 </header>
+
+<slider>
+    <slide><p>Utwórz nowe konto, dołacz do naszej społecznosci</p></slide>
+    <slide><p>Jestesmy juz w Katowicach i Chorzowie!</p></slide>
+    <slide><p>Sprawdz aktualne promocje</p></slide>
+    <slide><p>Sprzedawaj ksiazki w swojej okolicy</p></slide>
+
+
+</slider>
+
+<div id="news">CO NOWEGO | KSIĄŻKI</div>
+
+<div class ="boxWrrapper">
+    <div class="box"><img src="books/holownia.jpg"></div>
+    <div class="box"><img src="books/puzo.jpg"></div>
+    <div class="box"><img src="books/tusk.jpg"></div>
+    <div class="box"><img src="books/witcher.jpg"></div>
+
+</div>
+
+<div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
+
+<div class="boxWrrapper">
+    <div class="box"><img src="books/wada.jpg"></div>
+    <div class="box"><img src="books/greta.jpg"></div>
+    <div class="box"><img src="books/sweden.jpg"></div>
+
+</div>
+
+<div id="promotion">AKTUALNE PROMOCJE</div>
+
+
+<div class="boxWrrapper1">
+    <div class="box"><img src="books/cezar.jpg"></div>
+    <div class="box"><img src="books/stranger.jpg"></div>
+
+</div>
+
+
 
 <div id="footer">
     <div class="social-buttons">
@@ -361,14 +495,6 @@
 
 </script>
 
-<slider>
-    <slide><p>Utwórz nowe konto, dołacz do naszej społecznosci</p></slide>
-    <slide><p>Jestesmy juz w Katowicach i Chorzowie!</p></slide>
-    <slide><p>Sprawdz aktualne promocje</p></slide>
-    <slide><p>Sprzedawaj ksiazki w swojej okolicy</p></slide>
-
-
-</slider>
 
 </body>
 </html>
