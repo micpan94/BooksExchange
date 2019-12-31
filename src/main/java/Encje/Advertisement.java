@@ -19,11 +19,12 @@ public class Advertisement {
     @ManyToOne
     private Client client;
     private String location;
+    private String img;
 //    @Lob
 //    @Basic(fetch = FetchType.LAZY)
 //    private byte[] picture;
 
-    public Advertisement(LocalDateTime data, String title, String content, Integer price, Boolean isNew, String type, Client client,String location) {
+    public Advertisement(LocalDateTime data, String title, String content, Integer price, Boolean isNew, String type, Client client,String location,String img) {
         this.data = data;
         this.title = title;
         this.content = content;
@@ -32,6 +33,7 @@ public class Advertisement {
         this.type = type;
         this.client = client;
         this.location = location;
+        this.img = img;
 
     }
 
@@ -108,6 +110,14 @@ public class Advertisement {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }
 //

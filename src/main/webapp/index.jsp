@@ -70,7 +70,8 @@
             text-align: left;
             overflow: hidden;
         }
-        #bestsellers{
+
+        #bestsellers {
             display: block;
             width: 100%;
             color: ghostwhite;
@@ -83,7 +84,8 @@
             overflow: hidden;
 
         }
-        #promotion{
+
+        #promotion {
             display: block;
             width: 100%;
             margin-top: 100px;
@@ -93,7 +95,8 @@
             font-size: 30px;
             text-align: left;
         }
-        #contact{
+
+        #contact {
             display: block;
             width: 100%;
             margin-top: 100px;
@@ -262,7 +265,8 @@
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
         }
-        .boxWrrapper{
+
+        .boxWrrapper {
             margin-top: 160px;
             width: 100%;
             height: auto;
@@ -276,7 +280,8 @@
             text-shadow: black 0.1em 0.1em 0.2em;
 
         }
-        .boxWrrapper1{
+
+        .boxWrrapper1 {
             margin-top: 10px;
             width: 100%;
             height: auto;
@@ -292,7 +297,7 @@
 
         }
 
-        #info{
+        #info {
             color: white;
             font-size: larger;
             text-align: left;
@@ -300,7 +305,7 @@
 
         }
 
-        .box{
+        .box {
             width: 15%;
             min-width: 240px;
             height: 380px;
@@ -313,25 +318,27 @@
             cursor: pointer;
 
         }
-        .box img{
+
+        .box img {
             width: 100%;
             height: 100%;
         }
-        .box img:hover{
+
+        .box img:hover {
             opacity: 80%;
         }
+
         @media screen and(max-width: 1200px) {
-            .box{
+            .box {
                 width: 40%;
             }
         }
+
         @media screen and(max-width: 600px) {
-            .box{
+            .box {
                 width: 90%;
             }
         }
-
-
 
 
     </style>
@@ -357,20 +364,20 @@
 
                 <li class="nav-item active">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>Strona Główna</a></h3>
+                            class="fas fa-home"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>Bestsellery</a></h3>
+                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>Promocje</a></h3>
+                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i>Ogłoszenia</a></h3>
+                            class="fas fa-money-check"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
                 </li>
 
 
@@ -389,12 +396,14 @@
                 <% } else { %>
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
-                            class="fas fa-sign-in-alt"></i>Zaloguj</a></h3>
+                            class="fas fa-sign-in-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
-                            class="fas fa-child"></i>Nowe Konto</a>
+                            class="fas fa-child"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
                     </h3>
                 </li>
 
@@ -443,7 +452,7 @@
 
 <div id="news">CO NOWEGO | KSIĄŻKI</div>
 
-<div class ="boxWrrapper">
+<div class="boxWrrapper">
     <div class="box"><img src="books/holownia.jpg">49zł</div>
     <div class="box"><img src="books/puzo.jpg">59zł</div>
     <div class="box"><img src="books/tusk.jpg">29zł</div>
@@ -479,7 +488,6 @@
         <li>2019/2020</li>
     </ul>
 </div>
-
 
 
 <div id="footer">

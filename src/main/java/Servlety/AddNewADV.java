@@ -46,6 +46,11 @@ public class AddNewADV extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         if (req.getSession().getAttribute("user") != null) {
+
+            Client client1 = (Client) req.getSession().getAttribute("client");
+
+
+
             // Ustalamy sciezke do zapisu pliku
 //        String uploadPath = getServletContext().getRealPath("") + File.separator + "/adversmentImg";
             // w tym przypadku poliki sa zapisywane bezposrednio na serwerze
