@@ -55,7 +55,7 @@
             box-sizing: border-box;
             background-color: white;
             opacity: 85%;
-            font-size: 40px;
+            font-size: 20px;
             border: white 4px solid;
             cursor: pointer;
         }
@@ -152,6 +152,7 @@
 
         <div class="box">
             <c:out value="${element.title}"></c:out>
+            <c:out value="${element.price}"></c:out>
         </div>
 
 

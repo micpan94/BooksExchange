@@ -388,7 +388,7 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link"><i class="fas fa-user"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%></p>
                         </a>
 
                     </li>
@@ -413,13 +413,13 @@
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
-                            class="fas fa-plus"></i>Dodaj nowe
-                        ogłoszenie</a></h3>
+                            class="fas fa-plus"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
+                        ogłoszenie</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
+                            class="fas fa-sign-out-alt"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
                 </li>
 
                 <% }%>
