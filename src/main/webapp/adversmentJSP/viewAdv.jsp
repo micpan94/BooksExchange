@@ -32,33 +32,36 @@
             font-family: 'Lobster', cursive;
         }
 
-        #advList {
-            margin-top: 10px;
-            width: 100%;
-            height: auto;
+        #container{
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-flow: wrap;
-            margin-left: 0;
-            margin-right: 0;
-            color: white;
-            text-shadow: black 0.1em 0.1em 0.2em;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
+        .container{
+            display: flex;
+            border: black 4px solid;
+            margin: 5px;
+            padding: 2px;
+            background: #5a6268;
 
+        }
         .box {
-            width: 15%;
-            min-width: 240px;
-            height: 380px;
-            margin: 20px;
-            box-sizing: border-box;
-            background-color: white;
-            opacity: 85%;
-            font-size: 20px;
-            border: white 4px solid;
-            cursor: pointer;
+            display: flex;
+
+            border: black 4px solid;
+            margin: 1px;
+            padding: 1px;
         }
+
+        .box img{
+            width: 160px;
+            height: 240px;
+        }
+
 
 
     </style>
@@ -146,15 +149,23 @@
 </header>
 
 
-<div id="advList">
+<div id="container">
+    <div class="container"><h1>Aktualne ogłoszenia</h1></div>
 
     <c:forEach items="${advList}" var="element">
 
-        <div class="box">
-            <c:out value="${element.title}"></c:out>
-            <c:out value="${element.price}"></c:out>
-        </div>
+        <div class="container">
 
+
+            <div class="box"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
+                <div class="box">Sprzedam tanio Ojca Chrzestnego</div>
+                <div class="box">Katowice</div>
+                <div class="box">24 Listopad</div>
+                <div class="box">160zł</div>
+
+
+
+        </div>
 
 
     </c:forEach>
