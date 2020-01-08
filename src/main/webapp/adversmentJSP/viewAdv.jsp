@@ -32,7 +32,7 @@
             font-family: 'Lobster', cursive;
         }
 
-        #container{
+        #container {
             display: flex;
             width: 100%;
             flex-wrap: wrap;
@@ -41,42 +41,36 @@
             align-items: center;
         }
 
-        .container{
-            display: flex;
-            border: black 4px solid;
-            margin: 5px;
-            padding: 2px;
-            background: #5a6268;
-
-
+        .jpg {
+            min-width: 160px;
+            height: 100%;
+            border: black 2px solid;
         }
-        .box {
-            display: flex;
-            border: black 4px solid;
-            margin: 1px;
-            padding: 1px;
-            font-size: 24px;
+        .jpg img{
+            height: auto;
+            width: 165px;
         }
 
-        .box img{
-            width: 220px;
-            height: 240px;
-        }
-
-        .boxTitle{
-
-        }
-        .elements{
+        .info {
             display: flex;
             flex-direction: column;
+            border: black 2px solid;
         }
 
-
+        .title {
+            font-size: 40px;
+            align-items: center;
+            flex-direction: column;
+            border: black 2px solid;
+        }
+        .element{
+            font-size: 20px;
+            border: black 2px solid;
+        }
 
     </style>
 </head>
 <body>
-
 <header>
 
 
@@ -156,29 +150,18 @@
     </nav>
 
 </header>
-
-
 <div id="container">
     <div class="container"><h1>Aktualne ogłoszenia</h1></div>
-
     <c:forEach items="${advList}" var="element">
-
-        <div class="container">
-
-
-            <div class="box"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
-            <div class="boxTitle"><h2>Sprzedam tanio Ojca Chrzestnego</h2></div>
-
-                <div class="elements">
-                    <div class="box"> Lokalizacja : <c:out value="${element.location}"></c:out></div>
-                    <div class="box">Data : 24 Listopad</div>
-                    <div class="box">Cena : <c:out value="${element.price}"></c:out>zł</div>
-                    <div class="box">Rodzaj : <c:out value="${element.type}"></c:out></div>
-                </div>
-
-
-
-
+        <div class="jpg"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
+        <div class="info">
+            <div class="title"></div>
+            <div class="element">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
         </div>
 
 
