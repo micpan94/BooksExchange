@@ -48,18 +48,27 @@
             padding: 2px;
             background: #5a6268;
 
+
         }
         .box {
             display: flex;
-
             border: black 4px solid;
             margin: 1px;
             padding: 1px;
+            font-size: 24px;
         }
 
         .box img{
-            width: 160px;
+            width: 220px;
             height: 240px;
+        }
+
+        .boxTitle{
+
+        }
+        .elements{
+            display: flex;
+            flex-direction: column;
         }
 
 
@@ -158,10 +167,15 @@
 
 
             <div class="box"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
-                <div class="box">Sprzedam tanio Ojca Chrzestnego</div>
-                <div class="box">Katowice</div>
-                <div class="box">24 Listopad</div>
-                <div class="box">160zł</div>
+            <div class="boxTitle"><h2>Sprzedam tanio Ojca Chrzestnego</h2></div>
+
+                <div class="elements">
+                    <div class="box"> Lokalizacja : <c:out value="${element.location}"></c:out></div>
+                    <div class="box">Data : 24 Listopad</div>
+                    <div class="box">Cena : <c:out value="${element.price}"></c:out>zł</div>
+                    <div class="box">Rodzaj : <c:out value="${element.type}"></c:out></div>
+                </div>
+
 
 
 

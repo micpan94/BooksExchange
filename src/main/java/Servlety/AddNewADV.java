@@ -46,30 +46,18 @@ public class AddNewADV extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         if (req.getSession().getAttribute("user") != null) {
-
-            Client client1 = (Client) req.getSession().getAttribute("client");
-
-
-
-            // Ustalamy sciezke do zapisu pliku
-//        String uploadPath = getServletContext().getRealPath("") + File.separator + "/adversmentImg";
-            // w tym przypadku poliki sa zapisywane bezposrednio na serwerze
+            Advertisement advertisement = new Advertisement();
+            HttpSession session = req.getSession();
+            Client client = (Client) session.getAttribute("client");
+            Integer userID = client.getId();
+//            sciezka do zapisu pliku
             String uploadPath = "C:\\Users\\PanczoPC\\IdeaProjects\\inzynierka\\src\\main\\webapp\\adversmentJSP\\img";
+            String uploadPath2 = "C:\\Users\\PanczoPC\\IdeaProjects\\inzynierka\\target\\inzynierka-1.0-SNAPSHOT\\adversmentJSP\\img";
             File uploadDir = new File(uploadPath);
             if (!uploadDir.exists()) uploadDir.mkdir();
 
 
-            for (Part part : req.getParts()) {
-                // tutaj ghdzie jest abc nadajemy swoja nazwe
-                part.write(uploadPath + File.separator + "abc.jpg");
-
-
-                //uzyskujemy id klienta z atrybutu sesji nadanego przy logowaniu
-                HttpSession session = req.getSession();
-                Client client = (Client) session.getAttribute("client");
-                Integer userID = client.getId();
-                //setup
-                Advertisement advertisement = new Advertisement();
+            try {
                 if (req.getParameter("state").contains("Nowa")) {
                     advertisement.setNew(true);
                 } else {
@@ -82,26 +70,22 @@ public class AddNewADV extends HttpServlet {
                 advertisement.setClient(clientDao.findById(userID));
                 advertisement.setData(LocalDateTime.now());
                 advertisement.setLocation(client.getLocation());
-                ///////////////////// COS TU KMINIE
-
-
-                try {
-                    advertisementDAO.save(advertisement);
-                    RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
-                    session.setAttribute("advID", advertisement.getId());
-                    requestDispatcher.forward(req, resp);
-
-                } catch (Exception e) {
-                    resp.getWriter().print(e.getMessage());
+                advertisement.setImg(uploadPath);
+                advertisementDAO.save(advertisement);
+                RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
+                session.setAttribute("advID", advertisement.getId());
+                requestDispatcher.forward(req, resp);
+                for (Part part : req.getParts()) {
+                    part.write(uploadPath + File.separator + advertisement.getId() + ".jpg");
+                    part.write(uploadPath2 + File.separator + advertisement.getId() + ".jpg");
                 }
 
-
+            } catch (Exception e) {
+                resp.getWriter().print(e.getMessage());
             }
-        }
-
-        else {
+        } else {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
-            requestDispatcher.forward(req,resp);
+            requestDispatcher.forward(req, resp);
 
         }
 
