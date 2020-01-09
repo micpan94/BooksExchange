@@ -40,27 +40,31 @@
             flex-direction: column;
             align-items: center;
         }
-        .box{
-            width:100%;
-            height:100px;
-            border:white 2px solid;
-            margin:2px;
+
+        .box {
+            width: 100%;
+            height: 100px;
+            border: white 2px solid;
+            margin: 2px;
             flex-direction: column;
         }
-        .boxPhoto{
-            width:34%;
-            height:100px;
-            border:white 2px solid;
-            margin:2px;
+
+        .boxPhoto {
+            width: 34%;
+            height: 100px;
+            border: white 2px solid;
+            margin: 2px;
         }
+
         .boxPhoto img {
             width: 100%;
             height: 100%;
         }
-        .element{
-            width:100%;
-            border:white 1px solid;
-            margin:1px;
+
+        .element {
+            width: 100%;
+            border: white 1px solid;
+            margin: 1px;
         }
 
 
