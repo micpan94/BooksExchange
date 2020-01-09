@@ -18,11 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 
-
-<%--czccoinki--%>
-<%--    font-family: 'Girassol', cursive;--%>
-<%--    font-family: 'Calistoga', cursive;--%>
-
+    <%--czccoinki--%>
+    <%--    font-family: 'Girassol', cursive;--%>
+    <%--    font-family: 'Calistoga', cursive;--%>
 
 
     <style>
@@ -148,22 +146,22 @@
         <ul>
             <%--            // first name erero--%>
             <%
-                if (request.getAttribute("login_error") != null) {
+                if (request.getAttribute("price_error") != null) {
             %>
-            <li>Błędna nazwa użytkownika</li>
+            <li>Błędna cena</li>
             <%
                 }
             %>
 
             <%
-                if (request.getAttribute("wrong_password") != null) {
+                if (request.getAttribute("title_password") != null) {
             %>
-            <li>Błędne Hasło</li>
+            <li>tytuł może zawierać maksymalnie 200 znaków!</li>
 
             <%
                 }
             %>
-            <%--&lt;%&ndash;&ndash;%&gt; last name error--%>
+
 
         </ul>
     </fieldset>
@@ -206,7 +204,7 @@
     <textarea name="content" rows="6" id="textarea"
               placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
     <h4>Wybierz zdjęcia</h4>
-    <input type="file" name="multiPartServlet" multiple>
+    <input type="file" name="multiPartServlet">
     <input type="submit" name="" value="Dodaj">
 
 </form>
@@ -229,7 +227,8 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i class="fas fa-home"></i>Strona Główna</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                            class="fas fa-home"></i>Strona Główna</a></h3>
                 </li>
 
                 <li class="nav-item">
@@ -241,7 +240,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i class="fas fa-money-check"></i>Ogłoszenia</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                            class="fas fa-money-check"></i>Ogłoszenia</a></h3>
                 </li>
 
 
@@ -271,13 +271,14 @@
 
 
                 <% if (session.getAttribute("name") != null) { %>
-<%--                <li class="nav-item">--%>
-<%--                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe--%>
-<%--                        ogłoszenie</a></h3>--%>
-<%--                </li>--%>
+                <%--                <li class="nav-item">--%>
+                <%--                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe--%>
+                <%--                        ogłoszenie</a></h3>--%>
+                <%--                </li>--%>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                            class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
                 </li>
 
                 <% }%>
