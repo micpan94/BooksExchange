@@ -7,11 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BooksExchange.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,21 +215,7 @@
       <workItem from="1577532783077" duration="26708000" />
       <workItem from="1577788912793" duration="36099000" />
       <workItem from="1578429363059" duration="8791000" />
-      <workItem from="1578564163872" duration="676000" />
-    </task>
-    <task id="LOCAL-00004" summary="v11">
-      <created>1573073200119</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1573073200119</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Sticky menu + test slider">
-      <created>1573160127435</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1573160127435</updated>
+      <workItem from="1578564163872" duration="933000" />
     </task>
     <task id="LOCAL-00006" summary="slider test">
       <created>1573253885760</created>
@@ -564,7 +546,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578511823252</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="3.4">
+      <created>1578564898562</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1578564898562</updated>
+    </task>
+    <task id="LOCAL-00054" summary="3.6">
+      <created>1578565019693</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1578565019693</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView">
@@ -580,7 +576,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reqister new client v 1.5 added check email" />
     <MESSAGE value="login and @ validate" />
     <MESSAGE value=" login validate v1.4" />
     <MESSAGE value="1.5" />
@@ -605,7 +600,8 @@
     <MESSAGE value="3.2 final" />
     <MESSAGE value="3.3" />
     <MESSAGE value="3.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.4" />
+    <MESSAGE value="3.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578564944497">
@@ -616,18 +612,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564459280" />
-    <state x="541" y="115" key="CommitChangelistDialog2" timestamp="1578564896960">
+    <state x="541" y="115" key="CommitChangelistDialog2" timestamp="1578565017562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564896960" />
+    <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565017562" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1578564218533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564218533" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578564903655">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578565023474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564903655" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565023474" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578564847074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -640,11 +636,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/Servlety/UploadServlet.java</url>
           <line>31</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Servlety/TEST.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
