@@ -40,33 +40,29 @@
             flex-direction: column;
             align-items: center;
         }
-
-        .jpg {
-            min-width: 160px;
+        .box{
+            width:100%;
+            height:100px;
+            border:white 2px solid;
+            margin:2px;
+            flex-direction: column;
+        }
+        .boxPhoto{
+            width:34%;
+            height:100px;
+            border:white 2px solid;
+            margin:2px;
+        }
+        .boxPhoto img {
+            width: 100%;
             height: 100%;
-            border: black 2px solid;
-        }
-        .jpg img{
-            height: auto;
-            width: 165px;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            border: black 2px solid;
-        }
-
-        .title {
-            font-size: 40px;
-            align-items: center;
-            flex-direction: column;
-            border: black 2px solid;
         }
         .element{
-            font-size: 20px;
-            border: black 2px solid;
+            width:100%;
+            border:white 1px solid;
+            margin:1px;
         }
+
 
     </style>
 </head>
@@ -151,21 +147,23 @@
 
 </header>
 <div id="container">
-    <div class="container"><h1>Aktualne ogłoszenia</h1></div>
+
     <c:forEach items="${advList}" var="element">
-        <div class="jpg"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
-        <div class="info">
-            <div class="title"></div>
-            <div class="element">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-            </div>
+        <div class="boxPhoto"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
+        <div class="box">
+            <div class="element"><c:out value="${element.title}"></c:out></div>
+            <div class="element"><c:out value="${element.location}"></c:out></div>
+            <div class="element"><c:out value="${element.type}"></c:out></div>
+            <div class="element"><c:out value="${element.price}"></c:out></div>
+            <div class="element"><c:out value="${element.data}"></c:out></div>
         </div>
 
-
     </c:forEach>
+</div>
+
+<div id="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
 
 </div>
 

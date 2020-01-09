@@ -14,14 +14,7 @@
     <title>Dodaj nowe ogłoszenie</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Calistoga|Girassol&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
-
-    <%--czccoinki--%>
-    <%--    font-family: 'Girassol', cursive;--%>
-    <%--    font-family: 'Calistoga', cursive;--%>
-
 
     <style>
 

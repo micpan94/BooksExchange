@@ -9,20 +9,8 @@
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/ReisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/ReisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/TEST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ReisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ReisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +230,7 @@
       <workItem from="1577532783077" duration="26708000" />
       <workItem from="1577788912793" duration="36099000" />
       <workItem from="1578429363059" duration="8791000" />
-      <workItem from="1578564163872" duration="7026000" />
-    </task>
-    <task id="LOCAL-00006" summary="slider test">
-      <created>1573253885760</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1573253885760</updated>
+      <workItem from="1578564163872" duration="9114000" />
     </task>
     <task id="LOCAL-00007" summary="slider test">
       <created>1573253947041</created>
@@ -587,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578565019693</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="3.7">
+      <created>1578572124128</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1578572124128</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -603,7 +591,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login and @ validate" />
     <MESSAGE value=" login validate v1.4" />
     <MESSAGE value="1.5" />
     <MESSAGE value="1.5.1" />
@@ -628,7 +615,8 @@
     <MESSAGE value="3.3" />
     <MESSAGE value="3.4" />
     <MESSAGE value="3.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.6" />
+    <MESSAGE value="3.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="166" key="#JBoss_17.0.1.Final" timestamp="1578565504498">
@@ -651,10 +639,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564459280" />
-    <state x="541" y="115" key="CommitChangelistDialog2" timestamp="1578565017562">
+    <state x="541" y="115" key="CommitChangelistDialog2" timestamp="1578572122538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565017562" />
+    <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578572122538" />
     <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1578565741205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -679,10 +667,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564218533" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578565023474">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578572126934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565023474" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578572126934" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578564847074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
