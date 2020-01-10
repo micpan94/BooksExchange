@@ -46,7 +46,7 @@
         slider {
             display: block;
             width: 100%;
-            height: 80px;
+            height: 100px;
             overflow: hidden;
             position: absolute;
             background-position: center;
@@ -54,7 +54,6 @@
             background-size: cover;
             border: black 2px solid;
             opacity: 75%;
-
         }
 
         #news {
@@ -341,6 +340,14 @@
         }
 
 
+    </style>
+
+    <style>
+        @media (min-width: 415px) {
+            slider {
+                height: 80px;
+            }
+        }
     </style>
 
 </head>
