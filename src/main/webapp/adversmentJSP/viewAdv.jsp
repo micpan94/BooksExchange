@@ -27,7 +27,7 @@
 
     <style>
         body {
-            background-image: url("adversmentJSP/img/lib1.jpg");
+            background-image: url("img/index.jpg");
             background-size: inherit;
             font-family: 'Lobster', cursive;
         }

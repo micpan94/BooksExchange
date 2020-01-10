@@ -18,25 +18,31 @@
     <style>
 
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Lobster', cursive;
             background-image: url("img/index.jpg");
             color: white;
             text-align: center;
+            display: flex;
+            justify-content: center;
 
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
         }
 
         .box {
             width: 330px;
             padding: 40px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background: #191919;
             text-align: center;
             opacity: 80%;
+            margin-top: 50px;
         }
 
         .box h1 {
@@ -60,7 +66,7 @@
         }
 
         .box input[type = "text"]:focus, .box input[type = "password"]:focus {
-            width: 260px;
+            width: 240px;
             border-color: white;
         }
 
@@ -83,21 +89,17 @@
             background: black;
             color: white;
             border: 2px solid white;
-
-
         }
 
         #footer {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 0;
             background-color: black;
             color: white;
             opacity: 60%;
             text-align: center;
             font-size: 20px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
 
         }
 
@@ -143,106 +145,105 @@
     </style>
 </head>
 <body>
-<header>
+
+<div id="container">
+    <header>
 
 
-    <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-        <%--        ta linijka byla do loga --%>
-        <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+        <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+            <%--        ta linijka byla do loga --%>
+            <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
+            <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
-                aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                    aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="mainmenu">
+            <div class="collapse navbar-collapse" id="mainmenu">
 
-            <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto">
 
-                <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
-                </li>
-
-
-                <% if (session.getAttribute("name") != null) { %>
-                <h3>
-                    <li class="nav-item">
-                        <%
-                            String name = session.getAttribute("name").toString();
-                            String id = session.getAttribute("user").toString();
-                        %>
-                        <a class="nav-link"><i class="fas fa-user"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
-                            </p>
-                        </a>
-
+                    <li class="nav-item active">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                                class="fas fa-home"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                     </li>
-                </h3>
-                <% } else { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
-                            class="fas fa-sign-in-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
-                </li>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
-                            class="fas fa-child"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                                class="fas fa-money-check"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                    </li>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <h3>
+                        <li class="nav-item">
+                            <%
+                                String name = session.getAttribute("name").toString();
+                                String id = session.getAttribute("user").toString();
+                            %>
+                            <a class="nav-link"><i class="fas fa-user"></i>
+                                <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                                </p>
+                            </a>
+
+                        </li>
                     </h3>
-                </li>
+                    <% } else { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                                class="fas fa-sign-in-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
+                    </li>
 
-                <% } %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                                class="fas fa-child"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
+                        </h3>
+                    </li>
+
+                    <% } %>
 
 
-                <% if (session.getAttribute("name") != null) { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
-                            class="fas fa-plus"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
-                            ogłoszenie</p></a></h3>
-                </li>
+                    <% if (session.getAttribute("name") != null) { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
+                                class="fas fa-plus"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
+                                ogłoszenie</p></a></h3>
+                    </li>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
-                </li>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                                class="fas fa-sign-out-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
+                    </li>
 
-                <% }%>
+                    <% }%>
 
-            </ul>
+                </ul>
 
-        </div>
+            </div>
 
-    </nav>
+        </nav>
 
-</header>
+    </header>
 
-<form class="box" method="post">
-    <h1>Rejestracja</h1>
-
-    <div id="container">
-
+    <form class="box" method="post">
+        <h1>Rejestracja</h1>
         <%
             if (request.getAttribute("errors") != null) {
         %>
@@ -282,7 +283,6 @@
                 %>
             </ul>
         </fieldset>
-
         <%
             }
         %>
@@ -309,20 +309,19 @@
         </fieldset>
 
 
+    </form>
+
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+
     </div>
-
-
-</form>
-
-<div id="footer">
-    <div class="social-buttons">
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-
 
 </div>
 
