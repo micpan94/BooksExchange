@@ -23,7 +23,8 @@
             color: white;
             text-align: center;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            height: 100%;
 
         }
 
@@ -98,8 +99,7 @@
             text-align: center;
             font-size: 20px;
             width: 100%;
-            position: absolute;
-            bottom: 0;
+            align-self: end;
 
         }
 
@@ -311,17 +311,18 @@
 
     </form>
 
-    <div id="footer">
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-        </div>
 
 
+</div>
+<div id="footer">
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </div>
+
 
 </div>
 

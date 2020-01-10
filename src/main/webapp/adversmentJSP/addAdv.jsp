@@ -25,7 +25,8 @@
             text-align: center;
             font-family: 'Lobster', cursive;
         }
-        #container{
+
+        #container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -149,20 +150,24 @@
 
                 <li class="nav-item active">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
+                            class="fas fa-home"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
+                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
+                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                            class="fas fa-money-check"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
                 </li>
 
 
@@ -173,7 +178,9 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link"><i class="fas fa-user"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                            </p>
                         </a>
 
                     </li>
@@ -196,29 +203,15 @@
 
 
                 <% if (session.getAttribute("name") != null) { %>
-                <%--                <li class="nav-item">--%>
-                <%--                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe--%>
-                <%--                        ogłoszenie</a></h3>--%>
-                <%--                </li>--%>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
+                            class="fas fa-sign-out-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
                 </li>
 
                 <% }%>
-
             </ul>
-
-            <%--            zakomentowany forumalrz do wyszukiwania--%>
-
-            <%--            <form class="form-inline">--%>
-
-            <%--                <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">--%>
-            <%--                <button class="btn btn-light" type="submit">Znajdź</button>--%>
-
-            <%--            </form>--%>
-
         </div>
 
     </nav>
@@ -231,7 +224,6 @@
         %>
         <fieldset>
             <ul>
-                <%--            // first name erero--%>
                 <%
                     if (request.getAttribute("price_error") != null) {
                 %>
@@ -241,9 +233,18 @@
                 %>
 
                 <%
-                    if (request.getAttribute("title_password") != null) {
+                    if (request.getAttribute("title_error") != null) {
                 %>
-                <li>tytuł może zawierać maksymalnie 200 znaków!</li>
+                <li>Błędny tytuł, może zawierać maksymalnie 200 znaków!</li>
+
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("description_error") != null) {
+                %>
+                <li>Opis musi zawierać minimalnie 100 znaków!</li>
 
                 <%
                     }
@@ -256,6 +257,14 @@
         <%
             }
 
+        %>
+        <%
+            if (request.getAttribute("succes") != null) {
+        %>
+        <li>Udało się dodać ogłoszenie!</li>
+
+        <%
+            }
         %>
 
 
@@ -303,7 +312,6 @@
 
     </form>
 </div>
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
