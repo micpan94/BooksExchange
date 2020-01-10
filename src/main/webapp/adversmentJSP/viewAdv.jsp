@@ -165,11 +165,7 @@
     </c:forEach>
 </div>
 
-<div id="container">
-    <div class="box">1</div>
-    <div class="box">2</div>
 
-</div>
 
 
 <%--obsluga panelu gornego --%>

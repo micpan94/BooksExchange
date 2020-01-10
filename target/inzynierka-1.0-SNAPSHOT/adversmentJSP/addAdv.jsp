@@ -19,25 +19,24 @@
     <style>
 
         body {
-            margin: 0;
-            padding: 0;
-        !important;
+            background-image: url("adversmentJSP/img/index.jpg");
+            display: flex;
+            flex-direction: column;
+            text-align: center;
             font-family: 'Lobster', cursive;
-
         }
-
-        body {
-            background-image: url("adversmentJSP/img/lib1.jpg");
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
         }
 
         .box {
             width: 340px;
             padding: 20px;
-            position: absolute;
-            /*// tutaj zmienialem*/
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background: #191919;
             text-align: center;
             opacity: 80%;
@@ -57,7 +56,7 @@
             border: 0;
             background: none;
             display: block;
-            margin: 20px auto;
+            margin: 10px auto;
             text-align: center;
             border: 2px solid #3498db;
             padding: 14px 10px;
@@ -97,7 +96,7 @@
             border: 0;
             background: none;
             display: block;
-            margin: 20px auto;
+            margin: 5px auto;
             text-align: center;
             border: 2px solid #3498db;
             padding: 14px 10px;
@@ -131,77 +130,6 @@
 
 
 <body>
-<form class="box" method="post" enctype="multipart/form-data">
-    <%
-        if (request.getAttribute("errors") != null) {
-    %>
-    <fieldset>
-        <ul>
-            <%--            // first name erero--%>
-            <%
-                if (request.getAttribute("price_error") != null) {
-            %>
-            <li>Błędna cena</li>
-            <%
-                }
-            %>
-
-            <%
-                if (request.getAttribute("title_password") != null) {
-            %>
-            <li>tytuł może zawierać maksymalnie 200 znaków!</li>
-
-            <%
-                }
-            %>
-
-
-        </ul>
-    </fieldset>
-
-    <%
-        }
-
-    %>
-
-
-    <h2>Nowe Ogłoszenie </h2>
-    <input type="text" name="title" placeholder="tytuł">
-    <input type="text" name="price" placeholder="cena">
-    <label for="type">Rodziaj</label>
-    <select id="type" name="type">
-        <option>biznes</option>
-        <option>dla dzieci</option>
-        <option>fantastyka</option>
-        <option>historia</option>
-        <option>informatyka</option>
-        <option>komiks</option>
-        <option>kryminal</option>
-        <option>kuchnia</option>
-        <option>lektury szkolne</option>
-        <option>literatura obca</option>
-        <option>literatura polska</option>
-        <option>nauki scisle</option>
-        <option>prawo</option>
-        <option>religia</option>
-        <option>sztuka</option>
-        <option>turystyka</option>
-        <option>zdrowie</option>
-    </select>
-    <label for="selectx">Stan</label>
-    <select id="selectx" name="state">
-        <option>Nowa</option>
-        <option>Używana</option>
-    </select>
-    <h2>Opis</h2>
-    <textarea name="content" rows="6" id="textarea"
-              placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
-    <h4>Wybierz zdjęcia</h4>
-    <input type="file" name="multiPartServlet">
-    <input type="submit" name="" value="Dodaj">
-
-</form>
-
 <header>
 
 
@@ -221,20 +149,20 @@
 
                 <li class="nav-item active">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>Strona Główna</a></h3>
+                            class="fas fa-home"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-book"></i>Bestselery</a></h3>
+                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-percent"></i>Promocje</a></h3>
+                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i>Ogłoszenia</a></h3>
+                            class="fas fa-money-check"></i><p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
                 </li>
 
 
@@ -252,11 +180,15 @@
                 </h3>
                 <% } else { %>
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">Zaloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                            class="fas fa-sign-in-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">Nowe Konto</a>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                            class="fas fa-child"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
                     </h3>
                 </li>
 
@@ -292,6 +224,88 @@
     </nav>
 
 </header>
+<div id="container">
+    <form class="box" method="post" enctype="multipart/form-data">
+        <%
+            if (request.getAttribute("errors") != null) {
+        %>
+        <fieldset>
+            <ul>
+                <%--            // first name erero--%>
+                <%
+                    if (request.getAttribute("price_error") != null) {
+                %>
+                <li>Błędna cena</li>
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("title_password") != null) {
+                %>
+                <li>tytuł może zawierać maksymalnie 200 znaków!</li>
+
+                <%
+                    }
+                %>
+
+
+            </ul>
+        </fieldset>
+
+        <%
+            }
+
+        %>
+
+
+        <h3>Dodaj nowe ogłoszenie</h3>
+        <input type="text" name="title" placeholder="tytuł">
+        <input type="text" name="price" placeholder="cena">
+        <label for="type">Rodzaj</label>
+        <select id="type" name="type">
+            <option>biznes</option>
+            <option>dla dzieci</option>
+            <option>fantastyka</option>
+            <option>historia</option>
+            <option>informatyka</option>
+            <option>komiks</option>
+            <option>kryminal</option>
+            <option>kuchnia</option>
+            <option>lektury szkolne</option>
+            <option>literatura obca</option>
+            <option>literatura polska</option>
+            <option>nauki scisle</option>
+            <option>prawo</option>
+            <option>religia</option>
+            <option>sztuka</option>
+            <option>turystyka</option>
+            <option>zdrowie</option>
+        </select>
+        <label for="location">Lokalizacja</label>
+        <select id="location">
+            <option>Katowice</option>
+            <option>Dąbrowa Górnicza</option>
+            <option>Sosnowiec</option>
+            <option>Chorzów</option>
+        </select>
+        <label for="selectx">Stan</label>
+        <select id="selectx" name="state">
+            <option>Nowa</option>
+            <option>Używana</option>
+        </select>
+        <h3>Opis</h3>
+        <textarea name="content" rows="6" id="textarea"
+                  placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
+        <h4>Wybierz zdjęcia</h4>
+        <input type="file" name="multiPartServlet">
+        <input type="submit" name="" value="Dodaj">
+
+    </form>
+</div>
+
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
