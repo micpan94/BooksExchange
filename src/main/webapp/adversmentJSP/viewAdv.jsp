@@ -35,38 +35,39 @@
         #container {
             display: flex;
             width: 100%;
-            flex-wrap: wrap;
-            justify-content: center;
+            height: 100%;
             flex-direction: column;
             align-items: center;
         }
 
         .box {
-            width: 100%;
-            height: 100px;
-            border: white 2px solid;
-            margin: 2px;
-            flex-direction: column;
+            display: flex;
+            min-height: 230px ;
+            justify-content: space-between;
+            color: white;
+            border: #1d2124 2px solid;
+            padding: 2px;
+            margin-top: 2px;
         }
 
-        .boxPhoto {
-            width: 34%;
-            height: 100px;
-            border: white 2px solid;
-            margin: 2px;
-        }
-
-        .boxPhoto img {
-            width: 100%;
+        #photo img {
+            max-width: 200px;
             height: 100%;
         }
 
-        .element {
-            width: 100%;
-            border: white 1px solid;
-            margin: 1px;
+        #info {
+            display: flex;
+            flex-direction: column;
         }
 
+        .element {
+            border: white 2px solid;
+            margin: 1px;
+        }
+        #news{
+            align-self: flex-start;
+            color: white;
+        }
 
     </style>
 </head>
@@ -135,38 +136,29 @@
                 <% }%>
 
             </ul>
-
-            <%--            zakomentowany forumalrz do wyszukiwania--%>
-
-            <%--            <form class="form-inline">--%>
-
-            <%--                <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">--%>
-            <%--                <button class="btn btn-light" type="submit">Znajdź</button>--%>
-
-            <%--            </form>--%>
-
         </div>
 
     </nav>
 
 </header>
 <div id="container">
+    <div id="news"><h2>Najnowsze Ogłoszenia :</h2></div>
 
     <c:forEach items="${advList}" var="element">
-        <div class="boxPhoto"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
         <div class="box">
-            <div class="element"><c:out value="${element.title}"></c:out></div>
-            <div class="element"><c:out value="${element.location}"></c:out></div>
-            <div class="element"><c:out value="${element.type}"></c:out></div>
-            <div class="element"><c:out value="${element.price}"></c:out></div>
-            <div class="element"><c:out value="${element.data}"></c:out></div>
+            <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
+            <div id="info">
+                <div class="element"><c:out value="${element.title}"></c:out></div>
+                <div class="element"><c:out value="${element.data}"></c:out></div>
+                <div class="element"><c:out value="${element.content}"></c:out></div>
+                <div class="element"><c:out value="${element.price}"></c:out>zł</div>
+                <div class="element"><c:out value="${element.type}"></c:out></div>
+                <div class="element"><c:out value="${element.location}"></c:out></div>
+            </div>
         </div>
-
     </c:forEach>
+
 </div>
-
-
-
 
 <%--obsluga panelu gornego --%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

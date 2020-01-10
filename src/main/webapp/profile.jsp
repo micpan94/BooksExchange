@@ -1,15 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: PanczoPC
-  Date: 29.11.2019
-  Time: 21:59
+  User: Michal.Pankiewicz
+  Date: 1/10/2020
+  Time: 1:30 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Sprawdź najnowsze ogłoszenia</title>
+    <%--    linki zewnetrzne--%>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -17,58 +16,36 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c89e44ac5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <title>Welcome</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
     <%--    // od stopki--%>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+    <%--    link--%>
+    <title>Szczegóły twojego konta</title>
+
 
     <style>
         body {
             background-image: url("img/index.jpg");
-            background-size: inherit;
+            background-size: cover;
+            scroll-behavior: smooth;
             font-family: 'Lobster', cursive;
+            text-align: center;
         }
 
         #container {
-            display: flex;
             width: 100%;
             height: 100%;
-            flex-direction: column;
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
 
         .box {
-            display: flex;
-            min-height: 230px ;
-            justify-content: space-between;
-            color: white;
-            border: #1d2124 2px solid;
-            padding: 2px;
-            margin-top: 2px;
-        }
 
-        #photo img {
-            max-width: 200px;
-            height: 100%;
         }
-
-        #info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .element {
-            border: white 2px solid;
-            margin: 1px;
-        }
-        #news{
-            align-self: flex-start;
-            color: white;
-        }
-
     </style>
 </head>
 <body>
@@ -76,8 +53,6 @@
 
 
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-        <%--        ta linijka byla do loga --%>
-        <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
         <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
@@ -91,8 +66,26 @@
 
                 <li class="nav-item active">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>Strona Główna</a></h3>
+                            class="fas fa-home"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
+
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
+                </li>
+
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
+                </li>
+
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                            class="fas fa-money-check"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                </li>
+
 
                 <% if (session.getAttribute("name") != null) { %>
                 <h3>
@@ -101,7 +94,10 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
+                                class="fas fa-user"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                            </p>
                         </a>
 
                     </li>
@@ -109,12 +105,14 @@
                 <% } else { %>
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
-                            class="fas fa-sign-in-alt"></i>Zaloguj</a></h3>
+                            class="fas fa-sign-in-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
-                            class="fas fa-child"></i>Nowe Konto</a>
+                            class="fas fa-child"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
                     </h3>
                 </li>
 
@@ -124,43 +122,32 @@
                 <% if (session.getAttribute("name") != null) { %>
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
-                            class="fas fa-plus"></i>Dodaj nowe
-                        ogłoszenie</a></h3>
+                            class="fas fa-plus"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
+                            ogłoszenie</p></a></h3>
                 </li>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
+                            class="fas fa-sign-out-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
                 </li>
 
                 <% }%>
 
             </ul>
+
         </div>
 
     </nav>
 
 </header>
 <div id="container">
-    <div id="news"><h2>Najnowsze Ogłoszenia :</h2></div>
-
-    <c:forEach items="${advList}" var="element">
-        <div class="box">
-            <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
-            <div id="info">
-                <div class="element"><c:out value="${element.title}"></c:out></div>
-                <div class="element"><c:out value="${element.data}"></c:out></div>
-                <div class="element"><c:out value="${element.content}"></c:out></div>
-                <div class="element"><c:out value="${element.price}"></c:out>zł</div>
-                <div class="element"><c:out value="${element.type}"></c:out></div>
-                <div class="element"><c:out value="${element.location}"></c:out></div>
-            </div>
-        </div>
-    </c:forEach>
-
+    <div class="box"></div>
 </div>
 
-<%--obsluga panelu gornego --%>
+
+<%--skrypty js obslugujace navbar--%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -195,6 +182,6 @@
     });
 
 </script>
-<%----%>
+<%--skrypty js--%>
 </body>
 </html>
