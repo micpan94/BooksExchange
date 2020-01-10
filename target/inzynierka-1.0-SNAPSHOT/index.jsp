@@ -317,7 +317,7 @@
             width: 15%;
             min-width: 240px;
             height: 380px;
-            margin: 20px;
+            margin: 30px;
             box-sizing: border-box;
             background-color: white;
             opacity: 85%;
