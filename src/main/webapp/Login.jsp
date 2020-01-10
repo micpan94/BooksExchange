@@ -17,6 +17,14 @@
 
     <title>Panel logowania</title>
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
+
         .jumpers img {
             width: 100%;
             height: auto;
@@ -48,6 +56,8 @@
             display: flex;
             justify-content: center;
             height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         #container{
             display: flex;

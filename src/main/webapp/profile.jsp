@@ -30,12 +30,21 @@
 
 
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
         body {
             background-image: url("img/index.jpg");
             background-size: cover;
             scroll-behavior: smooth;
             font-family: 'Lobster', cursive;
             text-align: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         #container {

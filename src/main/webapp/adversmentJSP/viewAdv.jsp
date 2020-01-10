@@ -51,7 +51,7 @@
         }
 
         #photo img {
-            max-width: 200px;
+            max-width: 100%;
             height: 100%;
         }
 
@@ -63,10 +63,63 @@
         .element {
             border: white 2px solid;
             margin: 1px;
+            word-break: break-all;
+            padding: 10px;
         }
         #news{
             align-self: flex-start;
             color: white;
+        }
+        #footer {
+            background-color: black;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 40px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 15px;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
+        }
+
+        .social-buttons a::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, white, black);
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover::before {
+            transform: scale(0);
+        }
+
+        .social-buttons a i {
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover i {
+            background: linear-gradient(45deg, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(2.2);
         }
 
     </style>
@@ -144,19 +197,50 @@
 <div id="container">
     <div id="news"><h2>Najnowsze Ogłoszenia :</h2></div>
 
-    <c:forEach items="${advList}" var="element">
-        <div class="box">
-            <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
-            <div id="info">
-                <div class="element"><c:out value="${element.title}"></c:out></div>
-                <div class="element"><c:out value="${element.data}"></c:out></div>
-                <div class="element"><c:out value="${element.content}"></c:out></div>
-                <div class="element"><c:out value="${element.price}"></c:out>zł</div>
-                <div class="element"><c:out value="${element.type}"></c:out></div>
-                <div class="element"><c:out value="${element.location}"></c:out></div>
-            </div>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 30px;
+            grid-auto-rows: 1fr;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .grid-container__element {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+    <ul class="grid-container">
+        <c:forEach items="${advList}" var="element">
+            <li class="box grid-container__element">
+                <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
+                <div id="info">
+                    <div class="element"><c:out value="${element.title}"></c:out></div>
+                    <div class="element"><c:out value="${element.data}"></c:out></div>
+<%--                    <div class="element"><c:out value="${element.content}"></c:out></div>--%>
+                    <div class="element"><c:out value="${element.price}"></c:out>zł</div>
+<%--                    <div class="element"><c:out value="${element.type}"></c:out></div>--%>
+                    <div class="element"><c:out value="${element.location}"></c:out></div>
+                </div>
+            </li>
+        </c:forEach>
+    </ul>
+
+
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </c:forEach>
+
+
+    </div>
 
 </div>
 

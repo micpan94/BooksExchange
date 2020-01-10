@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
 
         body {
             text-align: center;
@@ -25,7 +32,8 @@
             display: flex;
             justify-content: center;
             height: 100%;
-
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         #container {

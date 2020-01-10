@@ -16,25 +16,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
 
         body {
-            font-family: 'Lobster', cursive;
-            background-image: url("img/index.jpg");
-            color: white;
             text-align: center;
+            background-image: url("img/index.jpg");
+            background-size: cover;
+            font-family: 'Lobster', cursive;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             height: 100%;
-
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         #container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             width: 100%;
             height: 100%;
+            justify-content: space-between;
         }
 
         .box {
@@ -42,8 +50,10 @@
             padding: 40px;
             background: #191919;
             text-align: center;
+            align-self: center;
             opacity: 80%;
-            margin-top: 50px;
+            color: white;
+            margin-top: 40px;
         }
 
         .box h1 {
@@ -142,6 +152,13 @@
             transform: scale(2.2);
         }
 
+    </style>
+    <style>
+        @media (min-width: 992px) {
+            #container {
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -312,19 +329,19 @@
     </form>
 
 
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
 
-</div>
-<div id="footer">
-    <div class="social-buttons">
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+
     </div>
-
-
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

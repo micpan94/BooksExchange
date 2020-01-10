@@ -26,6 +26,13 @@
 
 
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
         html, body {
             background-image: url("img/index.jpg");
             background-size: cover;
@@ -38,6 +45,8 @@
             padding: 0;
             margin-left: 0;
             margin-right: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
 
 
         }

@@ -292,7 +292,7 @@
             <option>zdrowie</option>
         </select>
         <label for="location">Lokalizacja</label>
-        <select id="location">
+        <select id="location" name="location">
             <option>Katowice</option>
             <option>Dąbrowa Górnicza</option>
             <option>Sosnowiec</option>
