@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,14 +230,7 @@
       <workItem from="1578429363059" duration="8791000" />
       <workItem from="1578564163872" duration="13053000" />
       <workItem from="1578590577670" duration="160000" />
-      <workItem from="1578591816559" duration="24091000" />
-    </task>
-    <task id="LOCAL-00015" summary="reqister new client v 1.3 + first validation">
-      <created>1573585992825</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1573585992825</updated>
+      <workItem from="1578591816559" duration="25445000" />
     </task>
     <task id="LOCAL-00016" summary="reqister new client v 1.4">
       <created>1573587245634</created>
@@ -582,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578652651859</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="4.4 added profile view">
+      <created>1578661355413</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1578661355413</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView">
@@ -598,7 +591,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.8.1" />
     <MESSAGE value="1.9 add Multipart servlet for img" />
     <MESSAGE value="1.9 home get new css" />
     <MESSAGE value="get bootstrap panel 2.0" />
@@ -623,7 +615,8 @@
     <MESSAGE value="4.0 slider fix + new register layout" />
     <MESSAGE value="4.1 add new adv form fix(correct display on iphone 6)" />
     <MESSAGE value="4.2 repair some bugs with adversment adv and add validation form" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.2 repair some bugs with adversment adv and add validation form" />
+    <MESSAGE value="4.4 added profile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.4 added profile view" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="166" key="#JBoss_17.0.1.Final" timestamp="1578565504498">
@@ -647,10 +640,10 @@
     </state>
     <state x="331" y="137" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578592095831" />
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578078254" />
-    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578659030697">
+    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578662733601">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578659030697" />
+    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578662733601" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578564459280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -663,11 +656,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651520707" />
-    <state x="2461" y="115" key="CommitChangelistDialog2" timestamp="1578652649665">
+    <state x="2461" y="115" key="CommitChangelistDialog2" timestamp="1578661352758">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578577918805" />
-    <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578652649665" />
+    <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578661352758" />
     <state x="592" y="208" key="FileChooserDialogImpl" timestamp="1578590615717">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -718,11 +711,11 @@
     </state>
     <state x="369" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578590698767" />
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564218533" />
-    <state x="2472" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578652655147">
+    <state x="2472" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578661363806">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578577926408" />
-    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578652655147" />
+    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578661363806" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1578591816467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

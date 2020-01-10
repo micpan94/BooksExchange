@@ -1,4 +1,5 @@
-<%--
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="Encje.Client" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
   Date: 1/10/2020
@@ -41,6 +42,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: white;
+        }
+
+        #container h1 {
+            display: flex;
+            align-self: start;
         }
 
         .box {
@@ -143,7 +150,16 @@
 
 </header>
 <div id="container">
-    <div class="box"></div>
+    <%
+        HttpSession session1 = request.getSession();
+        Client client = (Client) session1.getAttribute("client");
+    %>
+    <h1>Twoje aktualne dane:</h1>
+    <div class="box">
+        <div><%=client.getEmail()%>
+        </div>
+
+    </div>
 </div>
 
 
