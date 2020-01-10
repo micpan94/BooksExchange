@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="Encje.Client" %><%--
+<%@ page import="Encje.Client" %>
+<%@ page import="Encje.Advertisement" %>
+<%@ page import="java.util.Set" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
   Date: 1/10/2020
@@ -40,18 +42,26 @@
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             color: white;
         }
 
-        #container h1 {
-            display: flex;
-            align-self: start;
-        }
-
         .box {
-
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            color: white;
+            margin-top: 8px;
+            align-items: center;
+        }
+        .box div{
+            margin: 2px;
+            padding: 2px;
+        }
+        .adv{
+            width: 100%;
+            border: white 2px solid;
         }
     </style>
 </head>
@@ -153,13 +163,26 @@
     <%
         HttpSession session1 = request.getSession();
         Client client = (Client) session1.getAttribute("client");
+        Set<Advertisement> advertisementSet = client.getAdvertisementSet();
+        session1.setAttribute("list",advertisementSet);
     %>
-    <h1>Twoje aktualne dane:</h1>
-    <div class="box">
-        <div><%=client.getEmail()%>
-        </div>
 
+    <div class="box">
+        <h1>Twoje aktualne dane:</h1>
+        <div>Email: <%=client.getEmail()%></div>
+        <div>Login: <%=client.getLogin()%></div>
+        <div>Lokalizacja: <%=client.getLocation()%></div>
+        <div>Telefon: <%=client.getTelephoneNr()%></div>
+        <div>Id konta: <%=client.getId()%></div>
+        <div><button>Zmiana danych</button></div>
     </div>
+    <h1>Twoje aktualne ogloszenia</h1>
+    <c:forEach items="${list}" var="element">
+        <div class="adv">tytuł: <c:out value="${element.title}"></c:out></div>
+        <div class="adv">numer id: <c:out value="${element.id}"></c:out></div>
+        <div class="adv">lokalizacja: <c:out value="${element.location}"></c:out></div>
+    </c:forEach>
+
 </div>
 
 
