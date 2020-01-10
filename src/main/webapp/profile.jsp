@@ -58,10 +58,11 @@
         .box div{
             margin: 2px;
             padding: 2px;
+            border: white 2px solid;
         }
         .adv{
             width: 100%;
-            border: white 2px solid;
+
         }
     </style>
 </head>
