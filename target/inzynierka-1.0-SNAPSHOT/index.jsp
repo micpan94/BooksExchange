@@ -227,17 +227,17 @@
         }
 
         #footer {
-            background-color: black;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            display: block;
-            color: white;
-            opacity: 60%;
-            text-align: center;
-            font-size: 20px;
-            margin-top: 40px;
-        }
+              background-color: black;
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              display: block;
+              color: white;
+              opacity: 60%;
+              text-align: center;
+              font-size: 20px;
+              margin-top: 40px;
+          }
 
         .social-buttons a {
             display: inline-flex;
@@ -391,15 +391,15 @@
                         <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
-                </li>
+<%--                <li class="nav-item">--%>
+<%--                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>--%>
+<%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>--%>
+<%--                </li>--%>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
-                </li>
+<%--                <li class="nav-item">--%>
+<%--                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>--%>
+<%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>--%>
+<%--                </li>--%>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
@@ -420,7 +420,7 @@
                             String id = session.getAttribute("user").toString();
                         %>
                         <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i class="fas fa-user"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Mój profil
                             </p>
                         </a>
 
@@ -449,6 +449,12 @@
                             class="fas fa-plus"></i>
                         <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
                             ogłoszenie</p></a></h3>
+                </li>
+
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i class="fas fa-clipboard-list"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodane ogłoszenia</p></a></h3>
+
                 </li>
 
                 <li class="nav-item">
@@ -507,6 +513,10 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
 
 
 <div id="footer">
@@ -517,8 +527,6 @@
         <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
         <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </div>
-
-
 </div>
 
 <%--skrypty dla nav-baru--%>

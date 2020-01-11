@@ -42,8 +42,114 @@
             font-size: 45px;
         }
 
+        #container{
+            display: flex;
+            justify-content: center;
+        }
         .ideal {
             font-family: 'Lobster', cursive;
+        }
+        .contact-form{
+            width: 85%;
+            max-width: 600px;
+            background: black;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            opacity: 80%;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat",sans-serif;
+        }
+        .contact-form p{
+            font-size: 20px;
+        }
+
+        .contact-form h1{
+            margin-top: 0;
+            font-weight: 200;
+        }
+        .txtb{
+            border:1px solid gray;
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+        .txtb label{
+            display: block;
+            text-align: left;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .txtb input,.txtb textarea{
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 6px;
+        }
+        .btn{
+            display: inline-block;
+            background: #09ff00;
+            padding: 14px 0;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 8px;
+            width: 100%;
+        }
+        #footer {
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 15px;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
+        }
+
+        .social-buttons a::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, white, black);
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover::before {
+            transform: scale(0);
+        }
+
+        .social-buttons a i {
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover i {
+            background: linear-gradient(45deg, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(2.2);
         }
     </style>
 </head>
@@ -144,15 +250,39 @@
 
 
 <div id="container">
-    <div id="contact">KONTAKT</div>
+    <div class="contact-form">
+        <h1>Dane kontaktowe</h1>
+        <div class="txtb">
+            <label>Adres</label>
+            <p>Dąbrowa Górnicza ul.Dąbrowskiego 6</p>
 
-    <div id="info">
-        <ul>
-            <li>ul.Dąbrowskiego 6 Dąbrowa Górnicza</li>
-            <li>tel. 22 733 69 69</li>
-            <li>e-mail:micpan94@gmail.com</li>
-            <li>2019/2020</li>
-        </ul>
+        </div>
+
+        <div class="txtb">
+            <label>Telefon</label>
+            <p>516800260 lub 32 226 62 40</p>
+        </div>
+
+        <div class="txtb">
+            <label>Autor</label>
+            <p>Michał Pankiewicz</p>
+        </div>
+
+        <div class="txtb">
+            <label>Napisz do nas e-mail</label>
+            <p>micpan94@gmail.com</p>
+        </div>
+<%--        <a class="btn">Aktualizuj dane</a>--%>
+    </div>
+
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
 
 </div>

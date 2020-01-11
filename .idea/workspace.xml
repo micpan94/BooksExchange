@@ -7,31 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-BoldItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-BoldLegacy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-BoldLegacyItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-Italic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-LegacyItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-LightItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-LightLegacy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-LightLegacyItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-Medium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-MediumItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-MediumLegacy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-MediumLegacyItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-RegularLegacy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-SemiBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-SemiBoldItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-SemiBoldLegacy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/HKGrotesk-SemiBoldLegacyItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/font/SIL Open Font License.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/infoStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/addAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/addAdv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
     </list>
@@ -97,7 +82,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/adversmentJSP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/style" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -109,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\style" />
       <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP" />
       <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP\img" />
       <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\slider" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\books" />
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\slider" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp" />
@@ -212,7 +197,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -260,14 +245,7 @@
       <workItem from="1578590577670" duration="160000" />
       <workItem from="1578591816559" duration="29369000" />
       <workItem from="1578685232557" duration="9638000" />
-      <workItem from="1578739559786" duration="4540000" />
-    </task>
-    <task id="LOCAL-00021" summary="1.5.1">
-      <created>1574281744029</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1574281744029</updated>
+      <workItem from="1578739559786" duration="14050000" />
     </task>
     <task id="LOCAL-00022" summary="1.5.2">
       <created>1574282479127</created>
@@ -605,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578694439376</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="profile fix 1.6">
+      <created>1578744534375</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1578744534375</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView">
@@ -621,7 +606,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get first slider" />
     <MESSAGE value="slider 1.1" />
     <MESSAGE value="slider 1.2 + added some new font awesome icons" />
     <MESSAGE value=" added some new font awesome icons 1.4" />
@@ -646,7 +630,8 @@
     <MESSAGE value="profile check 1.1" />
     <MESSAGE value="profile fix 1.2" />
     <MESSAGE value="profile fix 1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile fix 1.3" />
+    <MESSAGE value="profile fix 1.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile fix 1.6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="166" key="#JBoss_17.0.1.Final" timestamp="1578565504498">
@@ -688,10 +673,10 @@
     </state>
     <state x="572" y="177" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1578691532267" />
     <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651520707" />
-    <state x="433" y="16" key="CommitChangelistDialog2" timestamp="1578694435963">
+    <state x="433" y="16" key="CommitChangelistDialog2" timestamp="1578744532431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="433" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578694435963" />
+    <state x="433" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578744532431" />
     <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578577918805" />
     <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578666420700" />
     <state x="592" y="208" key="FileChooserDialogImpl" timestamp="1578590615717">
@@ -699,28 +684,28 @@
     </state>
     <state x="592" y="208" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578590615717" />
     <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565741205" />
-    <state width="1256" height="251" key="GridCell.Tab.0.bottom" timestamp="1578742887837">
+    <state width="1256" height="195" key="GridCell.Tab.0.bottom" timestamp="1578754542718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1256" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578742887837" />
+    <state width="1256" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578754542718" />
     <state width="1443" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578470312" />
     <state width="1586" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578664613633" />
-    <state width="1256" height="251" key="GridCell.Tab.0.center" timestamp="1578742887837">
+    <state width="1256" height="195" key="GridCell.Tab.0.center" timestamp="1578754542718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1256" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578742887837" />
+    <state width="1256" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578754542718" />
     <state width="1443" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578470312" />
     <state width="1586" height="217" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578664613633" />
-    <state width="1256" height="251" key="GridCell.Tab.0.left" timestamp="1578742887837">
+    <state width="1256" height="195" key="GridCell.Tab.0.left" timestamp="1578754542718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1256" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578742887837" />
+    <state width="1256" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578754542718" />
     <state width="1443" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578470312" />
     <state width="1586" height="217" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578664613633" />
-    <state width="1256" height="251" key="GridCell.Tab.0.right" timestamp="1578742887837">
+    <state width="1256" height="195" key="GridCell.Tab.0.right" timestamp="1578754542718">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1256" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578742887837" />
+    <state width="1256" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578754542718" />
     <state width="1443" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578470312" />
     <state width="1586" height="217" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578664613633" />
     <state width="1256" height="159" key="GridCell.Tab.1.bottom" timestamp="1578691599390">
@@ -748,10 +733,10 @@
     </state>
     <state x="369" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578590698767" />
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564218533" />
-    <state x="442" y="201" key="Vcs.Push.Dialog.v2" timestamp="1578694443052">
+    <state x="442" y="201" key="Vcs.Push.Dialog.v2" timestamp="1578744571151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="442" y="201" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578694443052" />
+    <state x="442" y="201" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578744571151" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578577926408" />
     <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578666424900" />
     <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1578739563707">
@@ -791,6 +776,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java</url>
           <line>92</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/info.jsp</url>
+          <line>252</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

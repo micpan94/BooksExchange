@@ -83,17 +83,6 @@
             color: white;
             font-weight: 500;
         }
-        .box h5{
-            color: white;
-            font-weight: 100;
-            text-decoration: none;
-
-
-        }
-        a:visited{
-            text-decoration: none;
-            color: white;
-        }
 
         .box input[type = "text"], .box input[type = "password"] {
             border: 0;
@@ -101,7 +90,7 @@
             display: block;
             margin: 20px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 200px;
             outline: none;
@@ -112,7 +101,7 @@
 
         .box input[type = "text"]:focus, .box input[type = "password"]:focus {
             width: 240px;
-            border-color: #2ecc71;
+            border-color: white;
         }
 
         .box input[type="submit"] {
@@ -131,9 +120,9 @@
         }
 
         .box input[type="submit"]:hover {
-            /*background: #2ecc71;*/
             background: black;
             color: white;
+            border: 2px solid white;
         }
         #footer {
             background-color: black;

@@ -18,6 +18,14 @@
 
     <style>
 
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
+
         body {
             background-image: url("adversmentJSP/img/index.jpg");
             display: flex;
@@ -57,9 +65,9 @@
             border: 0;
             background: none;
             display: block;
-            margin: 10px auto;
+            margin: 20px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 200px;
             outline: none;
@@ -71,7 +79,7 @@
 
         .box input[type = "text"]:focus, .box input[type = "password"]:focus {
             width: 280px;
-            border-color: #2ecc71;
+            border-color: white;
         }
 
         .box input[type="submit"] {
@@ -90,7 +98,9 @@
         }
 
         .box input[type="submit"]:hover {
-            background: #2ecc71;
+            background: lightgreen;
+            color: white;
+            border: 2px solid white;
         }
 
         .box select {
@@ -99,7 +109,7 @@
             display: block;
             margin: 5px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 200px;
             outline: none;
@@ -114,7 +124,7 @@
             display: block;
             margin: 20px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 280px;
             outline: none;
@@ -123,6 +133,57 @@
             transition: 0.25s;
 
 
+        }
+        #log{
+            font-family: 'Lobster', cursive;
+        }
+        #footer {
+            background-color: black;
+            width: 100%;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 15px;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
+        }
+
+        .social-buttons a::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, white, black);
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover::before {
+            transform: scale(0);
+        }
+
+        .social-buttons a i {
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover i {
+            background: linear-gradient(45deg, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(2.2);
         }
 
     </style>
@@ -137,7 +198,7 @@
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
         <%--        ta linijka byla do loga --%>
         <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+        <h3><a class="navbar-brand" href="#"><p id="log">changebook.com</p></a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                 aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
@@ -311,6 +372,17 @@
         <input type="submit" name="" value="Dodaj">
 
     </form>
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+
+    </div>
 </div>
 
 
