@@ -1,14 +1,14 @@
-<%@ page import="Encje.Client" %>
-<%@ page import="Encje.ClientDao" %><%--
+<%--
   Created by IntelliJ IDEA.
-  User: PanczoPC
-  Date: 05.11.2019
-  Time: 19:53
+  User: Michal.Pankiewicz
+  Date: 1/11/2020
+  Time: 6:33 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <title>Twoje ogłoszenia</title>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -16,14 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c89e44ac5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <title>Najlepsze ksiązki na miejscu</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
     <%--    // od stopki--%>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-
 
     <style>
         @font-face {
@@ -227,17 +225,17 @@
         }
 
         #footer {
-              background-color: black;
-              position: fixed;
-              bottom: 0;
-              width: 100%;
-             display: block;
-              color: white;
-              opacity: 60%;
-              text-align: center;
-              font-size: 20px;
-              margin-top: 40px;
-          }
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 40px;
+        }
 
         .social-buttons a {
             display: inline-flex;
@@ -352,20 +350,6 @@
             }
         }
 
-
-    </style>
-
-    <style>
-        @media (min-width: 415px) {
-            slider {
-                height: 80px;
-            }
-        }
-        .ideal{
-            font-family: 'Lobster', cursive;
-        }
-
-
     </style>
 
 </head>
@@ -391,15 +375,15 @@
                         <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
 
-<%--                <li class="nav-item">--%>
-<%--                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>--%>
-<%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>--%>
-<%--                </li>--%>
+                <%--                <li class="nav-item">--%>
+                <%--                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>--%>
+                <%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>--%>
+                <%--                </li>--%>
 
-<%--                <li class="nav-item">--%>
-<%--                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>--%>
-<%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>--%>
-<%--                </li>--%>
+                <%--                <li class="nav-item">--%>
+                <%--                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>--%>
+                <%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>--%>
+                <%--                </li>--%>
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
@@ -453,7 +437,7 @@
 
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-clipboard-list"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Moje ogłoszenia</p></a></h3>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodane ogłoszenia</p></a></h3>
 
                 </li>
 
@@ -472,52 +456,6 @@
     </nav>
 
 </header>
-
-<slider>
-    <slide><p>Utwórz nowe konto, dołacz do naszej społecznosci</p></slide>
-    <slide><p>Jestesmy juz w Katowicach i Chorzowie!</p></slide>
-    <slide><p>Sprawdz aktualne promocje</p></slide>
-    <slide><p>Sprzedawaj ksiazki w swojej okolicy</p></slide>
-
-
-</slider>
-
-<div id="news">CO NOWEGO | KSIĄŻKI</div>
-
-<div class="boxWrrapper">
-    <div class="box"><img src="books/holownia.jpg">49zł</div>
-    <div class="box"><img src="books/puzo.jpg">59zł</div>
-    <div class="box"><img src="books/tusk.jpg">29zł</div>
-    <div class="box"><img src="books/witcher.jpg">89zł</div>
-
-</div>
-
-<div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
-
-<div class="boxWrrapper">
-    <div class="box"><img src="books/wada.jpg">19,99zł</div>
-    <div class="box"><img src="books/greta.jpg">9,99zł</div>
-    <div class="box"><img src="books/sweden.jpg">34,99zł</div>
-
-</div>
-
-<div id="promotion">AKTUALNE PROMOCJE</div>
-
-
-<div class="boxWrrapper1">
-    <div class="box"><img src="books/cezar.jpg">-30%</div>
-    <div class="box"><img src="books/stranger.jpg">-40%</div>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 
 <div id="footer">
     <div class="social-buttons">
@@ -564,7 +502,6 @@
     });
 
 </script>
-
 
 </body>
 </html>

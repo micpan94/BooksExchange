@@ -231,7 +231,7 @@
               position: fixed;
               bottom: 0;
               width: 100%;
-              display: block;
+             display: block;
               color: white;
               opacity: 60%;
               text-align: center;
@@ -452,8 +452,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i class="fas fa-clipboard-list"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodane ogłoszenia</p></a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-clipboard-list"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Moje ogłoszenia</p></a></h3>
 
                 </li>
 
@@ -489,7 +489,7 @@
     <div class="box"><img src="books/puzo.jpg">59zł</div>
     <div class="box"><img src="books/tusk.jpg">29zł</div>
     <div class="box"><img src="books/witcher.jpg">89zł</div>
-3
+
 </div>
 
 <div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
