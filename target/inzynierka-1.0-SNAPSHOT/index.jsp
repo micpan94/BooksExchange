@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c89e44ac5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <title>Welcome</title>
+    <title>Najlepsze ksiązki na miejscu</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
     <%--    // od stopki--%>
@@ -161,6 +161,7 @@
         slide p {
             font-family: 'Oleo Script', cursive;
             font-size: 28px;
+            text-shadow: 2px 2px black;
             text-align: center;
             margin-top: 6px;
             margin-bottom: 2px;
@@ -227,6 +228,9 @@
 
         #footer {
             background-color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             display: block;
             color: white;
             opacity: 60%;
@@ -357,6 +361,11 @@
                 height: 80px;
             }
         }
+        .ideal{
+            font-family: 'Lobster', cursive;
+        }
+
+
     </style>
 
 </head>
@@ -365,7 +374,7 @@
 
 
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+        <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                 aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
@@ -396,6 +405,10 @@
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
                             class="fas fa-money-check"></i>
                         <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                </li>
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/info"><i class="fas fa-info"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Kontakt</p></a></h3>
                 </li>
 
 
@@ -470,7 +483,7 @@
     <div class="box"><img src="books/puzo.jpg">59zł</div>
     <div class="box"><img src="books/tusk.jpg">29zł</div>
     <div class="box"><img src="books/witcher.jpg">89zł</div>
-
+3
 </div>
 
 <div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
@@ -491,16 +504,9 @@
 
 </div>
 
-<div id="contact">KONTAKT</div>
-
-<div id="info">
-    <ul>
-        <li>ul.Dąbrowskiego 6 Dąbrowa Górnicza</li>
-        <li>tel. 22 733 69 69</li>
-        <li>e-mail:micpan94@gmail.com</li>
-        <li>2019/2020</li>
-    </ul>
-</div>
+<br>
+<br>
+<br>
 
 
 <div id="footer">
@@ -515,17 +521,14 @@
 
 </div>
 
-
+<%--skrypty dla nav-baru--%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-
 <script src="js/bootstrap.min.js"></script>
-
 <script>
 
     $(document).ready(function () {

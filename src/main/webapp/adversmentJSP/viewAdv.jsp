@@ -26,6 +26,14 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
 
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
+
         body {
             background-image: url("img/index.jpg");
             background-size: inherit;
@@ -121,6 +129,9 @@
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
         }
+        #logo1{
+            font-family: 'Lobster', cursive;
+        }
 
     </style>
 </head>
@@ -131,14 +142,14 @@
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
         <%--        ta linijka byla do loga --%>
         <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+        <h3><a class="navbar-brand" href="#" ><p id="logo1">changebook.com</p></a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                 aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="mainmenu">
+
 
             <ul class="navbar-nav mr-auto">
 
