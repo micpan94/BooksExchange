@@ -163,14 +163,16 @@
             transform: scale(2.2);
         }
 
-        header{
-            display: flex;
-            align-self: flex-start;
-        }
+        /*header{*/
+        /*    display: flex;*/
+        /*    align-self: flex-start;*/
+        /*}*/
 
-        header p {
+
+        .ideal{
             font-family: 'Lobster', cursive;
         }
+
 
     </style>
 </head>
@@ -181,7 +183,7 @@
 
 
         <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-            <h3><a class="navbar-brand" href="#"><p>changebook.com</p></a></h3>
+            <h3><a class="navbar-brand" href="#"><span class="ideal">changebook.com</span></a></h3>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                     aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">

@@ -79,6 +79,10 @@
             text-align: left;
             overflow: hidden;
         }
+        #container{
+            display: flex;
+            flex-direction: column;
+        }
 
         #bestsellers {
             display: block;
@@ -359,6 +363,65 @@
         header{
             align-self: flex-start;
         }
+        .contact-form{
+            width: 85%;
+            max-width: 600px;
+            background: black;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            opacity: 80%;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat",sans-serif;
+            align-self: center;
+            word-wrap: break-word;
+        }
+        .contact-form p{
+            font-size: 20px;
+        }
+
+        .contact-form h1{
+            margin-top: 0;
+            font-weight: 200;
+        }
+        .txtb{
+            border:1px solid gray;
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+        .txtb label{
+            display: block;
+            text-align: left;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .txtb input,.txtb textarea{
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 6px;
+        }
+        .button{
+            border-radius: 4px;
+            background-color: black;
+            text-decoration: none;
+            color: black;
+            border: 3px white solid;
+            font-size: 14px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
+
     </style>
 
 
@@ -478,8 +541,8 @@
         <h1>Aktualna lista twoich ogłoszen</h1>
         <c:forEach items="${list}" var="element">
             <div class="txtb">
-                <label>Adres</label>
-                <p>Dąbrowa Górnicza ul.Dąbrowskiego 6</p>
+                <label></label>
+                <p><c:out value="${element.title}"></c:out>  <span class="inx"></span><button class="button"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/delete?id=${element.id}">usuń</a> </button> </p>
             </div>
         </c:forEach>
 
