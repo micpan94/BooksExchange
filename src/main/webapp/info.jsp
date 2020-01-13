@@ -43,8 +43,9 @@
         }
 
         #container{
+            width: 100%;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
         }
         .ideal {
             font-family: 'Lobster', cursive;
@@ -61,6 +62,8 @@
             text-align: center;
             box-shadow: 0 0 20px #000000b3;
             font-family: "Montserrat",sans-serif;
+            align-self: center;
+            word-wrap: break-word;
         }
         .contact-form p{
             font-size: 20px;
@@ -154,102 +157,101 @@
     </style>
 </head>
 <body>
-<header>
-
-
-    <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-        <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
-                aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainmenu">
-
-            <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
-                </li>
-
-
-                <% if (session.getAttribute("name") != null) { %>
-                <h3>
-                    <li class="nav-item">
-                        <%
-                            String name = session.getAttribute("name").toString();
-                            String id = session.getAttribute("user").toString();
-                        %>
-                        <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
-                                class="fas fa-user"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
-                            </p>
-                        </a>
-
-                    </li>
-                </h3>
-                <% } else { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
-                            class="fas fa-sign-in-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
-                            class="fas fa-child"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
-                    </h3>
-                </li>
-
-                <% } %>
-
-
-                <% if (session.getAttribute("name") != null) { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
-                            class="fas fa-plus"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
-                            ogłoszenie</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
-                </li>
-
-                <% }%>
-
-            </ul>
-
-        </div>
-
-    </nav>
-
-</header>
-
 
 <div id="container">
+    <header>
+
+
+        <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+            <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                    aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                                class="fas fa-home"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                                class="fas fa-money-check"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                    </li>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <h3>
+                        <li class="nav-item">
+                            <%
+                                String name = session.getAttribute("name").toString();
+                                String id = session.getAttribute("user").toString();
+                            %>
+                            <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
+                                    class="fas fa-user"></i>
+                                <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                                </p>
+                            </a>
+
+                        </li>
+                    </h3>
+                    <% } else { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                                class="fas fa-sign-in-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                                class="fas fa-child"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
+                        </h3>
+                    </li>
+
+                    <% } %>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
+                                class="fas fa-plus"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
+                                ogłoszenie</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                                class="fas fa-sign-out-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
+                    </li>
+
+                    <% }%>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
     <div class="contact-form">
         <h1>Dane kontaktowe</h1>
         <div class="txtb">

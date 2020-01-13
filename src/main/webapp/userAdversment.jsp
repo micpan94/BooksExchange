@@ -352,8 +352,15 @@
                 width: 90%;
             }
         }
+        .ideal{
+            font-family: 'Lobster', cursive;
+        }
 
+        header{
+            align-self: flex-start;
+        }
     </style>
+
 
 </head>
 <body>

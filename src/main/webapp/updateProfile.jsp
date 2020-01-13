@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/infoStyle.css">
+
     <style>
         @font-face {
             font-family: "xd";
@@ -163,6 +163,14 @@
             transform: scale(2.2);
         }
 
+        header{
+            display: flex;
+            align-self: flex-start;
+        }
+
+        header p {
+            font-family: 'Lobster', cursive;
+        }
 
     </style>
 </head>
@@ -173,7 +181,7 @@
 
 
         <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-            <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+            <h3><a class="navbar-brand" href="#"><p>changebook.com</p></a></h3>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                     aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
