@@ -1,17 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="Encje.Client" %>
-<%@ page import="Encje.Advertisement" %>
-<%@ page import="java.util.Set" %><%--
+<%@ page import="Encje.Client" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
-  Date: 1/11/2020
-  Time: 6:33 PM
+  Date: 1/13/2020
+  Time: 9:56 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Twoje ogłoszenia</title>
+    <title>Sprawdź swoje dane</title>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -25,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style/infoStyle.css">
     <style>
         @font-face {
             font-family: "xd";
@@ -34,199 +31,87 @@
         *{
             font-family: xd;
         }
-        html, body {
+        body {
             background-image: url("img/index.jpg");
             background-size: cover;
             scroll-behavior: smooth;
             font-family: 'Lobster', cursive;
             text-align: center;
-            /*  slider   */
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin-left: 0;
-            margin-right: 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
-
-
         }
 
-        /*// slider*/
-        slider {
-            display: block;
-            width: 100%;
-            height: 100px;
-            overflow: hidden;
-            position: absolute;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: black 2px solid;
-            opacity: 75%;
-        }
-
-        #news {
-            display: block;
-            width: 100%;
-            color: ghostwhite;
-            font-size: 30px;
-            position: absolute;
-            padding-left: 25px;
-            margin-right: 0;
-            margin-top: 100px;
-            text-shadow: black 0.1em 0.1em 0.2em;
-            text-align: left;
-            overflow: hidden;
-        }
-
-        #bestsellers {
-            display: block;
-            width: 100%;
-            color: ghostwhite;
-            padding-left: 25px;
-            text-shadow: black 0.1em 0.1em 0.2em;
-            font-size: 30px;
-            margin-top: 50px;
-            position: absolute;
-            text-align: left;
-            overflow: hidden;
-
-        }
-
-        #promotion {
-            display: block;
-            width: 100%;
-            margin-top: 100px;
-            color: ghostwhite;
-            padding-left: 25px;
-            text-shadow: black 0.1em 0.1em 0.2em;
-            font-size: 30px;
-            text-align: left;
-        }
-
-        #contact {
-            display: block;
-            width: 100%;
-            margin-top: 100px;
-            color: ghostwhite;
-            padding-left: 25px;
-            text-shadow: black 0.1em 0.1em 0.2em;
-            font-size: 30px;
-            text-align: left;
-        }
-
-        slider > * {
-            position: absolute;
-            display: block;
+        #container {
             width: 100%;
             height: 100%;
-            background: #1f1f1f;
-            animation: slide 24s infinite;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
         }
 
-        slide:nth-child(1) {
-            left: 0%;
-            animation-delay: -2s;
-            background-image: url("slider/1.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        .box div{
+            margin: 2px;
+            padding: 2px;
+            border: white 2px solid;
         }
 
-        slide:nth-child(2) {
-            animation-delay: 4s;
-            background-image: url("slider/2.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        slide:nth-child(3) {
-            animation-delay: 10s;
-            background-image: url("slider/3.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        slide:nth-child(4) {
-            animation-delay: 16s;
-            background-image: url("slider/4.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        slide p {
-            font-family: 'Oleo Script', cursive;
-            font-size: 28px;
-            text-shadow: 2px 2px black;
+        .contact-form{
+            width: 85%;
+            max-width: 600px;
+            background: black;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            opacity: 80%;
+            color: white;
             text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat",sans-serif;
+        }
+        .contact-form h1{
+            margin-top: 0;
+            font-weight: 200;
+        }
+        .txtb{
+            border:1px solid gray;
+            margin: 8px 0;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+        .txtb input[type="submit"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .txtb label{
+            display: block;
+            text-align: left;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 18px;
+
+        }
+        .txtb input,.txtb textarea{
+            width: 100%;
+            border: none;
+            color: white;
+            background: none;
+            outline: none;
+            font-size: 18px;
             margin-top: 6px;
-            margin-bottom: 2px;
-            padding: 5px;
-            display: inline-block;
-            width: 100%;
-            color: #fff;
+            text-align: center;
         }
-
-        @keyframes slide {
-            0% {
-                left: 100%;
-                width: 100%;
-            }
-            5% {
-                left: 0%;
-            }
-            25% {
-                left: 0%;
-            }
-            30% {
-                left: -100%;
-                width: 100%;
-            }
-            30.0001% {
-                left: -100%;
-                width: 0%;
-            }
-            100% {
-                left: 100%;
-                width: 0%;
-            }
-        }
-
-
-        h1 {
-            font-size: 36px;
-            font-weight: 400;
-            color: #C0D06F;
-            margin: 20px;
-        }
-
-        .jumpers img {
-            width: 100%;
-            height: auto;
-        }
-
-        .jumpers p {
-            margin-bottom: 30px;
-        }
-
-        .jumpers figcaption {
-            margin-top: 8px;
-        }
-
-        .navbar {
-            min-height: 57px;
-        }
-
-        input[name="r"] {
-            position: absolute;
-            visibility: hidden;
-        }
-
         #footer {
             background-color: black;
             position: fixed;
@@ -239,7 +124,6 @@
             font-size: 20px;
             margin-top: 40px;
         }
-
         .social-buttons a {
             display: inline-flex;
             text-decoration: none;
@@ -279,90 +163,17 @@
             transform: scale(2.2);
         }
 
-        .boxWrrapper {
-            margin-top: 160px;
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-flow: wrap;
-            margin-left: 0;
-            margin-right: 0;
-            color: white;
-            text-shadow: black 0.1em 0.1em 0.2em;
-
-        }
-
-        .boxWrrapper1 {
-            margin-top: 10px;
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-flow: wrap;
-            margin-left: 0;
-            margin-right: 0;
-            color: white;
-            text-shadow: black 0.1em 0.1em 0.2em;
-
-
-        }
-
-        #info {
-            color: white;
-            font-size: larger;
-            text-align: left;
-            text-shadow: black 0.1em 0.1em 0.2em;
-
-        }
-
-        .box {
-            width: 15%;
-            min-width: 240px;
-            height: 380px;
-            margin: 30px;
-            box-sizing: border-box;
-            background-color: white;
-            opacity: 85%;
-            font-size: 40px;
-            border: white 4px solid;
-            cursor: pointer;
-
-        }
-
-        .box img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .box img:hover {
-            opacity: 80%;
-        }
-
-        @media screen and(max-width: 1200px) {
-            .box {
-                width: 40%;
-            }
-        }
-
-        @media screen and(max-width: 600px) {
-            .box {
-                width: 90%;
-            }
-        }
 
     </style>
-
 </head>
 <body>
 <div id="container">
+<%--    nav-bar--%>
     <header>
 
 
         <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-            <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
+            <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                     aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
@@ -379,24 +190,20 @@
                             <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                     </li>
 
-                    <%--                <li class="nav-item">--%>
-                    <%--                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>--%>
-                    <%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>--%>
-                    <%--                </li>--%>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
+                    </li>
 
-                    <%--                <li class="nav-item">--%>
-                    <%--                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>--%>
-                    <%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>--%>
-                    <%--                </li>--%>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
+                    </li>
 
                     <li class="nav-item">
                         <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
                                 class="fas fa-money-check"></i>
                             <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
-                    </li>
-                    <li class="nav-item">
-                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/info"><i class="fas fa-info"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Kontakt</p></a></h3>
                     </li>
 
 
@@ -407,8 +214,9 @@
                                 String name = session.getAttribute("name").toString();
                                 String id = session.getAttribute("user").toString();
                             %>
-                            <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i class="fas fa-user"></i>
-                                <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Mój profil
+                            <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
+                                    class="fas fa-user"></i>
+                                <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
                                 </p>
                             </a>
 
@@ -440,12 +248,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-clipboard-list"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodane ogłoszenia</p></a></h3>
-
-                    </li>
-
-                    <li class="nav-item">
                         <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
                                 class="fas fa-sign-out-alt"></i>
                             <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
@@ -460,25 +262,92 @@
         </nav>
 
     </header>
-
+<%--    nav-bar--%>
     <%
-        HttpSession session1 = request.getSession();
-        Client client = (Client) session1.getAttribute("client");
-        Set<Advertisement> advertisementSet = client.getAdvertisementSet();
-        session1.setAttribute("list",advertisementSet);
+        HttpSession actualSession = request.getSession();
+        Client client = (Client) actualSession.getAttribute("client");
     %>
-    <div class="contact-form">
-        <h1>Aktualna lista twoich ogłoszen</h1>
-        <c:forEach items="${list}" var="element">
-            <div class="txtb">
-                <label>Adres</label>
-                <p>Dąbrowa Górnicza ul.Dąbrowskiego 6</p>
-            </div>
-        </c:forEach>
 
+
+    <div class="contact-form">
+        <h1>Twoje aktualne dane</h1>
+        <%
+            if (request.getAttribute("errors") != null) {
+        %>
+        <fieldset>
+            <ul>
+                <%
+                    if (request.getAttribute("login_error") != null) {
+                %>
+                <li>Błędny login</li>
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("telephone_error") != null) {
+                %>
+                <li>Błędny numer telefonu!</li>
+
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("firstName_error") != null) {
+                %>
+                <li>Błędne imie!</li>
+
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("lastName_error") != null) {
+                %>
+                <li>Błędne nazwisko !</li>
+
+                <%
+                    }
+                %>
+
+            </ul>
+        </fieldset>
+        <%
+            }
+
+        %>
+
+
+        <form method="post">
+            <div class="txtb">
+                <label>Login</label>
+                <input type="text" name="login" value="<%=client.getLogin()%>">
+                <label>Hasło</label>
+                <input type="password" name="password" value="<%=client.getPassword()%>">
+                <label>E-mail</label>
+                <input type="email" name="email" value="<%=client.getEmail()%>">
+                <label>Telefon</label>
+                <input type="telephone" name="telephone" value="<%=client.getTelephoneNr()%>">
+                <label>Imię</label>
+                <input type="text" name="firstName" value="<%=client.getFirstName()%>">
+                <label>Nazwisko</label>
+                <input type="text" name="lastName" value="<%=client.getLastName()%>">
+                <label>Lokalizacja</label>
+                <select name="location">
+                    <option>Katowice</option>
+                    <option>Sosnowiec</option>
+                    <option>Dąbrowa Górnicza</option>
+                    <option>Chorzów</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Zapisz">
+
+
+        </form>
 
     </div>
-
 
     <div id="footer">
         <div class="social-buttons">
@@ -489,17 +358,10 @@
             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
+
 </div>
 
-
-
-
-
-
-
-
-
-<%--skrypty dla nav-baru--%>
+<%--skrypty js obslugujace navbar--%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -534,6 +396,8 @@
     });
 
 </script>
+
+
 
 </body>
 </html>

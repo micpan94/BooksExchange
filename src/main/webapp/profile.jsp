@@ -102,7 +102,8 @@
             text-align: left;
             color: #333;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 16px;
+
         }
         .txtb input,.txtb textarea{
             width: 100%;
@@ -177,100 +178,101 @@
     </style>
 </head>
 <body>
-<header>
 
-
-    <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
-                aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainmenu">
-
-            <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
-                </li>
-
-
-                <% if (session.getAttribute("name") != null) { %>
-                <h3>
-                    <li class="nav-item">
-                        <%
-                            String name = session.getAttribute("name").toString();
-                            String id = session.getAttribute("user").toString();
-                        %>
-                        <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
-                                class="fas fa-user"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
-                            </p>
-                        </a>
-
-                    </li>
-                </h3>
-                <% } else { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
-                            class="fas fa-sign-in-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
-                            class="fas fa-child"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
-                    </h3>
-                </li>
-
-                <% } %>
-
-
-                <% if (session.getAttribute("name") != null) { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
-                            class="fas fa-plus"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
-                            ogłoszenie</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
-                </li>
-
-                <% }%>
-
-            </ul>
-
-        </div>
-
-    </nav>
-
-</header>
 <div id="container">
+    <header>
+
+
+        <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+            <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                    aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                                class="fas fa-home"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                                class="fas fa-money-check"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                    </li>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <h3>
+                        <li class="nav-item">
+                            <%
+                                String name = session.getAttribute("name").toString();
+                                String id = session.getAttribute("user").toString();
+                            %>
+                            <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
+                                    class="fas fa-user"></i>
+                                <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                                </p>
+                            </a>
+
+                        </li>
+                    </h3>
+                    <% } else { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                                class="fas fa-sign-in-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                                class="fas fa-child"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
+                        </h3>
+                    </li>
+
+                    <% } %>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
+                                class="fas fa-plus"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
+                                ogłoszenie</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                                class="fas fa-sign-out-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
+                    </li>
+
+                    <% }%>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
     <%
         HttpSession session1 = request.getSession();
         Client client = (Client) session1.getAttribute("client");
@@ -278,23 +280,16 @@
         session1.setAttribute("list",advertisementSet);
     %>
 
-<%--    <div class="box">--%>
-<%--        <h1>Twoje aktualne dane:</h1>--%>
-<%--        <div>Email: <%=client.getEmail()%></div>--%>
-<%--        <div>Login: <%=client.getLogin()%></div>--%>
-<%--        <div>Lokalizacja: <%=client.getLocation()%></div>--%>
-<%--        <div>Telefon: <%=client.getTelephoneNr()%></div>--%>
-<%--        <div>Id konta: <%=client.getId()%></div>--%>
-<%--        <div><button>Zmiana danych</button></div>--%>
-<%--    </div>--%>
-<%--    <h1>Twoje aktualne ogloszenia</h1>--%>
-<%--    <c:forEach items="${list}" var="element">--%>
-<%--        <div class="adv">tytuł: <c:out value="${element.title}"></c:out></div>--%>
-<%--        <div class="adv">numer id: <c:out value="${element.id}"></c:out></div>--%>
-<%--        <div class="adv">lokalizacja: <c:out value="${element.location}"></c:out></div>--%>
-<%--    </c:forEach>--%>
     <div class="contact-form">
         <h1>Twoje aktualne dane</h1>
+        <%
+            if (request.getAttribute("succes") != null) {
+        %>
+        <li>Udało się zaaktalizowac dane !</li>
+
+        <%
+            }
+        %>
         <div class="txtb">
             <label>Login</label>
             <p><%=client.getLogin()%></p>
@@ -314,8 +309,19 @@
             <label>Lokalizacja</label>
             <p><%=client.getLocation()%></p>
         </div>
-        <a class="btn">Aktualizuj dane</a>
+
+        <div class="txtb">
+            <label>Imię</label>
+            <p><%=client.getFirstName()%></p>
+        </div>
+
+        <div class="txtb">
+            <label>Nazwisko</label>
+            <p><%=client.getLastName()%></p>
+        </div>
+        <a class="btn" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/updateProfile">Aktualizuj dane</a>
     </div>
+
     <div id="footer">
         <div class="social-buttons">
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -324,11 +330,9 @@
             <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
             <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
-
-
     </div>
-</div>
 
+</div>
 
 <%--skrypty js obslugujace navbar--%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

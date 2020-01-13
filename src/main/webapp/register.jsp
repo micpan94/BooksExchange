@@ -274,6 +274,30 @@
                 <%
                     }
                 %>
+                    <%
+                        if (request.getAttribute("firstName_error") != null) {
+                    %>
+                    <li>Błędne imię</li>
+                    <%
+                        }
+                    %>
+
+                    <%
+                        if (request.getAttribute("lastName_error") != null) {
+                    %>
+                    <li>Błędne nazwisko</li>
+                    <%
+                        }
+                    %>
+                    <%
+                        if (request.getAttribute("telephone_error") != null) {
+                    %>
+                    <li>Błędny numer telefonu</li>
+                    <%
+                        }
+                    %>
+
+
                 <%--&lt;%&ndash;&ndash;%&gt; last name error--%>
                 <%
                     if (request.getAttribute("password_error") != null) {
@@ -316,12 +340,24 @@
                 </div>
 
                 <div class="inputField">
+                    <input name="firstName" type="text" id="firstName" placeholder="Imię">
+                </div>
+                <div class="inputField">
+                    <input name="lastName" type="text" id="lastName" placeholder="Nazwisko">
+                </div>
+                <div class="inputField">
+                    <input name="telephone" type="text" id="telephone" placeholder="Numer telefonu">
+                </div>
+
+                <div class="inputField">
                     <input name="email" type="text" id="dob" placeholder="Email">
                 </div>
 
                 <div class="inputField" id="submitField">
                     <input id="submitBtn" type="submit" value="Stwórz nowe konto">
                 </div>
+
+
             </form>
         </fieldset>
 
