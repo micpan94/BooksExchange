@@ -7,13 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userAdversment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userAdversment.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/Login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/addAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/addAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,14 +248,7 @@
       <workItem from="1578756419305" duration="2607000" />
       <workItem from="1578762964706" duration="2918000" />
       <workItem from="1578899265945" duration="25302000" />
-      <workItem from="1578947786891" duration="7549000" />
-    </task>
-    <task id="LOCAL-00027" summary="1.5.3">
-      <created>1574799588198</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1574799588198</updated>
+      <workItem from="1578947786891" duration="18776000" />
     </task>
     <task id="LOCAL-00028" summary="1.6 Login + validate">
       <created>1574886688057</created>
@@ -589,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578923795994</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="over 2.6">
+      <created>1578993614952</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1578993614952</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView">
@@ -654,12 +658,12 @@
     </state>
     <state x="331" y="137" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578592095831" />
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578078254" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1578922116177">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1579002287579">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="612" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1578764117263" />
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578922116177" />
-    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578906463133" />
+    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579002287579" />
     <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578564459280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -672,17 +676,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578917296832" />
-    <state x="744" y="200" width="630" height="592" key="#xdebugger.evaluate" timestamp="1578765906290">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate" timestamp="1578996180473">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="744" y="200" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1578765906290" />
-    <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578651520707" />
-    <state x="541" y="115" key="CommitChangelistDialog2" timestamp="1578923793115">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578996180473" />
+    <state x="2461" y="115" key="CommitChangelistDialog2" timestamp="1578993612050">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="433" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578764704623" />
     <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578923793115" />
-    <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578666420700" />
+    <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578993612050" />
     <state x="592" y="208" key="FileChooserDialogImpl" timestamp="1578590615717">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -757,11 +761,11 @@
     </state>
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578574599471" />
     <state x="2689" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578647311375" />
-    <state x="2442" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578992273565">
+    <state x="2442" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578998031046">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="522" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578919460769" />
-    <state x="2442" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578992273565" />
+    <state x="2442" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578998031046" />
     <state x="690" y="287" key="extract.method.dialog" timestamp="1578908745159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -808,11 +812,6 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java</url>
           <line>109</line>
           <option name="timeStamp" value="18" />
@@ -821,6 +820,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
           <line>31</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/userAdversment.jsp</url>
+          <line>555</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/userAdversment.jsp</url>
+          <line>550</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

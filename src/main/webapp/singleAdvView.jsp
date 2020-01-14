@@ -1,14 +1,13 @@
-<%@ page import="Encje.Client" %><%--
+<%@ page import="Encje.Advertisement" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
-  Date: 1/13/2020
-  Time: 9:56 AM
+  Date: 1/14/2020
+  Time: 12:34 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Sprawdź swoje dane</title>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -22,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-
+    <title><%=request.getAttribute("title")%>></title>
     <style>
         @font-face {
             font-family: "xd";
@@ -31,99 +30,43 @@
         *{
             font-family: xd;
         }
+
         body {
             background-image: url("img/index.jpg");
-            background-size: cover;
-            scroll-behavior: smooth;
+            background-size: inherit;
             font-family: 'Lobster', cursive;
-            text-align: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+
         }
 
         #container {
+            display: flex;
             width: 100%;
             height: 100%;
-            display: flex;
             flex-direction: column;
             align-items: center;
-            color: white;
         }
 
-        .box div{
-            margin: 2px;
-            padding: 2px;
-            border: white 2px solid;
+
+        #photo img {
+            max-width: 100%;
+            height: 100%;
         }
 
-        .contact-form{
-            width: 85%;
-            max-width: 600px;
-            background: black;
-            padding: 30px 40px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            opacity: 80%;
-            color: white;
-            text-align: center;
-            box-shadow: 0 0 20px #000000b3;
-            font-family: "Montserrat",sans-serif;
-        }
-        .contact-form h1{
-            margin-top: 0;
-            font-weight: 200;
-        }
-        .txtb{
-            border:1px solid gray;
-            margin: 8px 0;
-            color: white;
-            padding: 12px 18px;
-            border-radius: 8px;
-        }
-        .txtb input[type="submit"]{
-            border: 0;
-            background: none;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            border: 2px solid #2ecc71;
-            padding: 14px 40px;
-            outline: none;
-            color: white;
-            border-radius: 24px;
-            transition: 0.25s;
-            cursor: pointer;
-        }
-        .txtb label{
-            display: block;
-            text-align: left;
-            color: #333;
-            text-transform: uppercase;
-            font-size: 18px;
-
-        }
-        .txtb input,.txtb textarea{
-            width: 100%;
-            border: none;
-            color: white;
-            background: none;
-            outline: none;
-            font-size: 18px;
-            margin-top: 6px;
-            text-align: center;
-        }
         #footer {
             background-color: black;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
             display: block;
             color: white;
             opacity: 60%;
             text-align: center;
             font-size: 20px;
             margin-top: 40px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
         }
+
         .social-buttons a {
             display: inline-flex;
             text-decoration: none;
@@ -162,31 +105,74 @@
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
         }
-
-        /*header{*/
-        /*    display: flex;*/
-        /*    align-self: flex-start;*/
-        /*}*/
-
-
+        header{
+            align-self: flex-start;
+        }
         .ideal{
             font-family: 'Lobster', cursive;
         }
-        header{
-            align-self: flex-start;
+        .contact-form{
+            width: 85%;
+            max-width: 600px;
+            background: black;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            opacity: 80%;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat",sans-serif;
+        }
+        .contact-form h1{
+            margin-top: 0;
+            font-weight: 200;
+        }
+        .txtb{
+            border:1px solid gray;
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+        .txtb label{
+            display: block;
+            text-align: left;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 16px;
+
+        }
+        .txtb input,.txtb textarea{
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 6px;
+        }
+        .btn{
+            display: inline-block;
+            background: #09ff00;
+            padding: 14px 0;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 8px;
+            width: 100%;
         }
 
 
     </style>
 </head>
 <body>
+
+
 <div id="container">
-<%--    nav-bar--%>
     <header>
 
 
         <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-            <h3><a class="navbar-brand" href="#"><span class="ideal">changebook.com</span></a></h3>
+            <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                     aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
@@ -203,11 +189,13 @@
                             <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                     </li>
 
+
                     <li class="nav-item">
                         <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
                                 class="fas fa-money-check"></i>
                             <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
                     </li>
+
 
                     <% if (session.getAttribute("name") != null) { %>
                     <h3>
@@ -264,91 +252,13 @@
         </nav>
 
     </header>
-<%--    nav-bar--%>
-    <%
-        HttpSession actualSession = request.getSession();
-        Client client = (Client) actualSession.getAttribute("client");
-    %>
-
-
     <div class="contact-form">
-        <h1>Twoje aktualne dane</h1>
         <%
-            if (request.getAttribute("errors") != null) {
-        %>
-        <fieldset>
-            <ul>
-                <%
-                    if (request.getAttribute("login_error") != null) {
-                %>
-                <li>Błędny login</li>
-                <%
-                    }
-                %>
-
-                <%
-                    if (request.getAttribute("telephone_error") != null) {
-                %>
-                <li>Błędny numer telefonu!</li>
-
-                <%
-                    }
-                %>
-
-                <%
-                    if (request.getAttribute("firstName_error") != null) {
-                %>
-                <li>Błędne imie!</li>
-
-                <%
-                    }
-                %>
-
-                <%
-                    if (request.getAttribute("lastName_error") != null) {
-                %>
-                <li>Błędne nazwisko !</li>
-
-                <%
-                    }
-                %>
-
-            </ul>
-        </fieldset>
-        <%
-            }
-
+            Advertisement advertisement = (Advertisement) request.getAttribute("ADV");
         %>
 
 
-        <form method="post">
-            <div class="txtb">
-                <label>Login</label>
-                <input type="text" name="login" value="<%=client.getLogin()%>">
-                <label>Hasło</label>
-                <input type="password" name="password" value="<%=client.getPassword()%>">
-                <label>E-mail</label>
-                <input type="email" name="email" value="<%=client.getEmail()%>">
-                <label>Telefon</label>
-                <input type="telephone" name="telephone" value="<%=client.getTelephoneNr()%>">
-                <label>Imię</label>
-                <input type="text" name="firstName" value="<%=client.getFirstName()%>">
-                <label>Nazwisko</label>
-                <input type="text" name="lastName" value="<%=client.getLastName()%>">
-                <label>Lokalizacja</label>
-                <select name="location">
-                    <option>Katowice</option>
-                    <option>Sosnowiec</option>
-                    <option>Dąbrowa Górnicza</option>
-                    <option>Chorzów</option>
-                </select>
-            </div>
-
-            <input type="submit" value="Zapisz">
-
-
-        </form>
-
+            <h1><%=advertisement.getTitle()%></h1>
     </div>
 
     <div id="footer">
@@ -362,8 +272,7 @@
     </div>
 
 </div>
-
-<%--skrypty js obslugujace navbar--%>
+<%--skrypty dla navbaru--%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -398,8 +307,5 @@
     });
 
 </script>
-
-
-
 </body>
 </html>
