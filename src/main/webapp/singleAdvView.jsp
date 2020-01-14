@@ -284,11 +284,18 @@
             }
         %>
 
+
+
         <div class="txtb">
             <img src="adversmentJSP/img/<%=advertisement.getId()%>.jpg">
             <%=advertisement.getTitle()%>
         </div>
 
+        <div class="txtb">
+            <label>Kontakt</label>
+            <%= advertisement.getClient().getTelephoneNr()%>
+            <%=advertisement.getClient().getFirstName()%>
+        </div>
 
         <div class="txtb">
             <label>Szczegóły</label>
@@ -314,6 +321,7 @@
             <label>Cena</label>
             <%=advertisement.getPrice()%>zł
         </div>
+
     </div>
     <div id="footer">
         <div class="social-buttons">
