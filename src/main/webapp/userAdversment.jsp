@@ -531,15 +531,10 @@
 
     </header>
 
-    <%
-        HttpSession session1 = request.getSession();
-        Client client = (Client) session1.getAttribute("client");
-        Set<Advertisement> advertisementSet = client.getAdvertisementSet();
-        session1.setAttribute("list",advertisementSet);
-    %>
+
     <div class="contact-form">
         <h1>Aktualna lista twoich ogłoszen</h1>
-        <c:forEach items="${list}" var="element">
+        <c:forEach items="${ClientAdvList}" var="element">
             <div class="txtb">
                 <label></label>
                 <p><c:out value="${element.title}"></c:out>  <span class="inx"></span><button class="button"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/delete?id=${element.id}">usuń</a> </button> </p>
