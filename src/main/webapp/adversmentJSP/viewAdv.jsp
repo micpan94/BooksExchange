@@ -232,7 +232,7 @@
                     <div class="element"><c:out value="${element.title}"></c:out></div>
 <%--                    Format daty--%>
 
-                    <div class="element"><c:out value="${element.data}"></c:out></div>
+<%--                    <div class="element"><c:out value="${element.data}"></c:out></div>--%>
 <%--                    <div class="element"><c:out value="${element.content}"></c:out></div>--%>
                     <div class="element"><c:out value="${element.price}"></c:out>zł</div>
 <%--                    <div class="element"><c:out value="${element.type}"></c:out></div>--%>

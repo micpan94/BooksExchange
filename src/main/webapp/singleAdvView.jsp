@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-    <title><%=request.getAttribute("title")%>></title>
+    <title>changebook.com</title>
     <style>
         @font-face {
             font-family: "xd";
             src: url("font/HKGrotesk-Regular.otf");
         }
-        *{
+
+        * {
             font-family: xd;
         }
 
@@ -105,13 +106,16 @@
             -webkit-text-fill-color: transparent;
             transform: scale(2.2);
         }
-        header{
+
+        header {
             align-self: flex-start;
         }
-        .ideal{
+
+        .ideal {
             font-family: 'Lobster', cursive;
         }
-        .contact-form{
+
+        .contact-form {
             width: 85%;
             max-width: 600px;
             background: black;
@@ -122,27 +126,45 @@
             color: white;
             text-align: center;
             box-shadow: 0 0 20px #000000b3;
-            font-family: "Montserrat",sans-serif;
+            font-family: "Montserrat", sans-serif;
         }
-        .contact-form h1{
+
+        .contact-form label {
+            text-align: left;
+        }
+
+        .contact-form h1 {
             margin-top: 0;
             font-weight: 200;
+            color: #eaff9b;
+
         }
-        .txtb{
-            border:1px solid gray;
+
+        .txtb {
+            border: 1px solid gray;
             margin: 8px 0;
             padding: 12px 18px;
             border-radius: 8px;
+            word-wrap: break-word;
         }
-        .txtb label{
+
+        .txtb img {
+            width: 100%;
+            min-height: 240px;
+            max-height: 340px;
+        }
+
+        .txtb label {
             display: block;
             text-align: left;
-            color: #333;
+            color: #eaff9b;
             text-transform: uppercase;
             font-size: 16px;
 
+
         }
-        .txtb input,.txtb textarea{
+
+        .txtb input, .txtb textarea {
             width: 100%;
             border: none;
             background: none;
@@ -150,7 +172,8 @@
             font-size: 18px;
             margin-top: 6px;
         }
-        .btn{
+
+        .btn {
             display: inline-block;
             background: #09ff00;
             padding: 14px 0;
@@ -255,12 +278,43 @@
     <div class="contact-form">
         <%
             Advertisement advertisement = (Advertisement) request.getAttribute("ADV");
+            String stan = "nowy";
+            if (!advertisement.getNew()) {
+                stan = "używany";
+            }
         %>
 
+        <div class="txtb">
+            <img src="adversmentJSP/img/<%=advertisement.getId()%>.jpg">
+            <%=advertisement.getTitle()%>
+        </div>
 
-            <h1><%=advertisement.getTitle()%></h1>
+
+        <div class="txtb">
+            <label>Szczegóły</label>
+            <%=advertisement.getContent()%>
+        </div>
+
+        <div class="txtb">
+            <label>Stan</label>
+            <%=stan%>
+        </div>
+
+        <div class="txtb">
+            <label>Rodzaj</label>
+            <%=advertisement.getType()%>
+        </div>
+
+        <div class="txtb">
+            <label>Lokalizacja</label>
+            <%=advertisement.getLocation()%>
+        </div>
+
+        <div class="txtb">
+            <label>Cena</label>
+            <%=advertisement.getPrice()%>zł
+        </div>
     </div>
-
     <div id="footer">
         <div class="social-buttons">
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>

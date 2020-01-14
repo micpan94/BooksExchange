@@ -224,7 +224,7 @@
         }
     </style>
 
-    <ul class="grid-container"><a href="www.wp.pl"></a>
+    <ul class="grid-container">
         <c:forEach items="${advList}" var="element">
             <li class="box grid-container__element">
                 <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
@@ -232,7 +232,7 @@
                     <div class="element"><c:out value="${element.title}"></c:out></div>
 <%--                    Format daty--%>
 
-                    <div class="element"><c:out value="${element.data}"></c:out></div>
+<%--                    <div class="element"><c:out value="${element.data}"></c:out></div>--%>
 <%--                    <div class="element"><c:out value="${element.content}"></c:out></div>--%>
                     <div class="element"><c:out value="${element.price}"></c:out>zł</div>
 <%--                    <div class="element"><c:out value="${element.type}"></c:out></div>--%>
