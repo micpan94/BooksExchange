@@ -548,7 +548,7 @@
 
 
     <div class="contact-form">
-        <h1>Aktualna lista twoich ogłoszen</h1>
+        <h1>Twoje ogłoszenia</h1>
         <% Collection<Advertisement> clientAdvList = (Collection<Advertisement>) request.getAttribute("ClientAdvList");
             if (clientAdvList.size() > 0) {
         %>

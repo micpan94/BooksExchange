@@ -74,6 +74,14 @@
             word-break: break-all;
             padding: 10px;
         }
+
+        .element a{
+            text-decoration: none;
+            color: #eaff9b ;
+        }
+        .element a:visited{
+            color: white;
+        }
         #news{
             align-self: flex-start;
             color: white;
@@ -230,13 +238,9 @@
                 <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
                 <div id="info">
                     <div class="element"><c:out value="${element.title}"></c:out></div>
-<%--                    Format daty--%>
-
-<%--                    <div class="element"><c:out value="${element.data}"></c:out></div>--%>
-<%--                    <div class="element"><c:out value="${element.content}"></c:out></div>--%>
                     <div class="element"><c:out value="${element.price}"></c:out>zł</div>
-<%--                    <div class="element"><c:out value="${element.type}"></c:out></div>--%>
                     <div class="element"><c:out value="${element.location}"></c:out></div>
+                    <div class="element"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adversment?id=<c:out value="${element.id}"></c:out>">Sprawdź Szczegóły</a></div>
                 </div>
             </li>
         </c:forEach>
