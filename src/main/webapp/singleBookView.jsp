@@ -1,4 +1,4 @@
-<%--
+<%@ page import="Encje.Book" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
   Date: 1/15/2020
@@ -43,15 +43,17 @@
             font-size: 45px;
         }
 
-        #container{
+        #container {
             width: 100%;
             display: flex;
             flex-direction: column;
         }
+
         .ideal {
             font-family: 'Lobster', cursive;
         }
-        .contact-form{
+
+        .contact-form {
             width: 85%;
             max-width: 600px;
             background: black;
@@ -62,40 +64,48 @@
             color: white;
             text-align: center;
             box-shadow: 0 0 20px #000000b3;
-            font-family: "Montserrat",sans-serif;
+            font-family: "Montserrat", sans-serif;
             align-self: center;
             word-wrap: break-word;
         }
-        .contact-form p{
+
+        .contact-form p {
             font-size: 20px;
         }
 
-        .contact-form h1{
+        .contact-form h1 {
             margin-top: 0;
             font-weight: 200;
         }
-        .txtb{
-            border:1px solid gray;
+
+        .txtb {
+            border: 1px solid gray;
             margin: 8px 0;
             padding: 12px 18px;
             border-radius: 8px;
         }
-        .txtb label{
+        .txtb img{
+            width: 100%;
+        }
+
+        .txtb label {
             display: block;
             text-align: left;
             color: #333;
             text-transform: uppercase;
             font-size: 14px;
         }
-        .txtb input,.txtb textarea{
+
+        .txtb input, .txtb textarea {
             width: 100%;
             border: none;
             background: none;
             outline: none;
-            font-size: 18px;
+            font-size: 12px;
             margin-top: 6px;
         }
-        .btn{
+
+        .btn {
             display: inline-block;
             background: #09ff00;
             padding: 14px 0;
@@ -105,6 +115,7 @@
             margin-top: 8px;
             width: 100%;
         }
+
         #footer {
             background-color: black;
             position: fixed;
@@ -117,6 +128,7 @@
             font-size: 20px;
             margin-top: 40px;
         }
+
         .social-buttons a {
             display: inline-flex;
             text-decoration: none;
@@ -243,12 +255,48 @@
         </nav>
 
     </header>
+
+    <%
+        Book book = (Book) request.getAttribute("book");
+    %>
     <div class="contact-form">
-        <h1></h1>
+
+
+
         <div class="txtb">
-            <label></label>
+            <img src="bookJpg/<%=book.getId()%>.jpg">
+
         </div>
 
+        <div class="txtb">
+            <label>Tytuł</label>
+            <%=book.getTitle()%>
+        </div>
+
+        <div class="txtb">
+            <label>Autor</label>
+            <%=book.getAuthor()%>
+        </div>
+
+        <div class="txtb">
+            <label>Data wydania</label>
+            <%=book.getFirstRelease()%>
+        </div>
+        <div class="txtb">
+            <label>Wydawnictwo</label>
+            <%=book.getPublishingHouse()%>
+        </div>
+        <div class="txtb">
+            <label>Gatunek literacki</label>
+            <%=book.getType()%>
+        </div>
+        <div class="txtb">
+            <label>Cena</label>
+            <%=book.getPrice()%>zł
+        </div>
+
+<%--        button do dodawania --%>
+        <div class="btn">Dodaj do koszyka</div>
 
 
 
