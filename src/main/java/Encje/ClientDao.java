@@ -38,6 +38,8 @@ public class ClientDao extends EntityDao<Client> {
         return result;
     }
 
+
+
     public Client finyByLogin(String login) {
         Client client = new Client();
         Collection<Client> clients = findAll();
