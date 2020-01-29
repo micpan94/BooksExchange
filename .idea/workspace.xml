@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,14 +253,7 @@
       <workItem from="1580036843921" duration="240000" />
       <workItem from="1580284705829" duration="656000" />
       <workItem from="1580285850154" duration="1559000" />
-      <workItem from="1580295984000" duration="754000" />
-    </task>
-    <task id="LOCAL-00036" summary="1.9 add Multipart servlet for img">
-      <created>1575829789649</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1575829789649</updated>
+      <workItem from="1580295984000" duration="887000" />
     </task>
     <task id="LOCAL-00037" summary="1.9 home get new css">
       <created>1575840541963</created>
@@ -602,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579626168686</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="test to trigger jenkins">
+      <created>1580304342772</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1580304342774</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TodoView">
@@ -621,7 +617,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src/main/java" />
     </ignored-roots>
-    <MESSAGE value="3.1 final" />
     <MESSAGE value="3.2 final" />
     <MESSAGE value="3.3" />
     <MESSAGE value="3.4" />
@@ -646,7 +641,8 @@
     <MESSAGE value="first sigle adv view 1.0" />
     <MESSAGE value="simple adv fix 1.2" />
     <MESSAGE value="final" />
-    <option name="LAST_COMMIT_MESSAGE" value="final" />
+    <MESSAGE value="test to trigger jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="test to trigger jenkins" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="166" key="#JBoss_17.0.1.Final" timestamp="1578565504498">
@@ -696,11 +692,12 @@
     </state>
     <state x="744" y="200" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1578765906290" />
     <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578996180473" />
-    <state x="433" y="16" key="CommitChangelistDialog2" timestamp="1579626166207">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="541" y="20" key="CommitChangelistDialog2" timestamp="1580304450176">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="541" y="115" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579082883811" />
     <state x="433" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579626166207" />
+    <state x="541" y="20" key="CommitChangelistDialog2/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580304450176" />
     <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578923793115" />
     <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579011192514" />
     <state x="740" y="263" key="FileChooserDialogImpl" timestamp="1580285060325">
@@ -774,11 +771,12 @@
     </state>
     <state x="369" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579626088068" />
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564218533" />
-    <state x="442" y="201" key="Vcs.Push.Dialog.v2" timestamp="1579626171122">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="553" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580304345128">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579082888295" />
     <state x="442" y="201" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579626171122" />
+    <state x="553" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580304345128" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578923813892" />
     <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579010457290" />
     <state x="581" y="300" key="com.intellij.ide.util.TipDialog" timestamp="1580295982757">
