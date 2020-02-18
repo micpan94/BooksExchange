@@ -466,7 +466,16 @@
                 <li class="nav-item">
                     <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-clipboard-list"></i>
                         <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Moje ogłoszenia</p></a></h3>
+                </li>
 
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-shopping-cart"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Koszyk</p></a></h3>
+                </li>
+
+                <li class="nav-item">
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-clipboard-list"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zamówienia</p></a></h3>
                 </li>
 
                 <li class="nav-item">
