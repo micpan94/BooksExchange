@@ -12,10 +12,20 @@ public class ShoppingCard {
     Set<Book> books;
     @ManyToOne(fetch = FetchType.EAGER)
     Client client;
+    private Integer cost;
 
     public Integer getId() {
         return Id;
     }
+
+    public Integer getCost() {
+        return cost;
+    }
+
+    public void setCost(Integer cost) {
+        this.cost = cost;
+    }
+
     public void setId(Integer id) {
         Id = id;
     }

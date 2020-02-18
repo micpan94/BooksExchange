@@ -22,4 +22,14 @@ public class ShoppingCardDAO extends EntityDao<ShoppingCard> {
         return cards;
     }
 
+    Integer getTotalCost(ShoppingCard shoppingCard){
+        int sum = 0;
+        Set<Book> books = shoppingCard.getBooks();
+        for (Book element : books){
+            sum += element.getPrice();
+        }
+
+        return sum;
+    }
+
 }
