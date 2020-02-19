@@ -13,16 +13,25 @@ public class Client{
     private String email;
     private String telephoneNr;
     private String location;
-    @OneToMany(mappedBy = "client")
+    private String firstName;
+    private String lastName;
+
+    @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
     private Set<Advertisement> advertisementSet;
 
-    public Client(String login, String password, String email, String telephoneNr, String location, Set<Advertisement> advertisementSet) {
+    @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
+    private Set<ClientOrder> orders;
+
+    public Client(String firstName,String login, String password, String email, String telephoneNr, String location, String lastName, Set<Advertisement> advertisementSet,Set<ClientOrder> orders) {
         this.login = login;
         this.password = password;
         this.email = email;
         this.telephoneNr = telephoneNr;
         this.location = location;
+        this.lastName = lastName;
+        this.firstName = firstName;
         this.advertisementSet = advertisementSet;
+        this.orders = orders;
     }
 
     public Client(){}
@@ -46,6 +55,14 @@ public class Client{
 
     public Set<Advertisement> getAdvertisementSet() {
         return advertisementSet;
+    }
+
+    public Set<ClientOrder> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<ClientOrder> orders) {
+        this.orders = orders;
     }
 
     public void setAdvertisementSet(Set<Advertisement> advertisementSet) {
@@ -82,6 +99,22 @@ public class Client{
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override

@@ -14,39 +14,38 @@
     <title>Dodaj nowe ogłoszenie</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Calistoga|Girassol&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
-
-
-<%--czccoinki--%>
-<%--    font-family: 'Girassol', cursive;--%>
-<%--    font-family: 'Calistoga', cursive;--%>
-
-
 
     <style>
 
-        body {
-            margin: 0;
-            padding: 0;
-        !important;
-            font-family: 'Lobster', cursive;
-
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
         }
 
         body {
-            background-image: url("adversmentJSP/img/lib1.jpg");
+            background-image: url("adversmentJSP/img/index.jpg");
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
         }
 
         .box {
             width: 340px;
             padding: 20px;
-            position: absolute;
-            /*// tutaj zmienialem*/
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background: #191919;
             text-align: center;
             opacity: 80%;
@@ -68,7 +67,7 @@
             display: block;
             margin: 20px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 200px;
             outline: none;
@@ -80,7 +79,7 @@
 
         .box input[type = "text"]:focus, .box input[type = "password"]:focus {
             width: 280px;
-            border-color: #2ecc71;
+            border-color: white;
         }
 
         .box input[type="submit"] {
@@ -99,16 +98,18 @@
         }
 
         .box input[type="submit"]:hover {
-            background: #2ecc71;
+            background: lightgreen;
+            color: white;
+            border: 2px solid white;
         }
 
         .box select {
             border: 0;
             background: none;
             display: block;
-            margin: 20px auto;
+            margin: 5px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 200px;
             outline: none;
@@ -123,7 +124,7 @@
             display: block;
             margin: 20px auto;
             text-align: center;
-            border: 2px solid #3498db;
+            border: 2px solid rosybrown;
             padding: 14px 10px;
             width: 280px;
             outline: none;
@@ -133,6 +134,57 @@
 
 
         }
+        #log{
+            font-family: 'Lobster', cursive;
+        }
+        #footer {
+            background-color: black;
+            width: 100%;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 15px;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
+        }
+
+        .social-buttons a::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, white, black);
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover::before {
+            transform: scale(0);
+        }
+
+        .social-buttons a i {
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover i {
+            background: linear-gradient(45deg, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(2.2);
+        }
 
     </style>
 
@@ -140,84 +192,13 @@
 
 
 <body>
-<form class="box" method="post" enctype="multipart/form-data">
-    <%
-        if (request.getAttribute("errors") != null) {
-    %>
-    <fieldset>
-        <ul>
-            <%--            // first name erero--%>
-            <%
-                if (request.getAttribute("login_error") != null) {
-            %>
-            <li>Błędna nazwa użytkownika</li>
-            <%
-                }
-            %>
-
-            <%
-                if (request.getAttribute("wrong_password") != null) {
-            %>
-            <li>Błędne Hasło</li>
-
-            <%
-                }
-            %>
-            <%--&lt;%&ndash;&ndash;%&gt; last name error--%>
-
-        </ul>
-    </fieldset>
-
-    <%
-        }
-
-    %>
-
-
-    <h2>Nowe Ogłoszenie </h2>
-    <input type="text" name="title" placeholder="tytuł">
-    <input type="text" name="price" placeholder="cena">
-    <label for="type">Rodziaj</label>
-    <select id="type" name="type">
-        <option>biznes</option>
-        <option>dla dzieci</option>
-        <option>fantastyka</option>
-        <option>historia</option>
-        <option>informatyka</option>
-        <option>komiks</option>
-        <option>kryminal</option>
-        <option>kuchnia</option>
-        <option>lektury szkolne</option>
-        <option>literatura obca</option>
-        <option>literatura polska</option>
-        <option>nauki scisle</option>
-        <option>prawo</option>
-        <option>religia</option>
-        <option>sztuka</option>
-        <option>turystyka</option>
-        <option>zdrowie</option>
-    </select>
-    <label for="selectx">Stan</label>
-    <select id="selectx" name="state">
-        <option>Nowa</option>
-        <option>Używana</option>
-    </select>
-    <h2>Opis</h2>
-    <textarea name="content" rows="6" id="textarea"
-              placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
-    <h4>Wybierz zdjęcia</h4>
-    <input type="file" name="multiPartServlet" multiple>
-    <input type="submit" name="" value="Dodaj">
-
-</form>
-
 <header>
 
 
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
         <%--        ta linijka byla do loga --%>
         <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+        <h3><a class="navbar-brand" href="#"><p id="log">changebook.com</p></a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                 aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
@@ -229,19 +210,16 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i class="fas fa-home"></i>Strona Główna</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                            class="fas fa-home"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
                 </li>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-book"></i>Bestselery</a></h3>
-                </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="#"><i class="fas fa-percent"></i>Promocje</a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i class="fas fa-money-check"></i>Ogłoszenia</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                            class="fas fa-money-check"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
                 </li>
 
 
@@ -252,18 +230,24 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link"><i class="fas fa-user"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Witaj <%=name%> ID: <%=id%>
+                            </p>
                         </a>
 
                     </li>
                 </h3>
                 <% } else { %>
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login">Zaloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                            class="fas fa-sign-in-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
                 </li>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register">Nowe Konto</a>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                            class="fas fa-child"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
                     </h3>
                 </li>
 
@@ -271,33 +255,128 @@
 
 
                 <% if (session.getAttribute("name") != null) { %>
-<%--                <li class="nav-item">--%>
-<%--                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add">Dodaj nowe--%>
-<%--                        ogłoszenie</a></h3>--%>
-<%--                </li>--%>
 
                 <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i class="fas fa-sign-out-alt"></i>Wyloguj</a></h3>
+                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                            class="fas fa-sign-out-alt"></i>
+                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
                 </li>
 
                 <% }%>
-
             </ul>
-
-            <%--            zakomentowany forumalrz do wyszukiwania--%>
-
-            <%--            <form class="form-inline">--%>
-
-            <%--                <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">--%>
-            <%--                <button class="btn btn-light" type="submit">Znajdź</button>--%>
-
-            <%--            </form>--%>
-
         </div>
 
     </nav>
 
 </header>
+<div id="container">
+    <form class="box" method="post" enctype="multipart/form-data">
+        <%
+            if (request.getAttribute("errors") != null) {
+        %>
+        <fieldset>
+            <ul>
+                <%
+                    if (request.getAttribute("price_error") != null) {
+                %>
+                <li>Błędna cena</li>
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("title_error") != null) {
+                %>
+                <li>Błędny tytuł, może zawierać maksymalnie 200 znaków!</li>
+
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("description_error") != null) {
+                %>
+                <li>Opis musi zawierać minimalnie 100 znaków!</li>
+
+                <%
+                    }
+                %>
+
+
+            </ul>
+        </fieldset>
+
+        <%
+            }
+
+        %>
+        <%
+            if (request.getAttribute("succes") != null) {
+        %>
+        <li>Udało się dodać ogłoszenie!</li>
+
+        <%
+            }
+        %>
+
+
+        <h3>Dodaj nowe ogłoszenie</h3>
+        <input type="text" name="title" placeholder="tytuł">
+        <input type="text" name="price" placeholder="cena">
+        <label for="type">Rodzaj</label>
+        <select id="type" name="type">
+            <option>biznes</option>
+            <option>dla dzieci</option>
+            <option>fantastyka</option>
+            <option>historia</option>
+            <option>informatyka</option>
+            <option>komiks</option>
+            <option>kryminal</option>
+            <option>kuchnia</option>
+            <option>lektury szkolne</option>
+            <option>literatura obca</option>
+            <option>literatura polska</option>
+            <option>nauki scisle</option>
+            <option>prawo</option>
+            <option>religia</option>
+            <option>sztuka</option>
+            <option>turystyka</option>
+            <option>zdrowie</option>
+        </select>
+        <label for="location">Lokalizacja</label>
+        <select id="location" name="location">
+            <option>Katowice</option>
+            <option>Dąbrowa Górnicza</option>
+            <option>Sosnowiec</option>
+            <option>Chorzów</option>
+        </select>
+        <label for="selectx">Stan</label>
+        <select id="selectx" name="state">
+            <option>Nowa</option>
+            <option>Używana</option>
+        </select>
+        <h3>Opis</h3>
+        <textarea name="content" rows="6" id="textarea"
+                  placeholder="Napisz kilka słów na temat swojego ogłoszenia.."></textarea>
+        <h4>Wybierz zdjęcia</h4>
+        <input type="file" name="multiPartServlet">
+        <input type="submit" name="" value="Dodaj">
+
+    </form>
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+
+    </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

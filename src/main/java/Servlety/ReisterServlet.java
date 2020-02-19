@@ -46,6 +46,28 @@ public class ReisterServlet extends HttpServlet {
             req.setAttribute("password_error", true);
             validate = false;
         }
+        String telephone = req.getParameter("telephone");
+        if (telephone.length() > 8 && telephone.length() < 11){
+            client.setTelephoneNr(telephone);
+        }else {
+            req.setAttribute("errors",true);
+            req.setAttribute("telephone_error",true);
+        }
+        String firstName = req.getParameter("firstName");
+        if (firstName.length() < 16 && firstName.length() > 2){
+            client.setFirstName(firstName);
+        }else {
+            req.setAttribute("errors",true);
+            req.setAttribute("firstName_error",true);
+        }
+        String lastName = req.getParameter("lastName");
+        if (lastName.length() < 24 && lastName.length() > 4){
+            client.setLastName(lastName);
+        }else {
+            req.setAttribute("errors",true);
+            req.setAttribute("lastName_error",true);
+        }
+
         String email = req.getParameter("email");
         Pattern pattern = Pattern.compile("(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])");
         Matcher matcher = pattern.matcher(email);

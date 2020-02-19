@@ -2,139 +2,46 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="inzynierka:war exploded" />
+      <artifact name="BooksExchange:war exploded" />
     </artifacts-to-build>
-  </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/Encje/ClientDao.java" line="16" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/my-app/src/routes/advertisement-details/index.jsx" line="7" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/my-app/src/routes/index.jsx" line="13" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/ClientOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/UserOrdersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/UserOrdersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userOrders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userOrders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Encje/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-678">
-              <caret line="458" column="60" selection-start-line="458" selection-start-column="60" selection-end-line="458" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-              <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2293#2294#0" expanded="true" />
-                <element signature="e#2319#2320#0" expanded="true" />
-                <element signature="e#2357#2358#0" expanded="true" />
-                <element signature="e#2387#2388#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#915#916#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1285#1286#0" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/LogoutServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="33" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -145,76 +52,15 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>advList</find>
-      <find>social-buttons</find>
-      <find>ł</find>
-      <find>nie masz kont</find>
-      <find>best</find>
-      <find>footer</find>
-      <find>news</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
     </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/fontello.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cssB/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/slider.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/slider.css" />
-        <option value="$PROJECT_DIR$/src/main/java/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ReisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/ClientService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/EntityDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/AdvertisementDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/ReisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/logOut.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/ClientDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adv/addAdversment.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/BeanJackson.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/my-app/src/App.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/TestJsonServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adv/adv.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/my-app/src/routes/index.jsx" />
-        <option value="$PROJECT_DIR$/src/main/webapp/my-app/src/routes/advertisement-details/index.jsx" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/UploadServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/HomeServler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/addAdv2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV2.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/upload.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/TEST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/style/style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/slider.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/sliderTEST/slider.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/sliderTEST/style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/SLIDER.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/sliderBeta/beta.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/Advertisement.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -223,131 +69,22 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-875" />
-    <option name="y" value="-8" />
-    <option name="width" value="971" />
-    <option name="height" value="517" />
-  </component>
+  <component name="ProjectId" id="1W9aFWkEC5SUA1KN3REOUiS15bS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <showExcludedFiles Scope="false" ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Encje" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlety" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="adversmentJSP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="adversmentJSP" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inzynierka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inzynierka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory&#10;repository" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/books" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -359,38 +96,29 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\sliderTEST" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\adversmentJSP" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\adversmentJSP\img" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\img" />
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\adv" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Encje" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\books" />
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\slider" />
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\sliderBeta" />
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\style" />
-      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\img" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\bookJpg" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\style" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP\img" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="JBoss 17.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 17.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/inzynierka-1.0-SNAPSHOT/" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="inzynierka:war exploded">
+        <artifact name="BooksExchange:war exploded">
           <settings />
         </artifact>
       </deployment>
@@ -398,7 +126,7 @@
         <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="SERVER_GROUP" />
         <option name="USERNAME" value="" />
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
@@ -455,9 +183,33 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="inzynierka:war exploded" />
+          <artifact name="BooksExchange:war exploded" />
         </option>
       </method>
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.14139344" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -494,300 +246,35 @@
       <workItem from="1577532783077" duration="26708000" />
       <workItem from="1577788912793" duration="36099000" />
       <workItem from="1578429363059" duration="8791000" />
-    </task>
-    <task id="LOCAL-00004" summary="v11">
-      <created>1573073200119</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1573073200119</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Sticky menu + test slider">
-      <created>1573160127435</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1573160127435</updated>
-    </task>
-    <task id="LOCAL-00006" summary="slider test">
-      <created>1573253885760</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1573253885760</updated>
-    </task>
-    <task id="LOCAL-00007" summary="slider test">
-      <created>1573253947041</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1573253947041</updated>
-    </task>
-    <task id="LOCAL-00008" summary="slider test">
-      <created>1573253971026</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1573253971026</updated>
-    </task>
-    <task id="LOCAL-00009" summary="slider test v1.1">
-      <created>1573255411901</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1573255411901</updated>
-    </task>
-    <task id="LOCAL-00010" summary="slider test v1.1">
-      <created>1573290323747</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1573290323747</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Login panel with css v1.1">
-      <created>1573305084946</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1573305084946</updated>
-    </task>
-    <task id="LOCAL-00012" summary="register panel view + register new user">
-      <created>1573308657734</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1573308657734</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add client entity">
-      <created>1573340971689</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1573340971689</updated>
-    </task>
-    <task id="LOCAL-00014" summary="reqister new client v 1.2">
-      <created>1573581781350</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1573581781350</updated>
-    </task>
-    <task id="LOCAL-00015" summary="reqister new client v 1.3 + first validation">
-      <created>1573585992825</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1573585992825</updated>
-    </task>
-    <task id="LOCAL-00016" summary="reqister new client v 1.4">
-      <created>1573587245634</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1573587245634</updated>
-    </task>
-    <task id="LOCAL-00017" summary="reqister new client v 1.5 added check email">
-      <created>1573591214563</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1573591214563</updated>
-    </task>
-    <task id="LOCAL-00018" summary="login and @ validate">
-      <created>1573664944293</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1573664944293</updated>
-    </task>
-    <task id="LOCAL-00019" summary=" login validate v1.4">
-      <created>1573665459516</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1573665459516</updated>
-    </task>
-    <task id="LOCAL-00020" summary="1.5">
-      <created>1574280977202</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1574280977202</updated>
-    </task>
-    <task id="LOCAL-00021" summary="1.5.1">
-      <created>1574281744029</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1574281744029</updated>
-    </task>
-    <task id="LOCAL-00022" summary="1.5.2">
-      <created>1574282479127</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1574282479127</updated>
-    </task>
-    <task id="LOCAL-00023" summary="1.5.3">
-      <created>1574511961797</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1574511961797</updated>
-    </task>
-    <task id="LOCAL-00024" summary="1.5.3">
-      <created>1574795064480</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1574795064480</updated>
-    </task>
-    <task id="LOCAL-00025" summary="1.5.3">
-      <created>1574799357298</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1574799357298</updated>
-    </task>
-    <task id="LOCAL-00026" summary="1.5.3">
-      <created>1574799479541</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1574799479541</updated>
-    </task>
-    <task id="LOCAL-00027" summary="1.5.3">
-      <created>1574799588198</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1574799588198</updated>
-    </task>
-    <task id="LOCAL-00028" summary="1.6 Login + validate">
-      <created>1574886688057</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1574886688057</updated>
-    </task>
-    <task id="LOCAL-00029" summary="1.6 Login + validatex2">
-      <created>1574889802498</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1574889802498</updated>
-    </task>
-    <task id="LOCAL-00030" summary="1.6 Login + validatex2">
-      <created>1574967267721</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1574967267721</updated>
-    </task>
-    <task id="LOCAL-00031" summary="1.6 Login + validatex2">
-      <created>1574969397552</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1574969397552</updated>
-    </task>
-    <task id="LOCAL-00032" summary="1.6 Login + validatex2">
-      <created>1574972443319</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1574972443319</updated>
-    </task>
-    <task id="LOCAL-00033" summary="1.8">
-      <created>1575110325303</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1575110325303</updated>
-    </task>
-    <task id="LOCAL-00034" summary="1.8">
-      <created>1575406039072</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1575406039072</updated>
-    </task>
-    <task id="LOCAL-00035" summary="1.8.1">
-      <created>1575407399617</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1575407399617</updated>
-    </task>
-    <task id="LOCAL-00036" summary="1.9 add Multipart servlet for img">
-      <created>1575829789649</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1575829789649</updated>
-    </task>
-    <task id="LOCAL-00037" summary="1.9 home get new css">
-      <created>1575840541963</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1575840541963</updated>
-    </task>
-    <task id="LOCAL-00038" summary="1.9 home get new css">
-      <created>1575928078252</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1575928078252</updated>
-    </task>
-    <task id="LOCAL-00039" summary="get bootstrap panel 2.0">
-      <created>1576010027427</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1576010027427</updated>
-    </task>
-    <task id="LOCAL-00040" summary="get first slider">
-      <created>1577734379166</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1577734379166</updated>
-    </task>
-    <task id="LOCAL-00041" summary="slider 1.1">
-      <created>1577738172414</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1577738172414</updated>
-    </task>
-    <task id="LOCAL-00042" summary="slider 1.2 + added some new font awesome icons">
-      <created>1577746364792</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1577746364792</updated>
-    </task>
-    <task id="LOCAL-00043" summary=" added some new font awesome icons 1.4">
-      <created>1577747317577</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1577747317577</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fixed some bugs">
-      <created>1577749446467</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1577749446467</updated>
-    </task>
-    <task id="LOCAL-00045" summary="fixed some bugs">
-      <created>1577753962585</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1577753962585</updated>
+      <workItem from="1578564163872" duration="13053000" />
+      <workItem from="1578590577670" duration="160000" />
+      <workItem from="1578591816559" duration="29369000" />
+      <workItem from="1578685232557" duration="9638000" />
+      <workItem from="1578739559786" duration="14076000" />
+      <workItem from="1578756419305" duration="2607000" />
+      <workItem from="1578762964706" duration="2918000" />
+      <workItem from="1578899265945" duration="25302000" />
+      <workItem from="1578947786891" duration="23859000" />
+      <workItem from="1579070021940" duration="11813000" />
+      <workItem from="1579179097211" duration="23000" />
+      <workItem from="1579291837818" duration="3489000" />
+      <workItem from="1579522566774" duration="449000" />
+      <workItem from="1579625935300" duration="1564000" />
+      <workItem from="1580034244260" duration="1662000" />
+      <workItem from="1580036843921" duration="240000" />
+      <workItem from="1580284705829" duration="656000" />
+      <workItem from="1580285850154" duration="1559000" />
+      <workItem from="1580295984000" duration="3455000" />
+      <workItem from="1580325160347" duration="414000" />
+      <workItem from="1580326114114" duration="22000" />
+      <workItem from="1580368378751" duration="10469000" />
+      <workItem from="1580455077824" duration="1399000" />
+      <workItem from="1580831832718" duration="49000" />
+      <workItem from="1580831918880" duration="635000" />
+      <workItem from="1582035819070" duration="47000" />
+      <workItem from="1582044226322" duration="1717000" />
+      <workItem from="1582046059358" duration="1148000" />
+      <workItem from="1582047634188" duration="7934000" />
     </task>
     <task id="LOCAL-00046" summary="some new books">
       <created>1577795787259</created>
@@ -838,11 +325,302 @@
       <option name="project" value="LOCAL" />
       <updated>1578511823252</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="3.4">
+      <created>1578564898562</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1578564898562</updated>
+    </task>
+    <task id="LOCAL-00054" summary="3.6">
+      <created>1578565019693</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1578565019693</updated>
+    </task>
+    <task id="LOCAL-00055" summary="3.7">
+      <created>1578572124128</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1578572124128</updated>
+    </task>
+    <task id="LOCAL-00056" summary="3.8">
+      <created>1578574315934</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1578574315934</updated>
+    </task>
+    <task id="LOCAL-00057" summary="3.8.1">
+      <created>1578574789190</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1578574789190</updated>
+    </task>
+    <task id="LOCAL-00058" summary="3.8.2">
+      <created>1578576750103</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1578576750103</updated>
+    </task>
+    <task id="LOCAL-00059" summary="3.8.2.3">
+      <created>1578577578243</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1578577578243</updated>
+    </task>
+    <task id="LOCAL-00060" summary="3.8.3">
+      <created>1578577920583</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1578577920583</updated>
+    </task>
+    <task id="LOCAL-00061" summary="4.0 slider fix + new register layout">
+      <created>1578641764241</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1578641764241</updated>
+    </task>
+    <task id="LOCAL-00062" summary="4.1 add new adv form fix(correct display on iphone 6)">
+      <created>1578645108722</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1578645108722</updated>
+    </task>
+    <task id="LOCAL-00063" summary="4.2 repair some bugs with adversment adv and add validation form">
+      <created>1578652651859</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1578652651859</updated>
+    </task>
+    <task id="LOCAL-00064" summary="4.4 added profile view">
+      <created>1578661355413</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1578661355413</updated>
+    </task>
+    <task id="LOCAL-00065" summary="profile check 1.1">
+      <created>1578662836090</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1578662836090</updated>
+    </task>
+    <task id="LOCAL-00066" summary="profile fix 1.2">
+      <created>1578666423082</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1578666423082</updated>
+    </task>
+    <task id="LOCAL-00067" summary="profile fix 1.2">
+      <created>1578688506423</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1578688506425</updated>
+    </task>
+    <task id="LOCAL-00068" summary="profile fix 1.2">
+      <created>1578693855584</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1578693855584</updated>
+    </task>
+    <task id="LOCAL-00069" summary="profile fix 1.3">
+      <created>1578694439376</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1578694439376</updated>
+    </task>
+    <task id="LOCAL-00070" summary="profile fix 1.6">
+      <created>1578744534375</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1578744534375</updated>
+    </task>
+    <task id="LOCAL-00071" summary="profile fix 1.6">
+      <created>1578754569588</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1578754569588</updated>
+    </task>
+    <task id="LOCAL-00072" summary="profile fix 2.0">
+      <created>1578764707788</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1578764707791</updated>
+    </task>
+    <task id="LOCAL-00073" summary="profile fix 2.0">
+      <created>1578914683001</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1578914683001</updated>
+    </task>
+    <task id="LOCAL-00074" summary="over 2.5">
+      <created>1578918246509</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1578918246509</updated>
+    </task>
+    <task id="LOCAL-00075" summary="over 2.6">
+      <created>1578923795994</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1578923795994</updated>
+    </task>
+    <task id="LOCAL-00076" summary="over 2.6">
+      <created>1578993614952</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1578993614952</updated>
+    </task>
+    <task id="LOCAL-00077" summary="first sigle adv view 1.0">
+      <created>1579006470406</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1579006470406</updated>
+    </task>
+    <task id="LOCAL-00078" summary="simple adv fix 1.2">
+      <created>1579010008840</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1579010008840</updated>
+    </task>
+    <task id="LOCAL-00079" summary="simple adv fix 1.2">
+      <created>1579010448650</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1579010448650</updated>
+    </task>
+    <task id="LOCAL-00080" summary="final">
+      <created>1579082886288</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1579082886288</updated>
+    </task>
+    <task id="LOCAL-00081" summary="final">
+      <created>1579343274667</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1579343274668</updated>
+    </task>
+    <task id="LOCAL-00082" summary="final">
+      <created>1579625986618</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1579625986618</updated>
+    </task>
+    <task id="LOCAL-00083" summary="final">
+      <created>1579626111403</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1579626111403</updated>
+    </task>
+    <task id="LOCAL-00084" summary="final">
+      <created>1579626168685</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1579626168686</updated>
+    </task>
+    <task id="LOCAL-00085" summary="test to trigger jenkins">
+      <created>1580304342772</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1580304342774</updated>
+    </task>
+    <task id="LOCAL-00086" summary="test to trigger jenkins">
+      <created>1580304500299</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1580304500300</updated>
+    </task>
+    <task id="LOCAL-00087" summary="test to trigger jenkins">
+      <created>1580304763464</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1580304763464</updated>
+    </task>
+    <task id="LOCAL-00088" summary="test to trigger jenkins">
+      <created>1580375985710</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1580375985710</updated>
+    </task>
+    <task id="LOCAL-00089" summary="test to trigger jenkins">
+      <created>1580377947206</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1580377947206</updated>
+    </task>
+    <task id="LOCAL-00090" summary="test to trigger jenkins">
+      <created>1580377972768</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1580377972768</updated>
+    </task>
+    <task id="LOCAL-00091" summary="test to trigger jenkins">
+      <created>1580387539301</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1580387539301</updated>
+    </task>
+    <task id="LOCAL-00092" summary="test to trigger jenkins">
+      <created>1580395496695</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1580395496695</updated>
+    </task>
+    <task id="LOCAL-00093" summary="test to trigger jenkins">
+      <created>1582049633538</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1582049633541</updated>
+    </task>
+    <task id="LOCAL-00094" summary="test to trigger jenkins">
+      <created>1582051385043</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1582051385043</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,548 +631,322 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-1368" y="-8" width="1376" height="744" extended-state="6" />
-    <layout>
-      <window_info id="Project" order="0" visible="true" weight="0.2112462" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" weight="0.32936078" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30114567" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27410617" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Key Promoter X" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
-      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.32978722" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.14818764" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Persistence" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33152762" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27410617" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Key Promoter X" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
-      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.32978722" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reqister new client v 1.5 added check email" />
-    <MESSAGE value="login and @ validate" />
-    <MESSAGE value=" login validate v1.4" />
-    <MESSAGE value="1.5" />
-    <MESSAGE value="1.5.1" />
-    <MESSAGE value="1.5.2" />
-    <MESSAGE value="1.5.3" />
-    <MESSAGE value="1.6 Login + validate" />
-    <MESSAGE value="1.6 Login + validatex2" />
-    <MESSAGE value="1.8" />
-    <MESSAGE value="1.8.1" />
-    <MESSAGE value="1.9 add Multipart servlet for img" />
-    <MESSAGE value="1.9 home get new css" />
-    <MESSAGE value="get bootstrap panel 2.0" />
-    <MESSAGE value="get first slider" />
-    <MESSAGE value="slider 1.1" />
-    <MESSAGE value="slider 1.2 + added some new font awesome icons" />
-    <MESSAGE value=" added some new font awesome icons 1.4" />
-    <MESSAGE value="fixed some bugs" />
-    <MESSAGE value="some new books" />
-    <MESSAGE value="3.0 final" />
-    <MESSAGE value="3.1 final" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/main/java" />
+    </ignored-roots>
     <MESSAGE value="3.2 final" />
     <MESSAGE value="3.3" />
     <MESSAGE value="3.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.4" />
+    <MESSAGE value="3.6" />
+    <MESSAGE value="3.7" />
+    <MESSAGE value="3.8" />
+    <MESSAGE value="3.8.1" />
+    <MESSAGE value="3.8.2" />
+    <MESSAGE value="3.8.2.3" />
+    <MESSAGE value="3.8.3" />
+    <MESSAGE value="4.0 slider fix + new register layout" />
+    <MESSAGE value="4.1 add new adv form fix(correct display on iphone 6)" />
+    <MESSAGE value="4.2 repair some bugs with adversment adv and add validation form" />
+    <MESSAGE value="4.4 added profile view" />
+    <MESSAGE value="profile check 1.1" />
+    <MESSAGE value="profile fix 1.2" />
+    <MESSAGE value="profile fix 1.3" />
+    <MESSAGE value="profile fix 1.6" />
+    <MESSAGE value="profile fix 2.0" />
+    <MESSAGE value="over 2.5" />
+    <MESSAGE value="over 2.6" />
+    <MESSAGE value="first sigle adv view 1.0" />
+    <MESSAGE value="simple adv fix 1.2" />
+    <MESSAGE value="final" />
+    <MESSAGE value="test to trigger jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="test to trigger jenkins" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="166" key="#JBoss_17.0.1.Final" timestamp="1578565504498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="166" key="#JBoss_17.0.1.Final/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565504498" />
+    <state x="552" y="179" key="#JBoss_Server" timestamp="1578565755475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#JBoss_Server/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565755475" />
+    <state x="2472" y="179" key="#Notifications" timestamp="1578652571418">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="179" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578652571418" />
+    <state x="552" y="179" key="#Schemas_and_DTDs" timestamp="1578565751614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Schemas_and_DTDs/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565751614" />
+    <state x="331" y="137" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582048073644">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="414" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580387529094" />
+    <state x="331" y="137" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582048073644" />
+    <state x="414" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580285902566" />
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578578078254" />
+    <state x="612" y="182" key="#com.intellij.ide.util.MemberChooser" timestamp="1582057597219">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579080931008" />
+    <state x="612" y="182" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582057597219" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578922116177" />
+    <state x="2685" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579075460931" />
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578564459280">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564459280" />
+    <state x="468" y="140" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1578590619490">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="140" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1578590619490" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578917296832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578917296832" />
+    <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate" timestamp="1578996180473">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="200" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1578765906290" />
+    <state x="2635" y="224" width="630" height="592" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578996180473" />
+    <state x="433" y="16" key="CommitChangelistDialog2" timestamp="1582051383185">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="541" y="20" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580395494823" />
+    <state x="541" y="115" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579082883811" />
+    <state x="433" y="16" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582051383185" />
+    <state x="541" y="20" key="CommitChangelistDialog2/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580304761964" />
+    <state x="541" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578923793115" />
+    <state x="2461" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579011192514" />
+    <state x="740" y="263" key="FileChooserDialogImpl" timestamp="1580285060325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="263" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580285060325" />
+    <state x="592" y="208" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1579626080434" />
+    <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578565741205" />
+    <state width="1586" height="267" key="GridCell.Tab.0.bottom" timestamp="1582100161541">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1586" height="267" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@-1920.0.1920.1040" timestamp="1582100161541" />
+    <state width="1586" height="545" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580473207569" />
+    <state width="1586" height="170" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579504015696" />
+    <state width="1256" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582057813562" />
+    <state width="1586" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580286611981" />
+    <state width="1586" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129887" />
+    <state width="1586" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579078835029" />
+    <state width="1586" height="267" key="GridCell.Tab.0.center" timestamp="1582100161541">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1586" height="267" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@-1920.0.1920.1040" timestamp="1582100161541" />
+    <state width="1586" height="545" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580473207569" />
+    <state width="1586" height="170" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579504015696" />
+    <state width="1256" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582057813562" />
+    <state width="1586" height="361" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580286611981" />
+    <state width="1586" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129887" />
+    <state width="1586" height="345" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579078835029" />
+    <state width="1586" height="267" key="GridCell.Tab.0.left" timestamp="1582100161541">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1586" height="267" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@-1920.0.1920.1040" timestamp="1582100161541" />
+    <state width="1586" height="545" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580473207569" />
+    <state width="1586" height="170" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579504015696" />
+    <state width="1256" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582057813562" />
+    <state width="1586" height="361" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580286611981" />
+    <state width="1586" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129887" />
+    <state width="1586" height="345" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579078835029" />
+    <state width="1586" height="267" key="GridCell.Tab.0.right" timestamp="1582100161541">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1586" height="267" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@-1920.0.1920.1040" timestamp="1582100161541" />
+    <state width="1586" height="545" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580473207569" />
+    <state width="1586" height="170" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579504015696" />
+    <state width="1256" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582057813562" />
+    <state width="1586" height="361" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580286611981" />
+    <state width="1586" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129887" />
+    <state width="1586" height="345" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579078835029" />
+    <state width="1243" height="267" key="GridCell.Tab.1.bottom" timestamp="1582057002170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1243" height="267" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582057002170" />
+    <state width="1586" height="205" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129903" />
+    <state width="1586" height="251" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578992066108" />
+    <state width="1243" height="267" key="GridCell.Tab.1.center" timestamp="1582057002170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1243" height="267" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582057002170" />
+    <state width="1586" height="205" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129903" />
+    <state width="1586" height="251" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578992066108" />
+    <state width="1243" height="267" key="GridCell.Tab.1.left" timestamp="1582057002170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1243" height="267" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582057002170" />
+    <state width="1586" height="205" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129903" />
+    <state width="1586" height="251" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578992066108" />
+    <state width="1243" height="267" key="GridCell.Tab.1.right" timestamp="1582057002170">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1243" height="267" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582057002170" />
+    <state width="1586" height="205" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578924129903" />
+    <state width="1586" height="251" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578992066108" />
+    <state x="369" y="112" key="SettingsEditor" timestamp="1579626088068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="369" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579626088068" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578564218533" />
+    <state x="442" y="201" key="Vcs.Push.Dialog.v2" timestamp="1582051388736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="553" y="254" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1580395502886" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1579082888295" />
+    <state x="442" y="201" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582051388736" />
+    <state x="553" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580304764904" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578923813892" />
+    <state x="2472" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579010457290" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582044229890">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="581" y="300" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1582035819129" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582044229890" />
+    <state x="581" y="300" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-3840.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580831920645" />
+    <state x="581" y="300" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1536.824/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579179098839" />
+    <state x="581" y="300" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578899264719" />
+    <state x="2501" y="300" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579070020277" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579522622959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1579522622959" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578574599471" />
+    <state x="2689" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578647311375" />
+    <state x="2442" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578998031046">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="522" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578919460769" />
+    <state x="2442" y="257" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578998031046" />
+    <state x="690" y="287" key="extract.method.dialog" timestamp="1578908745159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="287" key="extract.method.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578908745159" />
+    <state x="2496" y="13" width="764" height="1015" key="find.popup" timestamp="1579073112596">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="462" y="10" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1578693434335" />
+    <state x="578" y="13" width="764" height="1015" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578917113820" />
+    <state x="2496" y="13" width="764" height="1015" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579073112596" />
+    <state x="274" y="33" key="new project wizard" timestamp="1580326135934">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="342" y="141" key="new project wizard/-1920.0.1920.1040/0.0.1920.1040/-3840.0.1536.824@0.0.1920.1040" timestamp="1579523011793" />
+    <state x="274" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580326135934" />
+    <state x="702" y="140" key="refactoring.ChangeSignatureDialog" timestamp="1578922208732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578922208732" />
+    <state x="2622" y="140" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578901620888" />
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1582049761325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582049761325" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578917062873" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578639899910" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Servlety/UploadServlet.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="1" />
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/ReisterServlet.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/UpdateProfileServlet.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/userAdversment.jsp</url>
+          <line>555</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/userAdversment.jsp</url>
+          <line>550</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Servlety/TEST.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/ReisterServlet.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/singleBookView.jsp</url>
+          <line>172</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/userAdversment.jsp</url>
+          <line>568</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
+          <line>19</line>
+          <properties field="clientDao" class="Servlety.LoginServlet" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/inzynierka$JBoss_17_0_1_Final.ic" NAME="JBoss 17.0.1.Final Coverage Results" MODIFIED="1575810486326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateCodeFragment">
-      <expression>
-        <expression-string>String uploadPath = getServletContext().getRealPath(&quot;&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>session.setAttribute(&quot;name&quot;,client.getLogin());</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>session.setAttribute(&quot;name&quot;,client.getLogin())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>session.setAttribute(&quot;user&quot;,clientID);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>session.setAttribute(&quot;user&quot;,userId);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>boolean isMultipart = ServletFileUpload.isMultipartContent(request);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>boolean isMultipart = ServletFileUpload.isMultipartContent(request)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/EntityDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ClientDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/HomeServler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/logOut.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/addAdv2.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv2.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV2.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/servlet/http/Part.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/AdvertisementDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/JBossLogManagerLogger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#645#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="1305" selection-start-line="1305" selection-end-line="1305" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/DelegatingBasicLogger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="272" column="60" lean-forward="true" selection-start-line="272" selection-start-column="60" selection-end-line="272" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/servlet/ServletContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/abc.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/bck1.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/login.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/index.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/lib1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/logo.jpg" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/WinNTFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding>
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/FileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UploadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sliderTEST/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sliderTEST/slider.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/TEST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/ReisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/SLIDER.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sliderBeta/beta.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/addAdv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="n#select#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/TestJsonServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#li#0;n#h3#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#4;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#5;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#7;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="222" column="94" selection-start-line="222" selection-start-column="94" selection-end-line="222" selection-end-column="94" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#5;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#6;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#a#0;n#h3#0;n#li#7;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/abc.jpg" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="1307" column="19" selection-start-line="1307" selection-start-column="19" selection-end-line="1307" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-678">
-          <caret line="458" column="60" selection-start-line="458" selection-start-column="60" selection-end-line="458" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2293#2294#0" expanded="true" />
-            <element signature="e#2319#2320#0" expanded="true" />
-            <element signature="e#2357#2358#0" expanded="true" />
-            <element signature="e#2387#2388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

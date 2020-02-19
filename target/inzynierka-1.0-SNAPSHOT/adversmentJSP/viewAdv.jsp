@@ -26,8 +26,16 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
 
     <style>
+        @font-face {
+            font-family: "xd";
+            src: url("font/HKGrotesk-Regular.otf");
+        }
+        *{
+            font-family: xd;
+        }
+
         body {
-            background-image: url("adversmentJSP/img/lib1.jpg");
+            background-image: url("img/index.jpg");
             background-size: inherit;
             font-family: 'Lobster', cursive;
         }
@@ -35,37 +43,102 @@
         #container {
             display: flex;
             width: 100%;
-            flex-wrap: wrap;
-            justify-content: center;
+            height: 100%;
             flex-direction: column;
             align-items: center;
         }
 
-        .jpg {
-            min-width: 160px;
-            height: 100%;
-            border: black 2px solid;
-        }
-        .jpg img{
-            height: auto;
-            width: 165px;
+        .box {
+            display: flex;
+            min-height: 230px ;
+            justify-content: space-between;
+            color: white;
+            border: #1d2124 2px solid;
+            padding: 2px;
+            margin-top: 2px;
         }
 
-        .info {
+        #photo img {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        #info {
             display: flex;
             flex-direction: column;
-            border: black 2px solid;
         }
 
-        .title {
-            font-size: 40px;
-            align-items: center;
-            flex-direction: column;
-            border: black 2px solid;
+        .element {
+            border: white 2px solid;
+            margin: 1px;
+            word-break: break-all;
+            padding: 10px;
         }
-        .element{
+
+        .element a{
+            text-decoration: none;
+            color: #eaff9b ;
+        }
+        .element a:visited{
+            color: white;
+        }
+        #news{
+            align-self: flex-start;
+            color: white;
+        }
+        #footer {
+            background-color: black;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
             font-size: 20px;
-            border: black 2px solid;
+            margin-top: 40px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .social-buttons a {
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 15px;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 8px;
+        }
+
+        .social-buttons a::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, white, black);
+            border-radius: 50%;
+            z-index: -1;
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover::before {
+            transform: scale(0);
+        }
+
+        .social-buttons a i {
+            transition: 0.3s ease-in;
+        }
+
+        .social-buttons a:hover i {
+            background: linear-gradient(45deg, black, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(2.2);
+        }
+        #logo1{
+            font-family: 'Lobster', cursive;
         }
 
     </style>
@@ -77,14 +150,14 @@
     <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
         <%--        ta linijka byla do loga --%>
         <%--        <img src="img/logo.png" width="30" height="30"class="d-inline-block mr-1 align-bottom" alt="">--%>
-        <h3><a class="navbar-brand" href="#">changebook.com</a></h3>
+        <h3><a class="navbar-brand" href="#" ><p id="logo1">changebook.com</p></a></h3>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
                 aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="mainmenu">
+
 
             <ul class="navbar-nav mr-auto">
 
@@ -100,7 +173,7 @@
                             String name = session.getAttribute("name").toString();
                             String id = session.getAttribute("user").toString();
                         %>
-                        <a class="nav-link"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
+                        <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i class="fas fa-user"></i>Witaj <%=name%> ID: <%=id%>
                         </a>
 
                     </li>
@@ -135,40 +208,58 @@
                 <% }%>
 
             </ul>
-
-            <%--            zakomentowany forumalrz do wyszukiwania--%>
-
-            <%--            <form class="form-inline">--%>
-
-            <%--                <input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">--%>
-            <%--                <button class="btn btn-light" type="submit">Znajdź</button>--%>
-
-            <%--            </form>--%>
-
         </div>
 
     </nav>
 
 </header>
 <div id="container">
-    <div class="container"><h1>Aktualne ogłoszenia</h1></div>
-    <c:forEach items="${advList}" var="element">
-        <div class="jpg"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
-        <div class="info">
-            <div class="title"></div>
-            <div class="element">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-            </div>
+    <div id="news"><h2>Najnowsze Ogłoszenia :</h2></div>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 30px;
+            grid-auto-rows: 1fr;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .grid-container__element {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+    <ul class="grid-container">
+        <c:forEach items="${advList}" var="element">
+            <li class="box grid-container__element">
+                <div id="photo"><img src="adversmentJSP/img/<c:out value="${element.id}"></c:out>.jpg"></div>
+                <div id="info">
+                    <div class="element"><c:out value="${element.title}"></c:out></div>
+                    <div class="element"><c:out value="${element.price}"></c:out>zł</div>
+                    <div class="element"><c:out value="${element.location}"></c:out></div>
+                    <div class="element"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adversment?id=<c:out value="${element.id}"></c:out>">Sprawdź Szczegóły</a></div>
+                </div>
+            </li>
+        </c:forEach>
+    </ul>
+
+
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
 
 
-    </c:forEach>
+    </div>
 
 </div>
-
 
 <%--obsluga panelu gornego --%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

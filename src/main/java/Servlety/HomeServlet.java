@@ -13,8 +13,8 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
-        requestDispatcher.forward(req,resp);
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
+            requestDispatcher.forward(req,resp);
     }
 
 
