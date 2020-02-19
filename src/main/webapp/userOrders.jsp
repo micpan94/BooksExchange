@@ -2,7 +2,9 @@
 <%@ page import="Encje.Client" %>
 <%@ page import="Encje.Advertisement" %>
 <%@ page import="java.util.Set" %>
-<%@ page import="java.util.Collection" %><%--
+<%@ page import="java.util.Collection" %>
+<%@ page import="Encje.Order" %>
+<%@ page import="Encje.ClientOrder" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
   Date: 1/11/2020
@@ -548,15 +550,15 @@
 
 
     <div class="contact-form">
-        <h1>Twoje ogłoszenia</h1>
-        <% Collection<Advertisement> clientAdvList = (Collection<Advertisement>) request.getAttribute("ClientAdvList");
-            if (clientAdvList.size() > 0) {
+        <h1>Twoje zamówienia</h1>
+        <% Collection<ClientOrder> clientOrders = (Collection<ClientOrder>) request.getAttribute("clientOrders");
+            if (clientOrders.size() > 0) {
         %>
 
-        <c:forEach items="${ClientAdvList}" var="element">
+        <c:forEach items="${clientOrders}" var="element">
             <div class="txtb">
 
-                <p><c:out value="${element.title}"></c:out> <span class="inx"></span>
+                <p><c:out value="${element.id}"></c:out> <span class="inx"></span>
                     <button class="button"><a
                             href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/delete?id=${element.id}">usuń</a>
                     </button>

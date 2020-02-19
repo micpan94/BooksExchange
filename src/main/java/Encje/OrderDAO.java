@@ -7,19 +7,19 @@ import java.util.Collection;
 import java.util.HashSet;
 
 @ApplicationScoped
-public class OrderDAO extends EntityDao<Order> {
+public class OrderDAO extends EntityDao<ClientOrder> {
     public OrderDAO(){
-        super(Order.class);
+        super(ClientOrder.class);
     }
     @Inject
     private ClientDao clientDao;
 
-    public Collection<Order> getAllOrdersByClientID(Integer id){
-        Collection<Order> orders = new HashSet<>();
-        Collection<Order> allOrders = findAll();
+    public Collection<ClientOrder> getAllOrdersByClientID(Integer id){
+        Collection<ClientOrder> orders = new HashSet<>();
+        Collection<ClientOrder> allOrders = findAll();
         Client clientId = clientDao.findById(id);
 
-        for (Order element : allOrders){
+        for (ClientOrder element : allOrders){
             if (element.getClient() == clientId){
                 orders.add(element);
             }

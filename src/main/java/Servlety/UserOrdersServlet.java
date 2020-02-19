@@ -2,7 +2,7 @@ package Servlety;
 
 import Encje.Client;
 import Encje.ClientDao;
-import Encje.Order;
+import Encje.ClientOrder;
 import Encje.OrderDAO;
 
 import javax.inject.Inject;
@@ -29,7 +29,7 @@ public class UserOrdersServlet extends HttpServlet {
         Client client = (Client) session.getAttribute("client");
 
         if (client != null) {
-            Collection<Order> allOrdersByClientID = orderDAO.getAllOrdersByClientID(client.getId());
+            Collection<ClientOrder> allOrdersByClientID = orderDAO.getAllOrdersByClientID(client.getId());
             req.setAttribute("ClientOrders",allOrdersByClientID);
 
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("userOrders.jsp");

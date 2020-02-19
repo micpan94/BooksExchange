@@ -20,9 +20,9 @@ public class Client{
     private Set<Advertisement> advertisementSet;
 
     @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
-    private Set<Order> orders;
+    private Set<ClientOrder> orders;
 
-    public Client(String firstName,String login, String password, String email, String telephoneNr, String location, String lastName, Set<Advertisement> advertisementSet,Set<Order> orders) {
+    public Client(String firstName,String login, String password, String email, String telephoneNr, String location, String lastName, Set<Advertisement> advertisementSet,Set<ClientOrder> orders) {
         this.login = login;
         this.password = password;
         this.email = email;
@@ -57,11 +57,11 @@ public class Client{
         return advertisementSet;
     }
 
-    public Set<Order> getOrders() {
+    public Set<ClientOrder> getOrders() {
         return orders;
     }
 
-    public void setOrders(Set<Order> orders) {
+    public void setOrders(Set<ClientOrder> orders) {
         this.orders = orders;
     }
 

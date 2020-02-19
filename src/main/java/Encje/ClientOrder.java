@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class Order  {
+public class ClientOrder  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -12,8 +12,12 @@ public class Order  {
     private Client client;
     private Integer totalPrice;
 
-    public Order(){}
-
+    public ClientOrder() {
+    }
+        public ClientOrder(Client client,Integer totalPrice){
+            this.client = client;
+            this.totalPrice = totalPrice;
+        }
 
     public Integer getId() {
         return id;
@@ -29,5 +33,13 @@ public class Order  {
 
     public void setClient(Client client) {
         this.client = client;
+    }
+
+    public Integer getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(Integer totalPrice) {
+        this.totalPrice = totalPrice;
     }
 }
