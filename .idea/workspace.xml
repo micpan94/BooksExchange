@@ -7,131 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Encje/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/userOrders.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Encje/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/ClientOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/ShoppingCardDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/UserOrdersServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/2092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/2093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/2094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/3056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/3057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/3058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/index.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/lib1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookJpg/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/BeanJackson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/DeleteAdvServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/DeleteAdvServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/ProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/ReisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/ReisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/TestJsonServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/UpdateProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/UpdateProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/UploadServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/UserAdversmentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/UserAdversmentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/BeanJackson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/ClientDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/DeleteAdvServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/DeleteAdvServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ReisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ReisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/TestJsonServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UpdateProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UpdateProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UploadServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UserAdversmentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UserAdversmentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2088.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2091.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2093.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/2094.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/3003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/3056.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/3057.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/3058.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/abc1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/index.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/lib1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/bookJpg/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/my-app/src/routes/advertisement-details/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/my-app/src/routes/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/slider/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/slider/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/upload.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,97 +37,134 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ClientDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/img/index.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/userOrders.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/BookDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserAdversmentServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Order.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#2570#2571#0" expanded="true" />
+                    <element signature="e#2601#2602#0" expanded="true" />
+                    <element signature="e#2653#2654#0" expanded="true" />
+                    <element signature="e#2693#2694#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#132#133#0" expanded="true" />
+                    <element signature="e#155#156#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/EntityDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ClientDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#229#230#0" expanded="true" />
+                    <element signature="e#264#265#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/BookDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Book.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -268,10 +186,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/UserOrdersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userOrders.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Encje/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Encje/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java" />
       </list>
     </option>
   </component>
@@ -399,22 +322,22 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\bookJpg" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\style" />
+      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Encje" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\sliderTEST" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\adversmentJSP" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\adversmentJSP\img" />
       <recent name="C:\Users\PanczoPC\IdeaProjects\inzynierka\src\main\webapp\img" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Encje" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp" />
-      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\bookJpg" />
-      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\style" />
-      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP" />
-      <recent name="C:\Users\michal.pankiewicz\IdeaProjects\BooksExchange\src\main\webapp\adversmentJSP\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -592,13 +515,6 @@
       <workItem from="1582044226322" duration="1717000" />
       <workItem from="1582046059358" duration="1148000" />
       <workItem from="1582047634188" duration="7934000" />
-    </task>
-    <task id="LOCAL-00048" summary="3.1 final">
-      <created>1577800246337</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1577800246337</updated>
     </task>
     <task id="LOCAL-00049" summary="3.2 final">
       <created>1577802014988</created>
@@ -936,11 +852,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582138700141</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="test to trigger jenkins">
+      <created>1582142154893</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1582142154893</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3375000" />
+    <option name="totallyTimeSpent" value="5675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,8 +876,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.21162046" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.17004265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -1356,6 +1280,12 @@
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/index.jsp</url>
+          <line>507</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java</url>
           <line>19</line>
@@ -1383,13 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ShoppingCardDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1411,31 +1334,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userOrders.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/BookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserOrdersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1446,30 +1348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ClientDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/img/index.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1477,6 +1355,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userAdversment.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userOrders.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="568" column="13" lean-forward="true" selection-start-line="568" selection-start-column="13" selection-end-line="568" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="468" column="6" selection-start-line="468" selection-start-column="6" selection-end-line="468" selection-end-column="6" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/EntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserAdversmentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ClientDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2570#2571#0" expanded="true" />
+            <element signature="e#2601#2602#0" expanded="true" />
+            <element signature="e#2653#2654#0" expanded="true" />
+            <element signature="e#2693#2694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
