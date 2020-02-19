@@ -19,10 +19,7 @@ public class Client{
     @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
     private Set<Advertisement> advertisementSet;
 
-    @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
-    private Set<ClientOrder> orders;
-
-    public Client(String firstName,String login, String password, String email, String telephoneNr, String location, String lastName, Set<Advertisement> advertisementSet,Set<ClientOrder> orders) {
+    public Client(String firstName,String login, String password, String email, String telephoneNr, String location, String lastName, Set<Advertisement> advertisementSet) {
         this.login = login;
         this.password = password;
         this.email = email;
@@ -31,7 +28,7 @@ public class Client{
         this.lastName = lastName;
         this.firstName = firstName;
         this.advertisementSet = advertisementSet;
-        this.orders = orders;
+
     }
 
     public Client(){}
@@ -57,13 +54,6 @@ public class Client{
         return advertisementSet;
     }
 
-    public Set<ClientOrder> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(Set<ClientOrder> orders) {
-        this.orders = orders;
-    }
 
     public void setAdvertisementSet(Set<Advertisement> advertisementSet) {
         this.advertisementSet = advertisementSet;
