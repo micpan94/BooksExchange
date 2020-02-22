@@ -10,7 +10,7 @@ public class ShoppingCard {
     private int id;
     @OneToOne
     private Client client;
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Book> books;
 
     public ShoppingCard() {

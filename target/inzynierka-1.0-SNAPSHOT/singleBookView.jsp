@@ -296,11 +296,20 @@
         </div>
 
 <%--        button do dodawania --%>
-        <div class="btn">Dodaj do koszyka</div>
-
+        <div class="btn">
+            <form action="" method="post">
+                <%
+                request.setAttribute("bookID",book.getId());
+                %>
+                <input type="submit" name="bookID" value="Dodaj do koszyka"/>
+            </form>
+        </div>
 
 
     </div>
+    <br>
+    <br>
+    <br>
 
     <div id="footer">
         <div class="social-buttons">

@@ -20,7 +20,9 @@ public class test extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        Book book = new Book("Teraz albo nigdy","Szymon Hołowania","Znak","2019",25,"biznes",null);
+        Book book = new Book("Teraz albo nigdy","Szymon Hołowania","Znak","2019",25,"biznes");
+        Book book1 = new Book("Ojciec Chrzestny","Mario Puzo","Albatros","2019",23,"Kryminał");
         bookDao.save(book);
+        bookDao.save(book1);
     }
 }

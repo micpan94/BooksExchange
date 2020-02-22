@@ -24,7 +24,7 @@ public class DeleteAdvServlet extends HttpServlet {
             Integer number = Integer.valueOf(nr);
             Advertisement advertisement = advertisementDAO.findById(number);
             advertisementDAO.delete(advertisement);
-            req.getRequestDispatcher("/advlist").forward(req,resp);
+
         }catch (Exception e){
             req.getRequestDispatcher("/home").forward(req,resp);
         }

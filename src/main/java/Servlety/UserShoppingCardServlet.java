@@ -42,4 +42,9 @@ public class UserShoppingCardServlet extends HttpServlet {
             resp.getWriter().print("złapałem exepszjona : " + e);
         }
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req,resp);
+    }
 }

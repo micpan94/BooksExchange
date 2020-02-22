@@ -555,12 +555,12 @@
             List<Book> items = (List<Book>) request.getAttribute("booksFromCard");
             if (items.size() > 0){
         %>
-        <c:forEach items="${items}" var="element">
+        <c:forEach items="${booksFromCard}" var="element">
             <div class="txtb">
 
                 <p><c:out value="${element.title}"></c:out> <span class="inx"></span>
                     <button class="button"><a
-                            href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/delete?id=${element.id}">usuń</a>
+                            href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/deleteItem?id=${element.id}">usuń</a>
                     </button>
                 </p>
             </div>

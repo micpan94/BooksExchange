@@ -2,8 +2,7 @@ package Encje;
 
 
 import javax.persistence.*;
-import java.util.List;
-import java.util.Set;
+
 
 @Entity
 public class Book  {
@@ -16,21 +15,18 @@ public class Book  {
     private String firstRelease;
     private Integer price;
     private String type;
-    @ManyToMany
-    private List<ShoppingCard> shoppingCard;
 
 
     public Book() {
     }
 
-    public Book(String title, String author, String publishingHouse, String firstRelease, Integer price, String type, List<ShoppingCard> shoppingCard) {
+    public Book(String title, String author, String publishingHouse, String firstRelease, Integer price, String type) {
         this.title = title;
         this.author = author;
         this.publishingHouse = publishingHouse;
         this.firstRelease = firstRelease;
         this.price = price;
         this.type = type;
-        this.shoppingCard = shoppingCard;
     }
 
     public int getId() {
@@ -90,13 +86,6 @@ public class Book  {
     }
 
 
-    public List<ShoppingCard> getShoppingCard() {
-        return shoppingCard;
-    }
-
-    public void setShoppingCard(List<ShoppingCard> shoppingCard) {
-        this.shoppingCard = shoppingCard;
-    }
 
     @Override
     public String toString() {
