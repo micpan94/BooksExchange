@@ -503,7 +503,7 @@
 
 <div class="boxWrrapper">
     <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=1" class="box"><img src="books/holownia.jpg">49zł</a>
-    <div class="box"><img src="books/puzo.jpg">59zł</div>
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=2" class="box"><img src="books/puzo.jpg">39zł</a>
     <div class="box"><img src="books/tusk.jpg">29zł</div>
     <div class="box"><img src="books/witcher.jpg">89zł</div>
 

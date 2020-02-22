@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlety/DeleteFromCardServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/ShopppingCardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/ShopppingCardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Encje/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/Advertisement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Encje/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Servlety/SingleBookViewServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/SingleBookViewServlet.class" afterDir="false" />
@@ -110,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="554" column="79" selection-start-line="554" selection-start-column="66" selection-end-line="554" selection-end-column="79" />
+            <state relative-caret-position="435">
+              <caret line="565" column="18" lean-forward="true" selection-start-line="565" selection-start-column="18" selection-end-line="565" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -538,14 +528,7 @@
       <workItem from="1582046059358" duration="1148000" />
       <workItem from="1582047634188" duration="7934000" />
       <workItem from="1582316664655" duration="2280000" />
-      <workItem from="1582364744965" duration="27574000" />
-    </task>
-    <task id="LOCAL-00053" summary="3.4">
-      <created>1578564898562</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1578564898562</updated>
+      <workItem from="1582364744965" duration="28059000" />
     </task>
     <task id="LOCAL-00054" summary="3.6">
       <created>1578565019693</created>
@@ -883,11 +866,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582379150572</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="x">
+      <created>1582396152223</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1582396152223</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36737000" />
+    <option name="totallyTimeSpent" value="37222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -902,7 +892,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -913,8 +903,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2340195" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27410617" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2340195" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27410617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -1648,8 +1638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="554" column="79" selection-start-line="554" selection-start-column="66" selection-end-line="554" selection-end-column="79" />
+        <state relative-caret-position="435">
+          <caret line="565" column="18" lean-forward="true" selection-start-line="565" selection-start-column="18" selection-end-line="565" selection-end-column="18" />
         </state>
       </provider>
     </entry>
