@@ -1,14 +1,18 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="Encje.Client" %>
-<%@ page import="Encje.ClientDao" %><%--
+<%@ page import="Encje.Advertisement" %>
+<%@ page import="java.util.Set" %>
+<%@ page import="java.util.Collection" %><%--
   Created by IntelliJ IDEA.
-  User: PanczoPC
-  Date: 05.11.2019
-  Time: 19:53
+  User: Michal.Pankiewicz
+  Date: 1/11/2020
+  Time: 6:33 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <title>Twoje zamówienia</title>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -16,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1c89e44ac5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <title>Najlepsze ksiązki na miejscu</title>
     <link rel="stylesheet" href="bootstrapCSS/bootstrap.min.css">
     <link rel="stylesheet" href="cssB/main.css">
     <%--    // od stopki--%>
@@ -24,15 +27,16 @@
     <%--    <link rel="stylesheet" href="style/style.css">--%>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
 
-
     <style>
         @font-face {
             font-family: "xd";
             src: url("font/HKGrotesk-Regular.otf");
         }
-        *{
+
+        * {
             font-family: xd;
         }
+
         html, body {
             background-image: url("img/index.jpg");
             background-size: cover;
@@ -77,6 +81,11 @@
             text-shadow: black 0.1em 0.1em 0.2em;
             text-align: left;
             overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
         }
 
         #bestsellers {
@@ -227,17 +236,17 @@
         }
 
         #footer {
-              background-color: black;
-              position: fixed;
-              bottom: 0;
-              width: 100%;
-             display: block;
-              color: white;
-              opacity: 60%;
-              text-align: center;
-              font-size: 20px;
-              margin-top: 40px;
-          }
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: block;
+            color: white;
+            opacity: 60%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 40px;
+        }
 
         .social-buttons a {
             display: inline-flex;
@@ -291,18 +300,6 @@
             color: white;
             text-shadow: black 0.1em 0.1em 0.2em;
 
-        }
-
-        .boxWrrapper a {
-            display: block;
-            text-decoration: none;
-            color: white;
-
-        }
-        .boxWrrapper a:visited,
-        .boxWrrapper a:hover{
-            color: #eaff9b;
-            outline: none;
         }
 
         .boxWrrapper1 {
@@ -364,192 +361,227 @@
             }
         }
 
-
-    </style>
-
-    <style>
-        @media (min-width: 415px) {
-            slider {
-                height: 80px;
-            }
-        }
-        .ideal{
+        .ideal {
             font-family: 'Lobster', cursive;
         }
 
+        header {
+            align-self: flex-start;
+        }
+
+        .contact-form {
+            width: 85%;
+            max-width: 600px;
+            background: black;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            opacity: 80%;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat", sans-serif;
+            align-self: center;
+            word-wrap: break-word;
+        }
+
+        .contact-form p {
+            font-size: 20px;
+        }
+
+        .contact-form h1 {
+            margin-top: 0;
+            font-weight: 200;
+        }
+
+        .txtb {
+            border: 1px solid gray;
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 8px;
+        }
+
+        .txtb label {
+            display: block;
+            text-align: left;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .txtb input, .txtb textarea {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 6px;
+        }
+
+        .button {
+            border-radius: 4px;
+            background-color: black;
+            text-decoration: none;
+            color: black;
+            border: 3px white solid;
+            font-size: 14px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .button a {
+            text-decoration: none;
+            color: white;
+        }
 
     </style>
 
+
 </head>
 <body>
-<header>
+<div id="container">
+    <header>
 
 
-    <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
-        <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
+        <nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+            <h3><a class="navbar-brand" href="#"><p class="ideal">changebook.com</p></a></h3>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
-                aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                    aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="mainmenu">
+            <div class="collapse navbar-collapse" id="mainmenu">
 
-            <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto">
 
-                <li class="nav-item active">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
-                            class="fas fa-home"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
-                </li>
+                    <li class="nav-item active">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT"><i
+                                class="fas fa-home"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Strona Główna</p></a></h3>
+                    </li>
 
-<%--                <li class="nav-item">--%>
-<%--                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>--%>
-<%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>--%>
-<%--                </li>--%>
+                    <%--                <li class="nav-item">--%>
+                    <%--                    <h3><a class="nav-link" href="#bestsellers"><i class="fas fa-book"></i>--%>
+                    <%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Bestsellery</p></a></h3>--%>
+                    <%--                </li>--%>
 
-<%--                <li class="nav-item">--%>
-<%--                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>--%>
-<%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>--%>
-<%--                </li>--%>
+                    <%--                <li class="nav-item">--%>
+                    <%--                    <h3><a class="nav-link" href="#promotion"><i class="fas fa-percent"></i>--%>
+                    <%--                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Promocje</p></a></h3>--%>
+                    <%--                </li>--%>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
-                            class="fas fa-money-check"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
-                </li>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/info"><i class="fas fa-info"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Kontakt</p></a></h3>
-                </li>
-
-
-                <% if (session.getAttribute("name") != null) { %>
-                <h3>
                     <li class="nav-item">
-                        <%
-                            String name = session.getAttribute("name").toString();
-                            String id = session.getAttribute("user").toString();
-                        %>
-                        <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i class="fas fa-user"></i>
-                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Mój profil
-                            </p>
-                        </a>
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adv"><i
+                                class="fas fa-money-check"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Ogłoszenia</p></a></h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/info"><i
+                                class="fas fa-info"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Kontakt</p></a></h3>
+                    </li>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <h3>
+                        <li class="nav-item">
+                            <%
+                                String name = session.getAttribute("name").toString();
+                                String id = session.getAttribute("user").toString();
+                            %>
+                            <a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myprofile"><i
+                                    class="fas fa-user"></i>
+                                <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Mój profil
+                                </p>
+                            </a>
+
+                        </li>
+                    </h3>
+                    <% } else { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
+                                class="fas fa-sign-in-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
+                                class="fas fa-child"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
+                        </h3>
+                    </li>
+
+                    <% } %>
+
+
+                    <% if (session.getAttribute("name") != null) { %>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
+                                class="fas fa-plus"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
+                                ogłoszenie</p></a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i
+                                class="fas fa-clipboard-list"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodane ogłoszenia</p></a></h3>
 
                     </li>
-                </h3>
-                <% } else { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/login"><i
-                            class="fas fa-sign-in-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Zaloguj</p></a></h3>
-                </li>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/register"><i
-                            class="fas fa-child"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Nowe Konto</p></a>
-                    </h3>
-                </li>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
+                                class="fas fa-sign-out-alt"></i>
+                            <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
+                    </li>
 
-                <% } %>
+                    <% }%>
 
+                </ul>
 
-                <% if (session.getAttribute("name") != null) { %>
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/add"><i
-                            class="fas fa-plus"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Dodaj nowe
-                            ogłoszenie</p></a></h3>
-                </li>
+            </div>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/advlist"><i class="fas fa-clipboard-list"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Moje ogłoszenia</p></a></h3>
-                </li>
+        </nav>
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/shoppingCard"><i class="fas fa-shopping-cart"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Koszyk</p></a></h3>
-                </li>
-
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/myorders"><i class="fas fa-truck"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Moje zamówienia</p></a></h3>
-                </li>
+    </header>
 
 
-                <li class="nav-item">
-                    <h3><a class="nav-link" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/logout"><i
-                            class="fas fa-sign-out-alt"></i>
-                        <p style=" text-shadow: black 0.1em 0.1em 0.2em; ">Wyloguj</p></a></h3>
-                </li>
+    <div class="contact-form">
+        <h1>Twoje ogłoszenia</h1>
+        <% Collection<Advertisement> clientAdvList = (Collection<Advertisement>) request.getAttribute("ClientAdvList");
+            if (clientAdvList.size() > 0) {
+        %>
 
-                <% }%>
+        <c:forEach items="${orders}" var="element">
+            <div class="txtb">
 
-            </ul>
+                <p> Zamówienie nr: <c:out value="${element.id}"></c:out> <span class="inx"></span>
+                    <button class="button"><a
+                            href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/delete?id=${element.id}">usuń</a>
+                    </button>
+                </p>
+            </div>
+        </c:forEach>
+        <% } else { %>
+        <p>Aktualnie nie masz żadnego ogłoszenia</p>
+        <%
+            }
+        %>
+    </div>
 
+
+    <div id="footer">
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
         </div>
-
-    </nav>
-
-</header>
-
-<slider>
-    <slide><p>Utwórz nowe konto, dołacz do naszej społecznosci</p></slide>
-    <slide><p>Jestesmy juz w Katowicach i Chorzowie!</p></slide>
-    <slide><p>Sprawdz aktualne promocje</p></slide>
-    <slide><p>Sprzedawaj ksiazki w swojej okolicy</p></slide>
-
-
-</slider>
-
-<div id="news">CO NOWEGO | KSIĄŻKI</div>
-
-<div class="boxWrrapper">
-    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=1" class="box"><img src="books/holownia.jpg">49zł</a>
-    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=2" class="box"><img src="books/puzo.jpg">39zł</a>
-    <div class="box"><img src="books/tusk.jpg">29zł</div>
-    <div class="box"><img src="books/witcher.jpg">89zł</div>
-
-</div>
-
-<div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
-
-<div class="boxWrrapper">
-    <div class="box"><img src="books/wada.jpg">19,99zł</div>
-    <div class="box"><img src="books/greta.jpg">9,99zł</div>
-    <div class="box"><img src="books/sweden.jpg">34,99zł</div>
-
-</div>
-
-<div id="promotion">AKTUALNE PROMOCJE</div>
-
-
-<div class="boxWrrapper1">
-    <div class="box"><img src="books/cezar.jpg">-30%</div>
-    <div class="box"><img src="books/stranger.jpg">-40%</div>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-<div id="footer">
-    <div class="social-buttons">
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </div>
 </div>
+
 
 <%--skrypty dla nav-baru--%>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -586,7 +618,6 @@
     });
 
 </script>
-
 
 </body>
 </html>
