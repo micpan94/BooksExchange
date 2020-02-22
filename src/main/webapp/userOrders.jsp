@@ -548,9 +548,9 @@
 
 
     <div class="contact-form">
-        <h1>Twoje ogłoszenia</h1>
-        <% Collection<Advertisement> clientAdvList = (Collection<Advertisement>) request.getAttribute("ClientAdvList");
-            if (clientAdvList.size() > 0) {
+        <h1>Twoje zamówienia</h1>
+        <% Collection<Advertisement> clientOrders = (Collection<Advertisement>) request.getAttribute("orders");
+            if (clientOrders.size() > 0) {
         %>
 
         <c:forEach items="${orders}" var="element">
@@ -564,7 +564,7 @@
             </div>
         </c:forEach>
         <% } else { %>
-        <p>Aktualnie nie masz żadnego ogłoszenia</p>
+        <p>Aktualnie nie masz żadnych zamówien</p>
         <%
             }
         %>
