@@ -20,9 +20,6 @@ public class Advertisement {
     private Client client;
     private String location;
     private String img;
-//    @Lob
-//    @Basic(fetch = FetchType.LAZY)
-//    private byte[] picture;
 
     public Advertisement(LocalDateTime data, String title, String content, Integer price, Boolean isNew, String type, Client client,String location,String img) {
         this.data = data;
