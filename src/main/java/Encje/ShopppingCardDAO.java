@@ -8,4 +8,6 @@ public class ShopppingCardDAO extends EntityDao<ShoppingCard>{
     public ShopppingCardDAO() {
         super(ShoppingCard.class);
     }
+
+
 }

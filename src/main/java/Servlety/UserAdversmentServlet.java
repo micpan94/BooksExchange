@@ -20,8 +20,6 @@ import java.util.Collection;
 public class UserAdversmentServlet extends HttpServlet {
 
     @Inject
-    ClientDao clientDao;
-    @Inject
     AdvertisementDAO advertisementDAO;
 
     @Override

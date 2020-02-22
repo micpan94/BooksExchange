@@ -2,7 +2,9 @@
 <%@ page import="Encje.Client" %>
 <%@ page import="Encje.Advertisement" %>
 <%@ page import="java.util.Set" %>
-<%@ page import="java.util.Collection" %><%--
+<%@ page import="java.util.Collection" %>
+<%@ page import="java.util.List" %>
+<%@ page import="Encje.Book" %><%--
   Created by IntelliJ IDEA.
   User: Michal.Pankiewicz
   Date: 1/11/2020
@@ -12,7 +14,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Twoje ogłoszenia</title>
+    <title>Twoj Koszyk</title>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -548,12 +550,12 @@
 
 
     <div class="contact-form">
-        <h1>Twoje zamówienia</h1>
-        <% Collection<Advertisement> clientAdvList = (Collection<Advertisement>) request.getAttribute("ClientAdvList");
-            if (clientAdvList.size() > 0) {
+        <h1>Twoj koszyk</h1>
+        <%
+            List<Book> items = (List<Book>) request.getAttribute("booksFromCard");
+            if (items.size() > 0){
         %>
-
-        <c:forEach items="${ClientAdvList}" var="element">
+        <c:forEach items="${items}" var="element">
             <div class="txtb">
 
                 <p><c:out value="${element.title}"></c:out> <span class="inx"></span>
@@ -564,10 +566,12 @@
             </div>
         </c:forEach>
         <% } else { %>
-        <p>Aktualnie nie masz żadnego zamówienia</p>
+        <p>Aktualnie nie masz nic w koszyku</p>
         <%
             }
         %>
+
+
     </div>
 
 
