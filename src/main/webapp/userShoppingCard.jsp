@@ -553,18 +553,30 @@
         <h1>Twoj koszyk</h1>
         <%
             List<Book> items = (List<Book>) request.getAttribute("booksFromCard");
+            int sum  = 0;
+            for (Book element :items){
+                sum+= element.getPrice();
+            }
             if (items.size() > 0){
         %>
         <c:forEach items="${booksFromCard}" var="element">
             <div class="txtb">
 
-                <p><c:out value="${element.title}"></c:out> <span class="inx"></span>
+                <p><c:out value="${element.title}"></c:out>  <c:out value="${element.price}"></c:out>zł<span class="inx"></span>
                     <button class="button"><a
                             href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/deleteItem?id=${element.id}">usuń</a>
                     </button>
                 </p>
             </div>
         </c:forEach>
+
+            <div class="txtb">
+                Razem do zapłaty : <%= sum%> zł
+            </div>
+
+
+        <a class="btn" style="font-size: 22px" href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/order">złóż zamówienie</a>
+
         <% } else { %>
         <p>Aktualnie nie masz nic w koszyku</p>
         <%
