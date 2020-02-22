@@ -15,13 +15,13 @@ public class Client{
     private String location;
     private String firstName;
     private String lastName;
+    @OneToOne
+    private ShoppingCard shoppingCard;
 
     @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
     private Set<Advertisement> advertisementSet;
-    @OneToMany(mappedBy = "client",fetch = FetchType.EAGER)
-    private Set<Order> orderSet;
 
-    public Client(String login, String password, String email, String telephoneNr, String location, String firstName, String lastName, Set<Advertisement> advertisementSet, Set<Order> orderSet) {
+    public Client(String login, String password, String email, String telephoneNr, String location, String firstName, String lastName, Set<Advertisement> advertisementSet,ShoppingCard shoppingCard) {
         this.login = login;
         this.password = password;
         this.email = email;
@@ -30,7 +30,7 @@ public class Client{
         this.firstName = firstName;
         this.lastName = lastName;
         this.advertisementSet = advertisementSet;
-        this.orderSet = orderSet;
+        this.shoppingCard = shoppingCard;
     }
 
     public Client(){}
@@ -109,12 +109,12 @@ public class Client{
         this.lastName = lastName;
     }
 
-    public Set<Order> getOrderSet() {
-        return orderSet;
+    public ShoppingCard getShoppingCard() {
+        return shoppingCard;
     }
 
-    public void setOrderSet(Set<Order> orderSet) {
-        this.orderSet = orderSet;
+    public void setShoppingCard(ShoppingCard shoppingCard) {
+        this.shoppingCard = shoppingCard;
     }
 
     @Override

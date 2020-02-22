@@ -19,7 +19,6 @@ public class test extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Book book = new Book("LOTR","Dzoni","MDC","2020",190,"Fantastyka");
-        bookDao.save(book);
+
     }
 }

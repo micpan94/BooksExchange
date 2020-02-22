@@ -2,6 +2,8 @@ package Servlety;
 
 import Encje.Client;
 import Encje.ClientDao;
+import Encje.ShoppingCard;
+import Encje.ShopppingCardDAO;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -18,7 +20,8 @@ import java.util.regex.Pattern;
 public class ReisterServlet extends HttpServlet {
     @Inject
     private ClientDao clientDao;
-
+    @Inject
+    private ShopppingCardDAO shopppingCardDAO;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("register.jsp");
@@ -28,6 +31,8 @@ public class ReisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Client client = new Client();
+//        ShoppingCard shoppingCard = new ShoppingCard();
+//        shoppingCard.setClient(client);
         Boolean validate = true;
         req.setAttribute("errors", false);
         String login = req.getParameter("login");
@@ -83,8 +88,12 @@ public class ReisterServlet extends HttpServlet {
         }
 
         if (validate) {
-
             clientDao.save(client);
+            ShoppingCard shoppingCard = new ShoppingCard();
+            shoppingCard.setClient(client);
+            shopppingCardDAO.save(shoppingCard);
+            client.setShoppingCard(shoppingCard);
+            clientDao.upgrade(client);
             req.setAttribute("succes", true);
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("register.jsp");
             requestDispatcher.forward(req, resp);
