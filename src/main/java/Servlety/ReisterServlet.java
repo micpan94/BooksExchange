@@ -57,6 +57,7 @@ public class ReisterServlet extends HttpServlet {
         }else {
             req.setAttribute("errors",true);
             req.setAttribute("telephone_error",true);
+            validate = false;
         }
         String firstName = req.getParameter("firstName");
         if (firstName.length() < 16 && firstName.length() > 2){
@@ -64,6 +65,7 @@ public class ReisterServlet extends HttpServlet {
         }else {
             req.setAttribute("errors",true);
             req.setAttribute("firstName_error",true);
+            validate = false;
         }
         String lastName = req.getParameter("lastName");
         if (lastName.length() < 24 && lastName.length() > 4){
@@ -71,6 +73,7 @@ public class ReisterServlet extends HttpServlet {
         }else {
             req.setAttribute("errors",true);
             req.setAttribute("lastName_error",true);
+            validate = false;
         }
 
         String email = req.getParameter("email");

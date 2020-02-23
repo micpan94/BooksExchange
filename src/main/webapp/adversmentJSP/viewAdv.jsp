@@ -214,7 +214,7 @@
 
 </header>
 <div id="container">
-    <div id="news"><h2>Najnowsze Ogłoszenia :</h2></div>
+    <div id="news"><h2>Ogłoszenia</h2></div>
 
     <style>
         .grid-container {

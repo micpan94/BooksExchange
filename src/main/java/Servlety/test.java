@@ -32,5 +32,12 @@ public class test extends HttpServlet {
 
         bookDao.save(book);
         bookDao.save(book1);
+        bookDao.save(book2);
+        bookDao.save(book3);
+        bookDao.save(book4);
+        bookDao.save(book5);
+        bookDao.save(book6);
+        bookDao.save(book7);
+        bookDao.save(book8);
     }
 }
