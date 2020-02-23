@@ -27,13 +27,9 @@ public class UserShoppingCardServlet extends HttpServlet {
         Client client = (Client) session.getAttribute("client");
         try {
             if (client != null) {
-                Collection<ShoppingCard> all = shopppingCardDAO.findAll();
-                for (ShoppingCard element : all) {
-                    if (element.getClient().getId() == client.getId()) {
-                        List<Book> books = element.getBooks();
-                        req.setAttribute("booksFromCard",books);
-                    }
-                }
+                ShoppingCard shoppingCard = shopppingCardDAO.findById(client.getShoppingCard().getId());
+                List<Book> books = shoppingCard.getBooks();
+                req.setAttribute("booksFromCard",books);
                 RequestDispatcher requestDispatcher = req.getRequestDispatcher("userShoppingCard.jsp");
                 requestDispatcher.forward(req, resp);
             }

@@ -6,59 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="x">
-      <change afterPath="$PROJECT_DIR$/.idea/changeBook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/bookJpg/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/singleBookView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/singleBookView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Encje/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/ClientDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Encje/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/DeleteAdvServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/DeleteAdvServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/ProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/ReisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/ReisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/UpdateProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/UpdateProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/UserAdversmentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/UserAdversmentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/HomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/SingleBookViewServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/SingleBookViewServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Servlety/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/ClientDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/ClientDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AddNewADV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/DeleteAdvServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/DeleteAdvServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ReisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/ReisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/HomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/SingleBookViewServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/SingleBookViewServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/TEST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/TEST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UpdateProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UpdateProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UserAdversmentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UserAdversmentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleBookView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleBookView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/profile.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/src/main/webapp/my-app/node_modules/" />
@@ -89,77 +55,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="578">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="65" column="50" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+            <state relative-caret-position="100">
+              <caret line="554" column="79" selection-start-line="554" selection-start-column="66" selection-end-line="554" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Orders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/EntityDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="236" column="36" selection-start-line="236" selection-start-column="36" selection-end-line="236" selection-end-column="36" />
+            <state relative-caret-position="296">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/profile.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/singleBookView.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="145" column="31" lean-forward="true" selection-start-line="145" selection-start-column="31" selection-end-line="145" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="221">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,19 +110,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/test.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="127">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding>
+                <element signature="e#1890#1891#0" expanded="true" />
+                <element signature="e#1925#1926#0" expanded="true" />
+                <element signature="e#1987#1988#0" expanded="true" />
+                <element signature="e#2035#2036#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -220,10 +189,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/usershoppingCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/UserAdversmentServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/Advertisement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/DeleteFromCardServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Encje/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/Orders.java" />
@@ -234,17 +200,20 @@
         <option value="$PROJECT_DIR$/src/main/java/Servlety/ClientOrdersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/userOrders.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/EntityDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/singleBookView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Encje/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Servlety/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java" />
       </list>
     </option>
   </component>
@@ -590,14 +559,7 @@
       <workItem from="1582047634188" duration="7934000" />
       <workItem from="1582316664655" duration="2280000" />
       <workItem from="1582364744965" duration="50360000" />
-      <workItem from="1582461016781" duration="14135000" />
-    </task>
-    <task id="LOCAL-00060" summary="3.8.3">
-      <created>1578577920583</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1578577920583</updated>
+      <workItem from="1582461016781" duration="16969000" />
     </task>
     <task id="LOCAL-00061" summary="4.0 slider fix + new register layout">
       <created>1578641764241</created>
@@ -935,11 +897,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582454770723</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="x">
+      <created>1582485765634</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1582485765635</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73658000" />
+    <option name="totallyTimeSpent" value="76492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -965,8 +934,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1898527" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38297874" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33060557" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38134205" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -1446,6 +1415,18 @@
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>List&lt;Book&gt; books = element.getBooks();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>List&lt;Book&gt; books = element.getBooks()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ShoppingCardDAO.java" />
@@ -1535,34 +1516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="257" selection-start-line="257" selection-end-line="257" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1691,31 +1648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2906#2907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/userOrders.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9843">
@@ -1753,13 +1685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="557" column="41" lean-forward="true" selection-start-line="557" selection-start-column="41" selection-end-line="557" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Encje/EntityDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1775,23 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="65" column="50" lean-forward="true" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -1825,15 +1733,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="277">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#1987#1988#0" expanded="true" />
+            <element signature="e#2035#2036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="554" column="79" selection-start-line="554" selection-start-column="66" selection-end-line="554" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/ShoppingCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2877#2878#0" expanded="true" />
+            <element signature="e#2906#2907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UserShoppingCardServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>

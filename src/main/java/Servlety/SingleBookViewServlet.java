@@ -36,6 +36,8 @@ public class SingleBookViewServlet extends HttpServlet {
 
         HttpSession session = req.getSession();
         Client client = (Client) session.getAttribute("client");
+
+        Integer count = client.getOrders().size();
         ShoppingCard shoppingCard = shopppingCardDAO.findById(client.getShoppingCard().getId());
 
         List<Book> books = shoppingCard.getBooks();
