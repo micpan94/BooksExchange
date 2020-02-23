@@ -1,7 +1,6 @@
 package Servlety;
 
-import Encje.Book;
-import Encje.BookDao;
+import Encje.*;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -17,6 +16,11 @@ public class HomeServlet extends HttpServlet {
     @Inject
     private BookDao bookDao;
 
+    @Inject
+    private ClientDao clientDao;
+    @Inject
+    private ShopppingCardDAO shopppingCardDAO;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -24,6 +28,11 @@ public class HomeServlet extends HttpServlet {
         Book book1 = new Book("Ojciec Chrzestny", "Mario Puzo", "Albatros", "2019", 23, "kryminał");
         bookDao.save(book);
         bookDao.save(book1);
+//        ShoppingCard shoppingCard = new ShoppingCard();
+//        shopppingCardDAO.save(shoppingCard);
+
+//        Client client = new Client("admin","123","dzony@wp.pl","516800255","Katowice","Michał","Panko",shoppingCard,null,null);
+//        clientDao.save(client);
 
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("index.jsp");
         requestDispatcher.forward(req, resp);

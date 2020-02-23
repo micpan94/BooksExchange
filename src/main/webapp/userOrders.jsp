@@ -550,17 +550,32 @@
     <div class="contact-form">
         <h1>Twoje zamówienia</h1>
         <% Collection<Advertisement> clientOrders = (Collection<Advertisement>) request.getAttribute("orders");
+            Client client = (Client) session.getAttribute("client");
             if (clientOrders.size() > 0) {
         %>
 
         <c:forEach items="${orders}" var="element">
             <div class="txtb">
+                <p> Szczegóły zamówienia nr: <c:out value="${element.id}"></c:out> <span class="inx"></span></p>
+                Dane do wysyłki
+                <p><c:out value="${element.address}"></c:out></p>
+                Kod pocztowy
+                <p><c:out value="${element.postCode}"></c:out></p>
+                Dane osobowe
+                <p><%=client.getFirstName()%> <%=client.getLastName()%></p>
+                Numer dla kuriera
+                <p><%=client.getTelephoneNr()%></p>
+                Rodzaj płatnosci
+                <p>Przelew bankowy</p>
+                Dane do przelewu
+                <p>mBank S.A. 82 1020 5226 0000 6102 0417 7895</p>
+                <p>Changebook.com ul.Fabryczna 16B 41-303 Dąbrowa Górnicza</p>
+                <p>Ważne informacje</p>
+                W tytule przelewu należy wpisac numer zamówienia, wysyłka po zaksięgowaniu wpłaty, przesyłka kurierem gratis
+                <p>Razem do zapłaty<p>
+                <p><c:out value="${element.totalPrice}"></c:out> zł</p>
 
-                <p> Zamówienie nr: <c:out value="${element.id}"></c:out> <span class="inx"></span>
-                    <button class="button"><a
-                            href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/delete?id=${element.id}">usuń</a>
-                    </button>
-                </p>
+
             </div>
         </c:forEach>
         <% } else { %>
