@@ -320,6 +320,11 @@
 
 
         }
+        .boxWrrapper1 a:visited,
+        .boxWrrapper1 a:hover{
+            color: #eaff9b;
+            outline: none;
+        }
 
         #info {
             color: white;
@@ -509,27 +514,25 @@
 <div class="boxWrrapper">
     <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=1" class="box"><img src="books/holownia.jpg">49zł</a>
     <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=2" class="box"><img src="books/puzo.jpg">39zł</a>
-    <div class="box"><img src="books/tusk.jpg">29zł</div>
-    <div class="box"><img src="books/witcher.jpg">89zł</div>
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=3" class="box"><img src="books/tusk.jpg">29zł</a>
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=4" class="box"><img src="books/witcher.jpg">89zł</a>
 
 </div>
 
 <div id="bestsellers">NAJLEPIEJ SPRZEDAWANE</div>
 
 <div class="boxWrrapper">
-    <div class="box"><img src="books/wada.jpg">19,99zł</div>
-    <div class="box"><img src="books/greta.jpg">9,99zł</div>
-    <div class="box"><img src="books/sweden.jpg">34,99zł</div>
-
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=5" class="box"><img src="books/wada.jpg">20zł</a>
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=6" class="box"><img src="books/greta.jpg">10zł</a>
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=7" class="box"><img src="books/sweden.jpg">35zł</a>
 </div>
 
 <div id="promotion">AKTUALNE PROMOCJE</div>
 
 
 <div class="boxWrrapper1">
-    <div class="box"><img src="books/cezar.jpg">-30%</div>
-    <div class="box"><img src="books/stranger.jpg">-40%</div>
-
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=8" class="box"><img src="books/cezar.jpg">135zł</a>
+    <a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/book?bookId=9" class="box"><img src="books/stranger.jpg">125zł</a>
 </div>
 
 <br>

@@ -3,6 +3,7 @@ package Servlety;
 import Encje.*;
 
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,6 +33,7 @@ public class SingleBookViewServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
         HttpSession session = req.getSession();
         Client client = (Client) session.getAttribute("client");
         ShoppingCard shoppingCard = shopppingCardDAO.findById(client.getShoppingCard().getId());
@@ -43,7 +45,7 @@ public class SingleBookViewServlet extends HttpServlet {
         shoppingCard.setBooks(books);
         shopppingCardDAO.upgrade(shoppingCard);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/shoppingCard");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/home");
         requestDispatcher.forward(req,resp);
     }
 }

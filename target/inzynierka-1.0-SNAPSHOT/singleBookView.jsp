@@ -7,8 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>in progress</title>
+<head><%
+    Book book1 = (Book) request.getAttribute("book");
+%>
+    <title><%=book1.getTitle()%></title>
     <meta charset="UTF-8">
     <meta name="author" content="Michał Pankiewicz">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
@@ -127,6 +129,53 @@
             text-align: center;
             font-size: 20px;
             margin-top: 40px;
+        }
+        
+        .btn {
+            position: relative;
+        }
+
+        .submit-btn {
+            background: #09ff00;
+            padding: 20px 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit-btn input {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+            outline: none;
+            font-family: 'Roboto';
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFF;
+            user-select: none;
+        }
+
+        .btn:last-child {
+            height: 80px;
+        }
+
+        .submit-btn:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            border-radius: 50%;
+            background-color: darken(#f1c40f, 20%);
+            opacity: 0.4;
+            bottom: -30px;
         }
 
         .social-buttons a {
@@ -301,7 +350,9 @@
                 <%
                 request.setAttribute("bookID",book.getId());
                 %>
-                <input type="submit" name="bookID" value="Dodaj do koszyka"/>
+                <div class="submit-btn">
+                    <input type="submit" name="bookID" value="Dodaj do koszyka"/>
+                </div>
             </form>
         </div>
 
@@ -330,9 +381,19 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
 <script>
 
     $(document).ready(function () {
+        const $button = document.querySelector('.submit-btn');
+        $button.addEventListener('click', function() {
+            const duration = 0.3,
+                delay = 0.08;
+            TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
+            TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
+            TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
+        });
+
         $('.dropdown').on('click', function (e) {
             var $el = $(this);
             var $parent = $(this).offsetParent(".dropdown-menu");

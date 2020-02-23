@@ -230,6 +230,12 @@
             display: flex;
             flex-direction: column;
         }
+        #photo{
+            background-color: black;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
     </style>
 
     <ul class="grid-container">

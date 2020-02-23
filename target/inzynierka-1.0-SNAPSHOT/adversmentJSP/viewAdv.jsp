@@ -214,7 +214,7 @@
 
 </header>
 <div id="container">
-    <div id="news"><h2>Najnowsze Ogłoszenia :</h2></div>
+    <div id="news"><h2>Ogłoszenia</h2></div>
 
     <style>
         .grid-container {
@@ -229,6 +229,12 @@
         .grid-container__element {
             display: flex;
             flex-direction: column;
+        }
+        #photo{
+            background-color: black;
+            height: 200px;
+            display: flex;
+            justify-content: center;
         }
     </style>
 

@@ -1,9 +1,7 @@
 package Servlety;
 
 import Encje.*;
-import com.sun.org.apache.xpath.internal.operations.Or;
-import org.hibernate.Session;
-import org.hibernate.criterion.Order;
+
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -49,6 +47,6 @@ public class OrdersServlet extends HttpServlet {
         shopppingCardDAO.upgrade(card);
 
 
-        resp.getWriter().print("ok dodano oglosznie ");
+        req.getRequestDispatcher("/home").forward(req,resp);
     }
 }
