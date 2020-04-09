@@ -23,6 +23,9 @@ public class UpdateProfileServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
 
         Client client = (Client) session.getAttribute("client");
         if (client!= null){
@@ -38,6 +41,9 @@ public class UpdateProfileServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
         HttpSession session = req.getSession();
         Client client = (Client) session.getAttribute("client");
         Boolean validate = true;

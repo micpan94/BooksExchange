@@ -24,12 +24,19 @@ public class ReisterServlet extends HttpServlet {
     private ShopppingCardDAO shopppingCardDAO;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("register.jsp");
         requestDispatcher.forward(req, resp);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
         Client client = new Client();
 //        ShoppingCard shoppingCard = new ShoppingCard();
 //        shoppingCard.setClient(client);
@@ -44,7 +51,7 @@ public class ReisterServlet extends HttpServlet {
             validate = false;
         }
         String password = req.getParameter("password");
-        if (password.length() < 14 && password.length() > 5) {
+        if (password.length() <16 && password.length() > 8) {
             client.setPassword(password);
         } else {
             req.setAttribute("errors", true);
@@ -108,7 +115,7 @@ public class ReisterServlet extends HttpServlet {
         }
 
 
-        // <- do tego momentu mam walidacje nastepnne
+        // <- do tego momentu validetae
 
     }
 }

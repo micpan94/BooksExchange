@@ -265,7 +265,7 @@
                 <%
                     if (request.getAttribute("login_error") != null) {
                 %>
-                <li>Błędna nazwa użytkownika</li>
+                <li>Błędny login(maksymalnie 13 znaków)</li>
                 <%
                     }
                 %>
@@ -297,7 +297,7 @@
                 <%
                     if (request.getAttribute("password_error") != null) {
                 %>
-                <li>Błędne hasło</li>
+                <li>Hasło musi zawierac minimum 9 znaków</li>
                 <%
                     }
                 %>

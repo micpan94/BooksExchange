@@ -275,7 +275,7 @@
                 <%
                     if (request.getAttribute("wrong_password") != null) {
                 %>
-                <li>Błędne Hasło</li>
+                <li>Błędny login lub hasło</li>
 
                 <%
                     }
