@@ -24,6 +24,9 @@ public class SingleBookViewServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
         Integer bookId = Integer.parseInt(req.getParameter("bookId"));
         Book selectedBook = bookDao.findById(bookId);
         req.setAttribute("book", selectedBook);
@@ -32,7 +35,9 @@ public class SingleBookViewServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
 
         HttpSession session = req.getSession();
         Client client = (Client) session.getAttribute("client");

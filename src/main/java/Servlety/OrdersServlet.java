@@ -25,11 +25,16 @@ public class OrdersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("OrderForm.jsp").forward(req,resp);
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
 
         Orders order = new Orders();
         order.setClient((Client) req.getSession().getAttribute("client"));
