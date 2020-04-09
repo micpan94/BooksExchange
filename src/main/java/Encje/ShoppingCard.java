@@ -1,5 +1,8 @@
 package Encje;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -10,7 +13,8 @@ public class ShoppingCard {
     private int id;
     @OneToOne
     private Client client;
-    @OneToMany(fetch = FetchType.EAGER)
+    @Fetch(FetchMode.SELECT)
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Book> books;
 
     public ShoppingCard() {

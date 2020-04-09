@@ -59,8 +59,8 @@ public class AddNewADV extends HttpServlet {
             Client client = (Client) session.getAttribute("client");
             Integer userID = client.getId();
 //            sciezka do zapisu pliku aby wyswietlaly sie zdjecia poprawnie musimy zapisywac w dwoch miejscach jednoczesnie , pamietamy o tym ze sciezba bedzie sie roznic w zalezosci od mazyny
-            String uploadPath = "C:\\Users\\Panko\\Desktop\\changeBook\\src\\main\\webapp\\adversmentJSP\\img";
-            String uploadPath2 = "C:\\Users\\Panko\\Desktop\\changeBook\\target\\inzynierka-1.0-SNAPSHOT\\adversmentJSP\\img";
+            String uploadPath = "C:\\Users\\PanczoPC\\IdeaProjects\\BooksExchange\\src\\main\\webapp\\adversmentJSP\\img";
+            String uploadPath2 = "C:\\Users\\PanczoPC\\IdeaProjects\\BooksExchange\\target\\inzynierka-1.0-SNAPSHOT\\adversmentJSP\\img";
 //            C:\Users\Panko\Desktop\changeBook\target\inzynierka-1.0-SNAPSHOT\adversmentJSP\img
 //            C:\Users\Panko\Desktop\changeBook\src\main\webapp\adversmentJSP\img
             File uploadDir = new File(uploadPath);

@@ -19,6 +19,8 @@ public class UserShoppingCardServlet extends HttpServlet {
 
     @Inject
     ShopppingCardDAO shopppingCardDAO;
+    @Inject
+    ClientDao clientDao;
 
 
     @Override
@@ -27,7 +29,7 @@ public class UserShoppingCardServlet extends HttpServlet {
         Client client = (Client) session.getAttribute("client");
         try {
             if (client != null) {
-                ShoppingCard shoppingCard = shopppingCardDAO.findById(client.getShoppingCard().getId());
+                ShoppingCard shoppingCard = shopppingCardDAO.getClientCard(clientDao.findById(client.getId()));
                 List<Book> books = shoppingCard.getBooks();
                 req.setAttribute("booksFromCard",books);
                 RequestDispatcher requestDispatcher = req.getRequestDispatcher("userShoppingCard.jsp");

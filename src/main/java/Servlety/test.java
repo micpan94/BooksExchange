@@ -23,7 +23,7 @@ public class test extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
 
-        Book book = new Book("Teraz albo nigdy","Szymon Hołownia","Znak","2019",25,"biznes",null);
+        Book book = new Book("Teraz albo nigdy","Szymon Hołownia","Znak","2019",25,"biznes", null);
         Book book1 = new Book("Ojciec Chrzestny","Mario Puzo","Albatros","2019",23,"kryminał",null);
         Book book2 = new Book("Szczerze","Donald Tusk","Agora","2019-12-12",29,"biznes",null);
         Book book3 = new Book("Miecz Przeznaczenia Wiedzmin","Andrzej Sapkowski","SuperNowa","2010-11-10",89,"fantastyka",null);

@@ -83,7 +83,6 @@
             color: white;
             text-align: center;
             box-shadow: 0 0 20px #000000b3;
-            padding-bottom: 120px;
             font-family: "Montserrat",sans-serif;
         }
         .contact-form h1{

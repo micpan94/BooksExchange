@@ -42,6 +42,7 @@
             align-items: center;
             width: 100%;
             height: 100%;
+            padding-bottom: 120px;
             justify-content: space-between;
         }
 

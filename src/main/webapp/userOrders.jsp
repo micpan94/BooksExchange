@@ -86,6 +86,7 @@
         #container {
             display: flex;
             flex-direction: column;
+            padding-bottom: 120px;
         }
 
         #bestsellers {
@@ -573,7 +574,7 @@
                 <p>Ważne informacje</p>
                 W tytule przelewu należy wpisac numer zamówienia, wysyłka po zaksięgowaniu wpłaty, przesyłka kurierem gratis
                 <p>Razem do zapłaty<p>
-                <p><c:out value="${element.totalPrice}"></c:out> zł</p>
+                <p style="color: #09ff00"><c:out value="${element.totalPrice}"></c:out> zł</p>
 
 
             </div>
