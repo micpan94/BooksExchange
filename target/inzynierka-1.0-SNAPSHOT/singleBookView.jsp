@@ -49,6 +49,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            padding-bottom: 120px;
         }
 
         .ideal {
@@ -93,7 +94,7 @@
         .txtb label {
             display: block;
             text-align: left;
-            color: #333;
+            color: burlywood;
             text-transform: uppercase;
             font-size: 14px;
         }
@@ -345,6 +346,9 @@
         </div>
 
 <%--        button do dodawania --%>
+        <%
+            if (session.getAttribute("client") != null) {
+        %>
         <div class="btn">
             <form action="" method="post">
                 <%
@@ -355,7 +359,7 @@
                 </div>
             </form>
         </div>
-
+        <% }%>
 
     </div>
     <br>

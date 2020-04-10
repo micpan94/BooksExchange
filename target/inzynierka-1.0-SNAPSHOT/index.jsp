@@ -320,6 +320,11 @@
 
 
         }
+        .boxWrrapper1 a {
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
         .boxWrrapper1 a:visited,
         .boxWrrapper1 a:hover{
             color: #eaff9b;

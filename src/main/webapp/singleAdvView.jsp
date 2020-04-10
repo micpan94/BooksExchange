@@ -47,7 +47,6 @@
             height: 100%;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 120px;
         }
 
 
@@ -128,6 +127,7 @@
             text-align: center;
             box-shadow: 0 0 20px #000000b3;
             font-family: "Montserrat", sans-serif;
+            padding-bottom: 100px;
         }
 
         .contact-form label {

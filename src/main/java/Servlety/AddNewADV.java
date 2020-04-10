@@ -40,6 +40,9 @@ public class AddNewADV extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("adversmentJSP/addAdv.jsp");
         requestDispatcher.forward(req, resp);
     }
@@ -47,6 +50,9 @@ public class AddNewADV extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
 
         // walidacja danych
         Boolean validate = true;

@@ -48,6 +48,7 @@
             flex-direction: column;
             align-items: center;
             color: white;
+            padding-bottom: 120px;
         }
 
         .box div{

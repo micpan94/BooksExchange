@@ -19,6 +19,9 @@ public class SingleAdvServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        req.setCharacterEncoding("UTF-8");
         String id = req.getParameter("id");
         if (id == null) {
             req.getRequestDispatcher("index.jsp").forward(req, resp);

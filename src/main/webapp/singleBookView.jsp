@@ -94,7 +94,7 @@
         .txtb label {
             display: block;
             text-align: left;
-            color: #333;
+            color: burlywood;
             text-transform: uppercase;
             font-size: 14px;
         }
