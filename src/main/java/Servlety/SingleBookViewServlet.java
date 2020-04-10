@@ -53,7 +53,7 @@ public class SingleBookViewServlet extends HttpServlet {
         shopppingCardDAO.upgrade(shoppingCard);
 
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/home");
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("shoppingCard");
         requestDispatcher.forward(req,resp);
     }
 }

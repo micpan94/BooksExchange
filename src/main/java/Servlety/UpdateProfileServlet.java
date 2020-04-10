@@ -57,8 +57,9 @@ public class UpdateProfileServlet extends HttpServlet {
             validate = false;
         }
         String password = req.getParameter("password");
-        if (password.length() < 14 && password.length() > 5) {
-            client.setPassword(password);
+        String passwordMd5 = clientDao.MD5(password);
+        if (password != passwordMd5) {
+           client.setPassword(passwordMd5);
         } else {
             req.setAttribute("errors", true);
             req.setAttribute("password_error", true);

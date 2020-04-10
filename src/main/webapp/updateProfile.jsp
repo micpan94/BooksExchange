@@ -308,7 +308,16 @@
                 <%
                     if (request.getAttribute("lastName_error") != null) {
                 %>
-                <li>Błędne nazwisko !</li>
+                <li>Błędne nazwisko!</li>
+
+                <%
+                    }
+                %>
+
+                <%
+                    if (request.getAttribute("password_error") != null) {
+                %>
+                <li>Błędne hasło!</li>
 
                 <%
                     }
