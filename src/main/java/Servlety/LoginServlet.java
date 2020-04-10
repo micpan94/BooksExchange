@@ -44,7 +44,9 @@ public class LoginServlet extends HttpServlet {
         for (Client element : users) {
             if (element.getLogin().equals(login)) {
                 isLoginInBase = true;
-                if (element.getPassword().equals(password)) {
+
+
+                if (clientDao.MD5(password).contains(element.getPassword())) {
                     wrongPassword = false;
                     sukcess = true;
                     userId = element.getId();

@@ -52,7 +52,7 @@ public class ReisterServlet extends HttpServlet {
         }
         String password = req.getParameter("password");
         if (password.length() <16 && password.length() > 8) {
-            client.setPassword(password);
+            client.setPassword(clientDao.MD5(password));
         } else {
             req.setAttribute("errors", true);
             req.setAttribute("password_error", true);

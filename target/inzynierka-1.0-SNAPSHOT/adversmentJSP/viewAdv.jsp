@@ -82,6 +82,10 @@
         .element a:visited{
             color: white;
         }
+        .element a:hover{
+            text-shadow: #1e7e34;
+            color: #2ecc71;
+        }
         #news{
             align-self: flex-start;
             color: white;
@@ -246,7 +250,7 @@
                     <div class="element"><c:out value="${element.title}"></c:out></div>
                     <div class="element"><c:out value="${element.price}"></c:out>zł</div>
                     <div class="element"><c:out value="${element.location}"></c:out></div>
-                    <div class="element"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adversment?id=<c:out value="${element.id}"></c:out>">Sprawdź Szczegóły</a></div>
+                    <div class="element" style="color: #09ff00"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adversment?id=<c:out value="${element.id}"></c:out>" style="color: #09ff00">Sprawdź Szczegóły</a></div>
                 </div>
             </li>
         </c:forEach>
