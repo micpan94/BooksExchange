@@ -40,6 +40,17 @@ public class AdvServlet extends HttpServlet {
             List<Advertisement> dąbrowa_górnicza = advertisementDAO.getAdvByCity("Dąbrowa Górnicza");
             req.setAttribute("advList",dąbrowa_górnicza);
         }
+        else if (req.getParameter("city").contains("Sosnowiec")){
+            List<Advertisement> sos = advertisementDAO.getAdvByCity("Sosnowiec");
+            req.setAttribute("advList",sos);
+        }
+        else if (req.getParameter("city").contains("Chorzów")){
+            List<Advertisement> so1s = advertisementDAO.getAdvByCity("Chorzów");
+            req.setAttribute("advList",so1s);
+        }
+        else if (req.getParameter("city").contains("szy")){
+            req.setAttribute("advList",advertisementCollection);
+        }
 
 
 

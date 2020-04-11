@@ -8,7 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleAdvView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleAdvView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Encje/AdvertisementDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/AdvServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/AdvServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Encje/AdvertisementDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AdvServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/AdvServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/src/main/webapp/my-app/node_modules/" />
@@ -39,19 +45,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/ProfileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UpdateProfileServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -66,21 +63,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="595">
               <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
             </state>
           </provider>
@@ -95,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="180" column="105" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="105" />
+            <state relative-caret-position="423">
+              <caret line="228" column="42" lean-forward="true" selection-start-line="228" selection-start-column="42" selection-end-line="228" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -108,7 +93,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="51" column="64" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/AdvertisementDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="29">
@@ -118,19 +121,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
+            <state relative-caret-position="578">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/InfoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="85">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -159,8 +162,8 @@
       <find>padding-bottom: 200px</find>
       <find>social</find>
       <find>txtb labe</find>
-      <find>footer</find>
       <find>conta</find>
+      <find>footer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,11 +212,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Servlety/UpdateProfileServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/OrderForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/info.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Encje/AdvertisementDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
       </list>
     </option>
   </component>
@@ -547,21 +552,7 @@
       <workItem from="1586435513558" duration="4970000" />
       <workItem from="1586447952767" duration="25319000" />
       <workItem from="1586543939873" duration="3455000" />
-      <workItem from="1586596814132" duration="7408000" />
-    </task>
-    <task id="LOCAL-00075" summary="over 2.6">
-      <created>1578923795994</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1578923795994</updated>
-    </task>
-    <task id="LOCAL-00076" summary="over 2.6">
-      <created>1578993614952</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1578993614952</updated>
+      <workItem from="1586596814132" duration="17538000" />
     </task>
     <task id="LOCAL-00077" summary="first sigle adv view 1.0">
       <created>1579006470406</created>
@@ -892,11 +883,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586604134891</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="v22.3">
+      <created>1586605013742</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1586605013742</updated>
+    </task>
+    <task id="LOCAL-00125" summary="v22.3">
+      <created>1586616111443</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1586616111443</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122626000" />
+    <option name="totallyTimeSpent" value="132756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,9 +914,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info id="Project" order="0" visible="true" weight="0.22334754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -922,7 +926,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17984831" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17984831" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3802817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1248,6 +1252,18 @@
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Encje/AdvertisementDAO.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1256,6 +1272,36 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>req.getParameter(&quot;city&quot;).contains(&quot;Dąbrowa Górnicza&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.getParameter(&quot;city&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>eq.getParameter(&quot;city&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.getParameter(&quot;city&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.getParameter(&quot;city&quot;).contains(&quot;katowice&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>req.getParameter(&quot;city&quot;) == &quot;katowice&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>clientDao.MD5(password</expression-string>
         <language-id>JAVA</language-id>
@@ -1268,36 +1314,6 @@
       </expression>
       <expression>
         <expression-string>element.getPassword()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clientDao.MD5(password)element.getPassword()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clientDao.MD5(password)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>shoppingCard.getBooks()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>books.</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>shopppingCardDAO.getCardByClient(client)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cardByClient.getBooks()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -1316,7 +1332,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/List.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar!/org/hibernate/collection/internal/PersistentBag.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1465,24 +1480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/InfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5899">
           <caret line="347" column="81" selection-start-line="347" selection-start-column="81" selection-end-line="347" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1639,13 +1640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/ProfileServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1660,17 +1654,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="379">
+          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderForm.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="403">
+          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1681,45 +1678,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="180" column="105" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="105" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="29">
+          <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/info.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="595">
           <caret line="35" column="51" lean-forward="true" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        <state relative-caret-position="578">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/InfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/ProfileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/AdvertisementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/AdvServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="51" column="64" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="228" column="42" lean-forward="true" selection-start-line="228" selection-start-column="42" selection-end-line="228" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

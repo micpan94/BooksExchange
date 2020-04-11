@@ -87,7 +87,7 @@
             text-shadow: #1e7e34;
             color: #2ecc71;
         }
-        #news{
+        .news{
             align-self: flex-start;
             color: white;
         }
@@ -219,7 +219,22 @@
 
 </header>
 <div id="container">
-    <div id="news"><h2>Ogłoszenia</h2></div>
+    <div class="news"><h2>Najnowsze ogłoszenia</h2></div>
+    <div class="news">
+        <form method="post">
+            <label>Lokalizacja: </label>
+            <select name="city">
+                <option>Wszystkie miasta</option>
+                <option>Katowice</option>
+                <option>Sosnowiec</option>
+                <option>Dąbrowa Górnicza</option>
+                <option>Chorzów</option>
+            </select>
+            <input type="submit" value="Filtruj">
+        </form>
+
+    </div>
+
 
     <style>
         .grid-container {
