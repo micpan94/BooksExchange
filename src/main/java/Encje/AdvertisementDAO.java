@@ -2,9 +2,7 @@ package Encje;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @ApplicationScoped
 public class AdvertisementDAO extends EntityDao<Advertisement> {
@@ -48,6 +46,17 @@ public class AdvertisementDAO extends EntityDao<Advertisement> {
         for (Advertisement element : all) {
             if (element.getId() == id) {
                 result = true;
+            }
+        }
+        return result;
+    }
+
+    public List<Advertisement> getAdvByCity(String city) {
+        List<Advertisement> result = new ArrayList<>();
+        Collection<Advertisement> all = findAll();
+        for (Advertisement element : all) {
+            if (element.getLocation().contains(city) ) {
+                result.add(element);
             }
         }
         return result;

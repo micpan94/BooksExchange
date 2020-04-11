@@ -220,6 +220,16 @@
 </header>
 <div id="container">
     <div id="news"><h2>Ogłoszenia</h2></div>
+    <form method="post">
+        <label>Wybierz miasto</label>
+        <select name="city">
+            <option>Katowice</option>
+            <option>Sosnowiec</option>
+            <option>Dąbrowa Górnicza</option>
+            <option>Chorzów</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
 
     <style>
         .grid-container {
