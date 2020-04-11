@@ -129,6 +129,7 @@
             box-shadow: 0 0 20px #000000b3;
             font-family: "Montserrat", sans-serif;
             margin-bottom: 300px;
+            padding-bottom: 110px;
         }
 
         .contact-form label {
