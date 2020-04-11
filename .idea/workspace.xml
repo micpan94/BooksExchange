@@ -9,9 +9,9 @@
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/adversmentJSP/viewAdv.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/updateProfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/updateProfile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleAdvView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleAdvView.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/src/main/webapp/my-app/node_modules/" />
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="641">
+              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="240" column="26" lean-forward="true" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
+            <state relative-caret-position="202">
+              <caret line="180" column="105" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="105" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -114,8 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+            <state relative-caret-position="539">
+              <caret line="130" column="33" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -149,12 +158,12 @@
       <find>/order</find>
       <find>contai</find>
       <find>contain</find>
-      <find>conta</find>
       <find>element</find>
       <find>padding-bottom: 200px</find>
       <find>social</find>
       <find>txtb labe</find>
       <find>footer</find>
+      <find>conta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Encje/ShopppingCardDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/OrderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/ClientOrdersServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/DeleteAdvServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/EntityDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/HomeServlet.java" />
@@ -202,10 +210,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/UpdateProfileServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/OrderForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java" />
       </list>
     </option>
@@ -540,21 +549,7 @@
       <workItem from="1586435513558" duration="4970000" />
       <workItem from="1586447952767" duration="25319000" />
       <workItem from="1586543939873" duration="3455000" />
-      <workItem from="1586596814132" duration="4393000" />
-    </task>
-    <task id="LOCAL-00070" summary="profile fix 1.6">
-      <created>1578744534375</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1578744534375</updated>
-    </task>
-    <task id="LOCAL-00071" summary="profile fix 1.6">
-      <created>1578754569588</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1578754569588</updated>
+      <workItem from="1586596814132" duration="6151000" />
     </task>
     <task id="LOCAL-00072" summary="profile fix 2.0">
       <created>1578764707788</created>
@@ -885,11 +880,25 @@
       <option name="project" value="LOCAL" />
       <updated>1586600428539</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="v22.3">
+      <created>1586601722158</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1586601722158</updated>
+    </task>
+    <task id="LOCAL-00120" summary="v22.3">
+      <created>1586602068470</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1586602068470</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119611000" />
+    <option name="totallyTimeSpent" value="121369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -902,6 +911,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" id="Project" order="0" visible="true" weight="0.22334754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1436,13 +1446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9418">
-          <caret line="554" column="79" selection-start-line="554" selection-start-column="66" selection-end-line="554" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Orders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1677,13 +1680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1698,10 +1694,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="130" column="33" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="240" column="26" lean-forward="true" selection-start-line="240" selection-start-column="26" selection-end-line="240" selection-end-column="26" />
+        <state relative-caret-position="202">
+          <caret line="180" column="105" selection-start-line="180" selection-start-column="50" selection-end-line="180" selection-end-column="105" />
           <folding>
             <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1711,8 +1721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="641">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

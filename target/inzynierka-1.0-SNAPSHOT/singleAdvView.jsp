@@ -47,6 +47,7 @@
             height: 100%;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 250px;
         }
 
 
@@ -127,7 +128,7 @@
             text-align: center;
             box-shadow: 0 0 20px #000000b3;
             font-family: "Montserrat", sans-serif;
-            padding-bottom: 100px;
+            margin-bottom: 300px;
         }
 
         .contact-form label {
@@ -151,6 +152,7 @@
         .txtb a {
             text-decoration:  none;
             color: lightyellow;
+            font-style: italic;
         }
         .txtb a:visited{
             color: #5a6268;
