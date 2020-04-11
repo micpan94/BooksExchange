@@ -46,6 +46,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            margin-bottom: 230px;
         }
         .ideal {
             font-family: 'Lobster', cursive;
