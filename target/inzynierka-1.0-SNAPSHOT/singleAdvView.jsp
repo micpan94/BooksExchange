@@ -148,6 +148,16 @@
             border-radius: 8px;
             word-wrap: break-word;
         }
+        .txtb a {
+            text-decoration:  none;
+            color: lightyellow;
+        }
+        .txtb a:visited{
+            color: #5a6268;
+        }
+        .txtb a:hover{
+            color: yellow;
+        }
 
         .txtb img {
             width: 100%;
@@ -293,7 +303,7 @@
         </div>
 
         <div class="txtb">
-            <label>Kontakt</label>
+            <label>Kontakt telefoniczny</label>
             <%= advertisement.getClient().getTelephoneNr()%>
             <%=advertisement.getClient().getFirstName()%>
         </div>
@@ -321,6 +331,11 @@
         <div class="txtb">
             <label>Cena</label>
             <%=advertisement.getPrice()%>zł
+        </div>
+
+        <div class="txtb">
+            <label>Kontakt email</label>
+            <a href="mailto:<%=advertisement.getClient().getEmail()%>?Subject=<%=advertisement.getTitle()%>" target="_top">Wyślij zapytanie</a>
         </div>
 
     </div>

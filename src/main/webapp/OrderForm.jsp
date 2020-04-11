@@ -42,8 +42,9 @@
             align-items: center;
             width: 100%;
             height: 100%;
-            padding-bottom: 120px;
+            padding-bottom: 450px;
             justify-content: space-between;
+
         }
 
         .box {

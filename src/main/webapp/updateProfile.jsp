@@ -49,6 +49,7 @@
             align-items: center;
             color: white;
             padding-bottom: 120px;
+            margin-bottom: 350px;
         }
 
         .box div{

@@ -9,9 +9,10 @@
     <list default="true" id="9eaa0ca5-90bd-413f-903d-65c27ed3cdfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/OrderForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrderForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlety/UpdateProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlety/UpdateProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UpdateProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/WEB-INF/classes/Servlety/UpdateProfileServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/updateProfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/updateProfile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleAdvView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/inzynierka-1.0-SNAPSHOT/singleAdvView.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/src/main/webapp/my-app/node_modules/" />
@@ -68,6 +69,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/updateProfile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/OrdersServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,26 +93,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1644">
-              <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3331">
-              <caret line="124" column="25" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
+            <state relative-caret-position="396">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/updateProfile.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5457">
-              <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
+            <state relative-caret-position="474">
+              <caret line="262" column="85" lean-forward="true" selection-start-line="262" selection-start-column="85" selection-end-line="262" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -174,17 +197,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Servlety/SingleAdvServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/AddNewADV.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/singleBookView.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Encje/ClientDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/ReisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/SingleBookViewServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Servlety/UpdateProfileServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/OrderForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/updateProfile.jsp" />
       </list>
     </option>
   </component>
@@ -518,14 +541,7 @@
       <workItem from="1586435513558" duration="4970000" />
       <workItem from="1586447952767" duration="25319000" />
       <workItem from="1586543939873" duration="3455000" />
-      <workItem from="1586596814132" duration="871000" />
-    </task>
-    <task id="LOCAL-00068" summary="profile fix 1.2">
-      <created>1578693855584</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1578693855584</updated>
+      <workItem from="1586596814132" duration="3545000" />
     </task>
     <task id="LOCAL-00069" summary="profile fix 1.3">
       <created>1578694439376</created>
@@ -863,11 +879,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586546644429</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="v22.3">
+      <created>1586597694873</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1586597694875</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116089000" />
+    <option name="totallyTimeSpent" value="118763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1415,13 +1438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/userShoppingCard.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9418">
@@ -1562,17 +1578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/persistence/EntityManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1660,13 +1665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/updateProfile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5457">
-          <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servlety/UpdateProfileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -1684,17 +1682,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderForm.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Encje/Advertisement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1644">
-          <caret line="106" column="36" lean-forward="true" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        <state relative-caret-position="578">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/singleAdvView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3331">
-          <caret line="124" column="25" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
+        <state relative-caret-position="641">
+          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrderForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adversmentJSP/viewAdv.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="262" column="85" lean-forward="true" selection-start-line="262" selection-start-column="85" selection-end-line="262" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/updateProfile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
         </state>
       </provider>
     </entry>
