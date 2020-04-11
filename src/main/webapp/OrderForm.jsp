@@ -111,6 +111,8 @@
             font-size: 20px;
             width: 100%;
             align-self: end;
+            position: fixed;
+            bottom: 0;
 
         }
 
