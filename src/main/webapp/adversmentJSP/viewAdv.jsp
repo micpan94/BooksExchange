@@ -46,6 +46,7 @@
             height: 100%;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 200px;
         }
 
         .box {
@@ -228,6 +229,7 @@
             grid-auto-rows: 1fr;
             width: 100%;
             padding: 0 20px;
+            padding-bottom: 200px;
         }
 
         .grid-container__element {

@@ -52,6 +52,6 @@ public class OrdersServlet extends HttpServlet {
         shopppingCardDAO.upgrade(card);
 
 
-        req.getRequestDispatcher("/home").forward(req,resp);
+        req.getRequestDispatcher("/myorders").forward(req,resp);
     }
 }

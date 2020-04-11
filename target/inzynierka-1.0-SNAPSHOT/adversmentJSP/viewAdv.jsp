@@ -46,6 +46,7 @@
             height: 100%;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 200px;
         }
 
         .box {
@@ -228,6 +229,7 @@
             grid-auto-rows: 1fr;
             width: 100%;
             padding: 0 20px;
+            padding-bottom: 200px;
         }
 
         .grid-container__element {
@@ -250,7 +252,7 @@
                     <div class="element"><c:out value="${element.title}"></c:out></div>
                     <div class="element"><c:out value="${element.price}"></c:out>zł</div>
                     <div class="element"><c:out value="${element.location}"></c:out></div>
-                    <div class="element" style="color: #09ff00"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adversment?id=<c:out value="${element.id}"></c:out>" style="color: #09ff00">Sprawdź Szczegóły</a></div>
+                    <div class="element" style="color:lightgoldenrodyellow"><a href="http://localhost:8090/inzynierka-1.0-SNAPSHOT/adversment?id=<c:out value="${element.id}"></c:out>" style="color:lightgoldenrodyellow">Sprawdź Szczegóły</a></div>
                 </div>
             </li>
         </c:forEach>
