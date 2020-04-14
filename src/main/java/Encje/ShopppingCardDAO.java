@@ -42,4 +42,13 @@ public class ShopppingCardDAO extends EntityDao<ShoppingCard> {
         }
         return result;
     }
+
+    public ShoppingCard deleteFromCArd (Book element, Client client){
+        ShoppingCard clientCard = getClientCard(client);
+        List<Book> books = clientCard.getBooks();
+        books.remove(element);
+        ShoppingCard result = new ShoppingCard();
+        result.setBooks(books);
+        return result;
+    }
 }

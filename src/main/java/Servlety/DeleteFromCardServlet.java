@@ -28,22 +28,22 @@ public class DeleteFromCardServlet extends HttpServlet {
         Client client = (Client) req.getSession().getAttribute("client");
         Collection<ShoppingCard> all = shopppingCardDAO.findAll();
         ShoppingCard shoppingCard = new ShoppingCard();
-        for (ShoppingCard element : all){
-            if (element.getClient().getId() == client.getId()){
+        for (ShoppingCard element : all) {
+            if (element.getClient().getId() == client.getId()) {
                 shoppingCard = element;
             }
         }
         List<Book> result = new ArrayList<>();
         List<Book> books = shoppingCard.getBooks();
-        for (Book element :books){
-            if (element.getId()!= book.getId()){
+        for (Book element : books) {
+            if (element.getId() != book.getId()) {
                 result.add(element);
             }
         }
-//        books.remove(book);
+
         shoppingCard.setBooks(result);
         int size = result.size();
         shopppingCardDAO.upgrade(shoppingCard);
-        req.getRequestDispatcher("shoppingCard").forward(req,resp);
+        req.getRequestDispatcher("shoppingCard").forward(req, resp);
     }
 }
